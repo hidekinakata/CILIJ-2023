@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@material-tailwind/react": "^1.4.2",
     "framer-motion": "^10.12.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

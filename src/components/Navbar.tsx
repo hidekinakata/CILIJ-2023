@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, Variants } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation } from "react-router-dom";
 import {
   BsChevronCompactLeft,
   BsFillCaretLeftFill,
@@ -11,20 +11,32 @@ type NavbarType = {};
 
 const Navbar: React.FC<NavbarType> = (props) => {
   const paths = [
-    { name: "Home", path: "/" },
-    { name: "Informações", path: "/sobre" },
+    { name: "Home", path: "/#" },
+    { name: "Sobre o evento", path: "/#sobre" },
     { name: "Palestras", path: "#" },
     { name: "Mesas Redondas", path: "#" },
     { name: "Coodenadores", path: "#" },
     { name: "Orientações", path: "#" },
     { name: "Contato", path: "#" },
   ];
-
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    function handleOutside() {
+      setIsOpen(false);
+    }
+    window.addEventListener("click", handleOutside);
+
+    return () => window.removeEventListener("click", handleOutside);
+  }, []);
 
   return (
     <AnimatePresence>
-      <header className={"fixed top-0 z-10 h-20 w-full"}>
+      <header
+        className={"fixed top-0 z-10 h-20 w-full"}
+        onClick={(e) => e.stopPropagation()}
+      >
         <motion.nav
           variants={NavVariants}
           initial={"initial"}
@@ -50,14 +62,14 @@ const Navbar: React.FC<NavbarType> = (props) => {
             <div className={"flex items-center gap-10"}>
               <a
                 className={
-                  " hidden cursor-pointer rounded-full bg-bermuda-500 p-2 text-white hover:bg-bermuda-400 md:block"
+                  " hidden cursor-pointer rounded-full bg-bermuda-500 p-2 px-4 text-white hover:bg-bermuda-400 md:block"
                 }
               >
-                Acompanhe sua inscrição
+                Faça sua inscrição
               </a>
               <motion.button
                 className={
-                  "box-content flex h-7 w-fit flex-col items-center justify-between rounded border border-black/30 p-3"
+                  "box-content flex h-7 w-9 flex-col items-center justify-between rounded border border-black/30 p-3"
                 }
                 onClick={() => setIsOpen((prev) => !prev)}
               >
@@ -68,29 +80,45 @@ const Navbar: React.FC<NavbarType> = (props) => {
                 >
                   <motion.div
                     variants={{
-                      open: { translateY: "0", rotate: 0 },
+                      open: {
+                        top: 0,
+                        translateY: "0",
+                        rotate: 0,
+                        width: "100%",
+                      },
                       close: {
+                        width: "50%",
                         rotate: 35,
                         top: "50%",
+                        left: "50%",
                         translateY: "-50%",
+                        translateX: "-50%",
                       },
                     }}
                     className={"absolute h-0.5 w-full bg-black"}
                   />
                   <motion.div
                     variants={{
-                      open: { translateY: "-50%", rotate: 0, top: "100%" },
-                      close: {
-                        rotate: -35,
-                        top: "50%",
+                      open: {
+                        width: "100%",
+                        top: "100%",
+                        rotate: 0,
                         translateY: "-50%",
+                      },
+                      close: {
+                        width: "50%",
+                        top: "50%",
+                        rotate: -35,
+                        left: "50%",
+                        translateY: "-50%",
+                        translateX: "-50%",
                       },
                     }}
                     className={"absolute h-0.5 w-full bg-black"}
                   />
                 </motion.div>
                 <motion.span className={"w-full text-[10px] leading-none"}>
-                  menu
+                  {isOpen ? "Fechar" : "Menu"}
                 </motion.span>
               </motion.button>
             </div>
@@ -101,7 +129,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
             initial={"hidden"}
             animate={isOpen ? "visible" : "hidden"}
             className={
-              "z-0 justify-between bg-white/30 p-7 shadow backdrop-blur md:ml-auto md:mr-24 md:mt-3 md:w-fit md:rounded-xl "
+              "relative z-30 justify-between bg-white/30 p-7 shadow backdrop-blur md:ml-auto md:mr-24 md:mt-3 md:w-fit md:rounded-xl "
             }
           >
             <ul
@@ -116,7 +144,16 @@ const Navbar: React.FC<NavbarType> = (props) => {
                     "flex w-full items-center justify-end gap-3 border-b border-b-black/[0.01] text-right transition hover:border-b-black/20"
                   }
                 >
-                  <Link to={path.path}>{path.name}</Link>
+                  {path.path.startsWith("#") ||
+                  path.path.startsWith(location.pathname + "#") ? (
+                    <a href={path.path} onClick={() => setIsOpen(false)}>
+                      {path.name}
+                    </a>
+                  ) : (
+                    <Link to={path.path} onClick={() => setIsOpen(false)}>
+                      {path.name}
+                    </Link>
+                  )}
                   <IoIosSquare className={"text-sm"} />
                 </li>
               ))}
@@ -126,7 +163,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
                 "mx-auto block w-fit cursor-pointer rounded-full bg-bermuda-500 px-4 py-2 text-white hover:bg-bermuda-400 md:hidden"
               }
             >
-              Acompanhe sua inscrição
+              Faça sua inscrição
             </a>
           </motion.div>
         </motion.nav>
