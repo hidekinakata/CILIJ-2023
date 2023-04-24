@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
         hidden: { y: -200, opacity: 0 },
       }}
       initial={"show"}
-      animate={scrollBehavior === "scrollDown" ? "hidden" : "show"}
+      animate={scrollBehavior === "scrollDown" && !isOpen ? "hidden" : "show"}
       transition={{
         duration: 0.5,
         delay: 0.5,
