@@ -7,7 +7,7 @@ const About: React.FC<AboutType> = (props) => {
     <section
       id="sobre"
       className={
-        "[&>p:not(:)] min-h-screen px-12 pb-10 pt-28 text-justify text-sm sm:px-32 sm:text-base [&>p]:mb-4 [&>p]:indent-8"
+        "[&>p:not(:)] min-h-screen px-4 pb-10 pt-28 text-justify sm:px-32 [&>p]:mb-4 [&>p]:indent-8"
       }
     >
       <h1 className={"mb-10 text-center text-5xl"}> Sobre o evento </h1>
@@ -66,8 +66,8 @@ const About: React.FC<AboutType> = (props) => {
         que começa agora, afinal,
       </p>
 
-      <cite className={"w-full text-center font-caveat text-xl"}>
-        <p className={"py-5 !indent-0"}>
+      <cite className={"w-full text-center font-caveat text-2xl md:text-4xl"}>
+        <p className={"pt-5 !indent-0"}>
           “O homem, como um ser histórico, inserido num permanente movimento de
           procura, faz e refaz o seu saber.”
         </p>
