@@ -4,6 +4,7 @@ import { CgClose, CgMenuRight, CgMenuRightAlt } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import useScrollBehavior from "../hooks/useScrollBehavior";
 import { GiLog } from "react-icons/all";
+import { useMediaQuery } from "usehooks-ts";
 
 type NavbarType = {};
 
@@ -41,8 +42,11 @@ const Navbar: React.FC<NavbarType> = (props) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const scrollBehavior = useScrollBehavior();
+  const matches = useMediaQuery("(min-width: 768px)");
 
-  useEffect(() => console.log(scrollBehavior), [scrollBehavior]);
+  useEffect(() => {
+    if (matches) setIsOpen(false);
+  }, [matches]);
 
   return (
     <motion.header
