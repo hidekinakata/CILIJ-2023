@@ -49,13 +49,14 @@ const Navbar: React.FC<NavbarType> = (props) => {
       variants={{
         show: {
           y: 0,
+          opacity: 1,
         },
-        hidden: { y: -200 },
+        hidden: { y: -200, opacity: 0 },
       }}
       initial={"show"}
       animate={scrollBehavior === "scrollDown" ? "hidden" : "show"}
       transition={{
-        ease: "easeInOut",
+        duration: 0.5,
         delay: 0.5,
       }}
       className={"fixed z-10 h-fit w-full bg-aubergine-900"}
