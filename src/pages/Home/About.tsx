@@ -14,11 +14,7 @@ const About: React.FC<AboutType> = (props) => {
         Sobre o evento
       </h1>
 
-      <p
-      // className={
-      //   "!indent-0 first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold  first-letter:text-black"
-      // }
-      >
+      <p>
         O VII Congresso Internacional de Literatura Infantil e Juvenil -
         <strong> Educação literária: mudanças em movimento</strong> - (re)nasce
         em solo mineiro a partir das muitas histórias já contadas, uma vez que
