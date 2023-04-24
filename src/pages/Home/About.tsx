@@ -11,8 +11,7 @@ const About: React.FC<AboutType> = (props) => {
       }
     >
       <h1 className={"mb-10 text-center text-4xl md:text-5xl"}>
-        {" "}
-        Sobre o evento{" "}
+        Sobre o evento
       </h1>
 
       <p
