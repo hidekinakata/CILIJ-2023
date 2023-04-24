@@ -1,46 +1,73 @@
 /** @type {import("tailwindcss").Config} */
-const withMT = require("@material-tailwind/react/utils/withMT");
-module.exports = withMT({
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
-    "node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}"],
+
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
+    "node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        caveat: ["Caveat", "cursive"]
+        sans: ["Poppins", "sans-serif"],
+        caveat: ["Caveat", "cursive"],
       },
       colors: {
         "fuel-yellow": {
-          "50": "#fdfae8",
-          "100": "#faf3c6",
-          "200": "#f6e593",
-          "300": "#eecd59",
-          "400": "#e3b426",
-          "500": "#cf9b20",
-          "600": "#b07a1c",
-          "700": "#8d581b",
-          "800": "#734921",
-          "900": "#613d23",
-          "950": "#371e10"
+          50: "#fdfae8",
+          100: "#faf3c6",
+          200: "#f6e593",
+          300: "#eecd59",
+          400: "#e3b426",
+          500: "#cf9b20",
+          600: "#b07a1c",
+          700: "#8d581b",
+          800: "#734921",
+          900: "#613d23",
+          950: "#371e10",
         },
-        "bermuda": {
-          "50": "#f1fcf8",
-          "100": "#d0f7ea",
-          "200": "#a1eed5",
-          "300": "#77e0c2",
-          "400": "#3cc5a2",
-          "500": "#23a989",
-          "600": "#198870",
-          "700": "#186d5b",
-          "800": "#18574b",
-          "900": "#18493f",
-          "950": "#082b26"
-        }
-
-
-      }
-    }
+        bermuda: {
+          50: "#f1fcf8",
+          100: "#d0f7ea",
+          200: "#a1eed5",
+          300: "#77e0c2",
+          400: "#3cc5a2",
+          500: "#23a989",
+          600: "#198870",
+          700: "#186d5b",
+          800: "#18574b",
+          900: "#18493f",
+          950: "#082b26",
+        },
+        truegray: {
+          50: "#c4c4c4",
+          100: "#c4c4c4",
+          200: "#adadad",
+          300: "#8a8a8a",
+          400: "#696969",
+          500: "#525252",
+          600: "#383838",
+          700: "#292929",
+          800: "#1f1f1f",
+          900: "#171717",
+          950: "#030303",
+        },
+        aubergine: {
+          50: "#fdf3f4",
+          100: "#fce4e7",
+          200: "#fbcdd3",
+          300: "#f6abb5",
+          400: "#ef7a8a",
+          500: "#e44f63",
+          600: "#d03247",
+          700: "#af2638",
+          800: "#912332",
+          900: "#79232e",
+          950: "#26080c",
+        },
+      },
+    },
   },
-  plugins: []
-});
-
+  plugins: [],
+};
