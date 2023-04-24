@@ -19,7 +19,7 @@ const Header: React.FC<HomeType> = (props) => {
     >
       <div
         className={
-          "flex h-fit flex-col-reverse items-center justify-center md:flex-row md:justify-start"
+          "flex h-fit flex-col-reverse items-center justify-center md:flex-row md:justify-start md:gap-20"
         }
       >
         <div
@@ -38,13 +38,11 @@ const Header: React.FC<HomeType> = (props) => {
           <h1 className={"text-3xl font-black md:max-w-screen-sm md:text-6xl "}>
             Educação literária:
             <span className={"font-['Caveat'] text-red-700"}>
-              <span className={"md:hidden"}>
-                <br />
-              </span>
+              <br />
               Mudanças em movimento
             </span>
           </h1>
-          <div className={"mt-10 w-fit self-center"}>
+          <div className={"mt-10 w-fit self-center md:self-start"}>
             <SubscribeBtn />
           </div>
         </div>
