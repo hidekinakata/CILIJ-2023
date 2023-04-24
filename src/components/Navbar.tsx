@@ -1,7 +1,9 @@
 import { AnimatePresence, motion, Variants } from "framer-motion";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CgClose, CgMenuRight, CgMenuRightAlt } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import useScrollBehavior from "../hooks/useScrollBehavior";
+import { GiLog } from "react-icons/all";
 
 type NavbarType = {};
 
@@ -38,9 +40,26 @@ const Navbar: React.FC<NavbarType> = (props) => {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
+  const scrollBehavior = useScrollBehavior();
+
+  useEffect(() => console.log(scrollBehavior), [scrollBehavior]);
 
   return (
-    <header className={"fixed z-10 h-fit w-full bg-aubergine-900"}>
+    <motion.header
+      variants={{
+        show: {
+          y: 0,
+        },
+        hidden: { y: -200 },
+      }}
+      initial={"show"}
+      animate={scrollBehavior === "scrollDown" ? "hidden" : "show"}
+      transition={{
+        ease: "easeInOut",
+        delay: 0.5,
+      }}
+      className={"fixed z-10 h-fit w-full bg-aubergine-900"}
+    >
       <div className={"relative flex h-24 w-full items-center justify-center"}>
         <Link
           to={"/"}
@@ -105,7 +124,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
           ))}
         </ul>
       </motion.nav>
-    </header>
+    </motion.header>
   );
 };
 
