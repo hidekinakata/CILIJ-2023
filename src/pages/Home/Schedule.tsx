@@ -22,8 +22,10 @@ const Schedule: React.FC<ScheduleType> = (props) => {
           schedule: [
             "Credenciamento",
             "Abertura",
-            "Conferência de Abertura",
-            "João Anzanello Carrascoza (escritor)",
+            {
+              title: "Conferência de Abertura",
+              content: "João Anzanello Carrascoza (escritor)",
+            },
           ],
         },
         {
@@ -32,16 +34,12 @@ const Schedule: React.FC<ScheduleType> = (props) => {
             {
               title: "Mesa redonda 1: Os pequenos",
               content:
-                "Teresa Mendes (pesquisadora Portugal)\n" +
-                "Aline Abreu (escritora)\n" +
-                "Daniela Padilha (editora)\n",
+                "Teresa Mendes (pesquisadora Portugal), Aline Abreu (escritora), Daniela Padilha (editora) ",
             },
             {
               title: "Mesa redonda 2: Os maiores",
               content:
-                "Andreia Oliveira (pesquisadora) \n" +
-                "José Roberto Torrero (escritor)\n" +
-                "Irene Vasco (escritora Colômbia)\n",
+                "Andreia Oliveira (pesquisadora), José Roberto Torrero (escritor), Irene Vasco (escritora Colômbia)",
             },
           ],
         },
@@ -68,10 +66,7 @@ const Schedule: React.FC<ScheduleType> = (props) => {
             {
               title: "Mesa Especial: Minas Gerais e a literatura",
               content:
-                "Marta Passos (pesquisadora)\n" +
-                "Nelson Cruz (ilustrador)\n" +
-                "Ângela Leite\n" +
-                "(escritora)\n",
+                "Marta Passos (pesquisadora), Nelson Cruz (ilustrador), Ângela Leite, (escritora)",
             },
             "Lançamento de livros ",
           ],
@@ -94,16 +89,12 @@ const Schedule: React.FC<ScheduleType> = (props) => {
             {
               title: "Mesa redonda 3: Tradição Popular ",
               content:
-                "Alexandre Gomes (escritor)\n" +
-                "Marco Haurelio (escritor)\n" +
-                "Fernando Teixeira Luis (pesquisador)\n",
+                "Alexandre Gomes (escritor), Marco Haurelio (escritor), Fernando Teixeira Luis (pesquisador)",
             },
             {
               title: "Mesa redonda 4: Ilustração",
               content:
-                "Hércules Tolêdo Corrêa (pesquisador)\n" +
-                "Odilon Moraes (ilustrador)\n" +
-                "Renato Moriconi (ilustrador)\n",
+                "Hércules Tolêdo Corrêa (pesquisador), Odilon Moraes (ilustrador), Renato Moriconi (ilustrador)",
             },
           ],
         },
@@ -127,7 +118,7 @@ const Schedule: React.FC<ScheduleType> = (props) => {
     <section
       id="sobre"
       className={
-        "[&>p:not(:)] min-h-screen px-8 pb-10 pt-28 text-justify text-sm sm:px-32 sm:text-base"
+        "[&>p:not(:)] min-h-screen px-3 pb-10 pt-28 text-justify text-sm sm:px-32 sm:text-base"
       }
     >
       <h1 className={"mb-10 text-center text-5xl"}> Programação </h1>
@@ -146,10 +137,14 @@ const Schedule: React.FC<ScheduleType> = (props) => {
             <TabPanel key={value} value={value}>
               {desc.map(({ title, schedule }) => (
                 <div key={title}>
-                  <h1 className={"mb-5 border-b text-center text-lg"}>
+                  <h1 className={"mb-5 border-b text-center text-xl"}>
                     {title}
                   </h1>
-                  <ul className={"mb-10 [&>li:not(:last-child)]:mb-5"}>
+                  <ul
+                    className={
+                      "mb-10 text-left text-sm [&>li:not(:last-child)]:mb-5"
+                    }
+                  >
                     {schedule.map((item, index) => {
                       if (!Object.keys(item).includes("title"))
                         return (
