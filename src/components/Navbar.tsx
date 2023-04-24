@@ -68,7 +68,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
         variants={NavVariants}
         initial={"hidden"}
         animate={isOpen ? "visible" : "hidden"}
-        className={"md:!block md:!opacity-100"}
+        className={"h-10 md:!block md:!opacity-100"}
       >
         <ul
           className={

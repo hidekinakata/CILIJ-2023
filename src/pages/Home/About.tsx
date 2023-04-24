@@ -7,10 +7,13 @@ const About: React.FC<AboutType> = (props) => {
     <section
       id="sobre"
       className={
-        "[&>p:not(:)] min-h-screen px-4 pb-10 pt-28 text-justify sm:px-32 [&>p]:mb-4 [&>p]:indent-8"
+        "[&>p:not(:)] min-h-screen px-4 pb-10 pt-40 text-justify sm:px-32 [&>p]:mb-4 [&>p]:indent-8"
       }
     >
-      <h1 className={"mb-10 text-center text-5xl"}> Sobre o evento </h1>
+      <h1 className={"mb-10 text-center text-4xl md:text-5xl"}>
+        {" "}
+        Sobre o evento{" "}
+      </h1>
 
       <p
       // className={
