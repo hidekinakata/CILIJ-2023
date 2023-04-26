@@ -1,19 +1,13 @@
 import React from "react";
 import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
   Tab,
   TabPanel,
+  Tabs,
+  TabsBody,
+  TabsHeader,
 } from "@material-tailwind/react";
 import { BsArrowReturnRight } from "react-icons/bs";
-import {
-  WiDaySunny,
-  WiHorizonAlt,
-  WiMoonAltNew,
-  WiNightClear,
-  WiSunrise,
-} from "react-icons/wi";
+import { WiDaySunny, WiHorizonAlt, WiNightClear } from "react-icons/wi";
 
 type ScheduleType = {};
 
