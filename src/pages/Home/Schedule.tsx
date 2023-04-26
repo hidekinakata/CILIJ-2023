@@ -6,7 +6,14 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
-import { BsArrowReturnRight } from "react-icons/all";
+import { BsArrowReturnRight } from "react-icons/bs";
+import {
+  WiDaySunny,
+  WiHorizonAlt,
+  WiMoonAltNew,
+  WiNightClear,
+  WiSunrise,
+} from "react-icons/wi";
 
 type ScheduleType = {};
 
@@ -18,7 +25,7 @@ const Schedule: React.FC<ScheduleType> = (props) => {
       value: "day1",
       desc: [
         {
-          title: "Manhã",
+          title: "Manhã ",
           schedule: [
             "Credenciamento",
             "Abertura",
@@ -101,8 +108,11 @@ const Schedule: React.FC<ScheduleType> = (props) => {
         {
           title: "Tarde",
           schedule: [
-            "Conferência de Encerramento",
-            "María Teresa Andruetto (Argentina)",
+            {
+              title: "Conferência de Encerramento",
+              content: "María Teresa Andruetto (Argentina)",
+            },
+
             "Show cultural de encerramento",
           ],
         },
@@ -124,7 +134,12 @@ const Schedule: React.FC<ScheduleType> = (props) => {
       <h1 className={"mb-10 text-center text-5xl"}> Programação </h1>
 
       <Tabs value="day1" className={"relative z-[1]"}>
-        <TabsHeader>
+        <TabsHeader
+          className={"bg-truegray-500/10"}
+          indicatorProps={{
+            className: "bg-aubergine-900/20 shadow-none text-blue-500",
+          }}
+        >
           {data.map(({ day, dayw, value }) => (
             <Tab key={value} value={value} className={"flex flex-col p-2"}>
               <h1>{day}</h1>
@@ -134,15 +149,37 @@ const Schedule: React.FC<ScheduleType> = (props) => {
         </TabsHeader>
         <TabsBody>
           {data.map(({ value, desc }) => (
-            <TabPanel key={value} value={value}>
+            <TabPanel
+              key={value}
+              value={value}
+              className={"grid grid-cols-3 gap-3"}
+            >
               {desc.map(({ title, schedule }) => (
-                <div key={title}>
-                  <h1 className={"mb-5 border-b text-center text-xl"}>
+                <div key={title} className={"p-5 shadow"}>
+                  <h1
+                    className={
+                      "mb-10 mt-8 flex items-center justify-center gap-3 text-center text-xl md:text-3xl"
+                    }
+                  >
+                    {title.includes("Manhã") ? (
+                      <WiHorizonAlt />
+                    ) : title.includes("Tarde") ? (
+                      <WiDaySunny />
+                    ) : (
+                      <WiNightClear />
+                    )}
                     {title}
+                    {title.includes("Manhã") ? (
+                      <WiHorizonAlt />
+                    ) : title.includes("Tarde") ? (
+                      <WiDaySunny />
+                    ) : (
+                      <WiNightClear />
+                    )}
                   </h1>
                   <ul
                     className={
-                      "mb-10 text-left text-sm [&>li:not(:last-child)]:mb-5"
+                      "mb-4 text-left text-sm md:text-lg [&>li:not(:last-child)]:mb-5"
                     }
                   >
                     {schedule.map((item, index) => {
@@ -152,8 +189,8 @@ const Schedule: React.FC<ScheduleType> = (props) => {
                             key={item as string}
                             className={"flex items-center gap-3"}
                           >
-                            <div>
-                              <BsArrowReturnRight className={"w-6 stroke-2"} />
+                            <div className={"flex h-full"}>
+                              <BsArrowReturnRight className={"w-6 stroke-2 "} />
                             </div>
                             <div className={""}>
                               <h1>{item as string}</h1>
@@ -176,7 +213,9 @@ const Schedule: React.FC<ScheduleType> = (props) => {
                             </div>
                             <div className={""}>
                               <h1 className={"font-black"}>{content.title}</h1>
-                              <span>{content.content}</span>
+                              <span className={"opacity-70"}>
+                                {content.content}
+                              </span>
                             </div>
                           </li>
                         );
