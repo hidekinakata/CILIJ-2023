@@ -46,14 +46,14 @@ const Navbar: React.FC<NavbarType> = (props) => {
     if (matches) setIsOpen(false);
   }, [matches]);
 
-  useEffect(() => {
-    function handleMove(e: MouseEvent) {
-      if (e.clientY < 40) return setIsOpen(true);
-    }
-    window.addEventListener("mousemove", handleMove);
-
-    return () => window.removeEventListener("mousemove", handleMove);
-  }, []);
+  // useEffect(() => {
+  //   function handleMove(e: MouseEvent) {
+  //     if (e.clientY < 40) return setIsOpen(true);
+  //   }
+  //   window.addEventListener("mousemove", handleMove);
+  //
+  //   return () => window.removeEventListener("mousemove", handleMove);
+  // }, []);
 
   return (
     <motion.header
@@ -68,7 +68,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
       animate={scrollBehavior === "scrollDown" && !isOpen ? "hidden" : "show"}
       transition={{
         duration: 0.2,
-        delay: 0.5,
+        delay: 0.2,
       }}
       className={"fixed z-10 h-fit w-full bg-aubergine-900"}
     >

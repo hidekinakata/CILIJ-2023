@@ -122,7 +122,7 @@ const Schedule: React.FC<ScheduleType> = (props) => {
     <section
       id="programacao"
       className={
-        "[&>p:not(:)] min-h-screen px-3 pb-10 pt-28 text-justify text-sm sm:px-32 sm:text-base"
+        "[&>p:not(:)] h-fit px-3 pb-10 pt-28 text-justify text-sm sm:px-32 sm:text-base"
       }
     >
       <h1 className={"mb-10 text-center text-5xl"}> Programação </h1>
@@ -146,7 +146,9 @@ const Schedule: React.FC<ScheduleType> = (props) => {
             <TabPanel
               key={value}
               value={value}
-              className={"gap-3 md:grid md:grid-cols-3"}
+              className={
+                "grid grid-rows-3 gap-5 lg:grid-cols-3 lg:grid-rows-none"
+              }
             >
               {desc.map(({ title, schedule }) => (
                 <div key={title} className={"p-5 shadow"}>
@@ -173,7 +175,7 @@ const Schedule: React.FC<ScheduleType> = (props) => {
                   </h1>
                   <ul
                     className={
-                      "mb-4 text-left text-sm md:text-lg [&>li:not(:last-child)]:mb-5"
+                      "mb-4 border-l pl-4 text-left text-sm md:text-base [&>li:not(:last-child)]:mb-5 "
                     }
                   >
                     {schedule.map((item, index) => {
@@ -181,11 +183,13 @@ const Schedule: React.FC<ScheduleType> = (props) => {
                         return (
                           <li
                             key={item as string}
-                            className={"flex items-center gap-3"}
+                            className={"relative flex items-center gap-3"}
                           >
-                            <div className={"flex h-full"}>
-                              <BsArrowReturnRight className={"w-6 stroke-2 "} />
-                            </div>
+                            <div
+                              className={
+                                "absolute -left-4 top-2 h-2 w-2 -translate-x-1/2 rounded-full bg-truegray-500"
+                              }
+                            ></div>
                             <div className={""}>
                               <h1>{item as string}</h1>
                               <span></span>
@@ -200,11 +204,13 @@ const Schedule: React.FC<ScheduleType> = (props) => {
                         return (
                           <li
                             key={content.title}
-                            className={"flex items-center gap-3"}
+                            className={"relative flex items-center gap-3"}
                           >
-                            <div>
-                              <BsArrowReturnRight className={"w-6 stroke-2"} />
-                            </div>
+                            <div
+                              className={
+                                "absolute -left-4 top-2 h-2 w-2 -translate-x-1/2 rounded-full bg-truegray-500"
+                              }
+                            ></div>
                             <div className={""}>
                               <h1 className={"font-black"}>{content.title}</h1>
                               <span className={"opacity-70"}>
