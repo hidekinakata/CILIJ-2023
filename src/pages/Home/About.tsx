@@ -7,7 +7,7 @@ const About: React.FC<AboutType> = (props) => {
     <section
       id="sobre"
       className={
-        "min-h-screen px-4 pb-10 pt-10 text-justify leading-relaxed sm:px-32 md:pt-24 [&>p]:mb-4 [&>p]:indent-8"
+        "min-h-screen px-4 pb-10 pt-10 text-justify leading-relaxed sm:px-32 md:pt-16 [&>p]:mb-4 [&>p]:indent-8"
       }
     >
       <h1 className={"mb-10 text-center text-4xl md:text-5xl"}>
