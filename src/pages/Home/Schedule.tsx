@@ -126,7 +126,7 @@ const Schedule: React.FC<ScheduleType> = (props) => {
 
   return (
     <section
-      id="sobre"
+      id="programacao"
       className={
         "[&>p:not(:)] min-h-screen px-3 pb-10 pt-28 text-justify text-sm sm:px-32 sm:text-base"
       }
@@ -152,7 +152,7 @@ const Schedule: React.FC<ScheduleType> = (props) => {
             <TabPanel
               key={value}
               value={value}
-              className={"grid grid-cols-3 gap-3"}
+              className={"gap-3 md:grid md:grid-cols-3"}
             >
               {desc.map(({ title, schedule }) => (
                 <div key={title} className={"p-5 shadow"}>
