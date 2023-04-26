@@ -1,9 +1,8 @@
-import { AnimatePresence, motion, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import { CgClose, CgMenuRight, CgMenuRightAlt } from "react-icons/cg";
+import { CgClose, CgMenuRightAlt } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import useScrollBehavior from "../hooks/useScrollBehavior";
-import { GiLog } from "react-icons/all";
 import { useMediaQuery } from "usehooks-ts";
 
 type NavbarType = {};
@@ -33,8 +32,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
   const paths = [
     { name: "Home", path: "/#" },
     { name: "Sobre o evento", path: "/#sobre" },
-    { name: "Palestras", path: "#" },
-    { name: "Mesas Redondas", path: "#" },
+    { name: "Programação", path: "/#programacao" },
     { name: "Coodenadores", path: "#" },
     { name: "Orientações", path: "#" },
     { name: "Contato", path: "#" },
@@ -48,6 +46,15 @@ const Navbar: React.FC<NavbarType> = (props) => {
     if (matches) setIsOpen(false);
   }, [matches]);
 
+  useEffect(() => {
+    function handleMove(e: MouseEvent) {
+      if (e.clientY < 40) return setIsOpen(true);
+    }
+    window.addEventListener("mousemove", handleMove);
+
+    return () => window.removeEventListener("mousemove", handleMove);
+  }, []);
+
   return (
     <motion.header
       variants={{
@@ -60,7 +67,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
       initial={"show"}
       animate={scrollBehavior === "scrollDown" && !isOpen ? "hidden" : "show"}
       transition={{
-        duration: 0.5,
+        duration: 0.2,
         delay: 0.5,
       }}
       className={"fixed z-10 h-fit w-full bg-aubergine-900"}
