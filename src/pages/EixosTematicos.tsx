@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Eixos from "../data/eixos_data";
+import { Await } from "react-router-dom";
 type EixosTematicosType = {};
 
 const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
@@ -137,13 +138,12 @@ const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
                 </a>{" "}
                 <button
                   className={"rounded bg-fuel-yellow-200 p-1 text-xs"}
-                  onClick={(e) => {
-                    if (navigator.clipboard)
-                      return navigator.clipboard
-                        .writeText(eixo.email)
-                        .then(
-                          (r) => (e.currentTarget.innerHTML = "Email copiado!")
-                        );
+                  onClick={async (e) => {
+                    if (navigator.clipboard) {
+                      e.currentTarget.innerHTML = "Email copiado!";
+                      await navigator.clipboard.writeText(eixo.email);
+                      return;
+                    }
                     unsecuredCopyToClipboard(e.currentTarget, eixo.email);
                     e.currentTarget.innerHTML = "Email copiado!";
                   }}
