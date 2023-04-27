@@ -46,14 +46,19 @@ const Header: React.FC<HomeType> = (props) => {
             <motion.h3
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              className={"text-lg"}
+              className={
+                "grid grid-cols-[min-content_auto] grid-rows-2 gap-x-2 gap-y-1 align-middle text-lg leading-none"
+              }
             >
-              <span className={"text-red-800"}>VII</span> Congresso
-              Internacional de
-              <br />
-              <span className={"text-red-800"}>
-                Literatura Infantil e Juvenil
+              <span
+                className={
+                  "row-span-2 float-left h-full place-self-center text-5xl text-red-800 "
+                }
+              >
+                VII
               </span>
+              <p className={"self-end"}>Congresso Internacional de</p>
+              <p className={"text-red-800"}>Literatura Infantil e Juvenil</p>
             </motion.h3>
             <motion.h1
               initial={{ x: -20, opacity: 0 }}
