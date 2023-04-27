@@ -10,7 +10,7 @@ const SubscribeBtn: React.FC<SubscribeBtnType> = (props) => {
       <a
         className={
           props.className +
-          " w-fit cursor-pointer bg-bermuda-500 p-2 px-4 text-center text-white hover:bg-bermuda-400"
+          " w-fit cursor-pointer rounded bg-bermuda-400 p-2 px-5 text-center text-2xl text-white hover:bg-bermuda-400"
         }
       >
         Faça sua inscrição
