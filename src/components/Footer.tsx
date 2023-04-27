@@ -7,7 +7,7 @@ const Footer: React.FC<FooterType> = (props) => {
   return (
     <footer
       className={
-        "flex h-60 w-full items-center bg-aubergine-950 font-medium text-white"
+        "mt-auto flex h-60 w-full items-center bg-aubergine-900 font-medium text-white"
       }
     >
       <div className={"w-full whitespace-pre-wrap"}>
