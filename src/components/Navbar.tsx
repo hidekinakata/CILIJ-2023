@@ -33,9 +33,9 @@ const Navbar: React.FC<NavbarType> = (props) => {
     { name: "Home", path: "/#" },
     { name: "Sobre o evento", path: "/#sobre" },
     { name: "Programação", path: "/#programacao" },
-    { name: "Coodenadores", path: "#" },
+    { name: "Eixos temáticos", path: "/eixos" },
     { name: "Orientações", path: "#" },
-    { name: "Contato", path: "#" },
+    { name: "Contato", path: "/contact" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -70,7 +70,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
         duration: 0.2,
         delay: 0.2,
       }}
-      className={"fixed z-10 h-fit w-full bg-aubergine-900"}
+      className={"fixed z-50 h-fit w-full bg-aubergine-700"}
     >
       <div className={"relative flex h-24 w-full items-center justify-center"}>
         <Link
@@ -99,7 +99,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
         variants={NavVariants}
         initial={"hidden"}
         animate={isOpen ? "visible" : "hidden"}
-        className={"h-10 md:!block md:!opacity-100"}
+        className={"h-10 text-black md:!block md:!opacity-100"}
       >
         <ul
           className={
