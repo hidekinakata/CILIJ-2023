@@ -6,8 +6,8 @@ import {
   TabsBody,
   TabsHeader,
 } from "@material-tailwind/react";
-import { BsArrowReturnRight } from "react-icons/bs";
 import { WiDaySunny, WiHorizonAlt, WiNightClear } from "react-icons/wi";
+import { Link } from "react-router-dom";
 
 type ScheduleType = {};
 
@@ -131,7 +131,7 @@ const Schedule: React.FC<ScheduleType> = (props) => {
         <TabsHeader
           className={"bg-truegray-500/10"}
           indicatorProps={{
-            className: "bg-aubergine-900/20 shadow-none text-blue-500",
+            className: "bg-fuel-yellow-400/80 shadow-none text-blue-500",
           }}
         >
           {data.map(({ day, dayw, value }) => (
@@ -228,6 +228,15 @@ const Schedule: React.FC<ScheduleType> = (props) => {
           ))}
         </TabsBody>
       </Tabs>
+
+      <div className={"my-6 flex items-center justify-center"}>
+        <Link
+          to={"/programacao"}
+          className={"rounded bg-fuel-yellow-400/80 p-4 px-5 text-xl"}
+        >
+          Veja a programação completa aqui
+        </Link>
+      </div>
     </section>
   );
 };
