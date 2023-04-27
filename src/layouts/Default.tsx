@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/Footer";
 
 type DefaultType = React.PropsWithChildren & {};
 
 const Default: React.FC<DefaultType> = ({ children }) => {
+  const { pathname, hash, key } = useLocation();
+
+  useEffect(() => {
+    // if not a hash link, scroll to top
+    if (hash === "") {
+      window.scrollTo(0, 0);
+    }
+    // else scroll to id
+    else {
+      setTimeout(() => {
+        const id = hash.replace("#", "");
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView();
+        }
+      }, 0);
+    }
+  }, [pathname, hash, key]); // do this on route change
   return (
-    <div className={"min-h-screen"}>
+    <div className={"flex min-h-screen flex-col"}>
       <Navbar />
       <Outlet />
       <Footer />
