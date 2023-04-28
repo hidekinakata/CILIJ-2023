@@ -69,13 +69,12 @@ const Schedule: React.FC<ScheduleType> = (props) => {
               content:
                 "Marta Passos (pesquisadora), Nelson Cruz (ilustrador), Ângela Leite, (escritora)",
             },
-            "Lançamento de livros ",
           ],
         },
 
         {
           title: "Noite",
-          schedule: ["Sarau Literário"],
+          schedule: ["Lançamento de livros"],
         },
       ],
     },
@@ -178,7 +177,7 @@ const Schedule: React.FC<ScheduleType> = (props) => {
                       "mb-4 border-l pl-4 text-left text-sm md:text-base [&>li:not(:last-child)]:mb-5 "
                     }
                   >
-                    {schedule.map((item, index) => {
+                    {schedule.map((item) => {
                       if (!Object.keys(item).includes("title"))
                         return (
                           <li
