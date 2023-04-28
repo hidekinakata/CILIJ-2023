@@ -12,6 +12,7 @@ type Schedule = {
 };
 
 type EventDay = {
+  key: string;
   day: string;
   day_week: string;
   morning: Schedule[];
@@ -19,8 +20,9 @@ type EventDay = {
   night: Schedule[];
 };
 
-const EventDay: { [key: string]: EventDay } = {
-  day6: {
+const EventDay: EventDay[] = [
+  {
+    key: "day6",
     day: "6 de Dezembro",
     day_week: "Quarta-Feira",
     morning: [
@@ -119,7 +121,8 @@ const EventDay: { [key: string]: EventDay } = {
     ],
     night: [{ type_title: "Sarau Literario" }],
   },
-  day7: {
+  {
+    key: "day7",
     day: "7 de Dezembro",
     day_week: "Quinta-Feira",
     morning: [
@@ -155,7 +158,8 @@ const EventDay: { [key: string]: EventDay } = {
     ],
     night: [{ type_title: "Lançamento de livros" }],
   },
-  day8: {
+  {
+    key: "day8",
     day: "8 de Dezembro",
     day_week: "Sexta-Feira",
     morning: [
@@ -258,6 +262,6 @@ const EventDay: { [key: string]: EventDay } = {
     ],
     night: [],
   },
-};
+];
 
 export default EventDay;
