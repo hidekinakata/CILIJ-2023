@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Eixos from "../data/eixos_data";
-import { Await } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
 type EixosTematicosType = {};
 
 const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
@@ -69,13 +70,13 @@ const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
                     "h-10 w-auto cursor-pointer  overflow-hidden overflow-ellipsis whitespace-nowrap rounded-lg transition duration-500 hover:bg-fuel-yellow-500"
                   }
                 >
-                  <a
+                  <HashLink
                     className={"grid h-full w-full place-items-center px-3"}
                     onClick={() => setShowMenuEixos(false)}
-                    href={"#eixo" + eixo.eixo}
+                    to={"#eixo" + eixo.eixo}
                   >
                     Eixo {eixo.eixo}
-                  </a>
+                  </HashLink>
                 </li>
               ))}
             </ul>
@@ -102,9 +103,9 @@ const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
                   "w-auto cursor-pointer overflow-hidden overflow-ellipsis whitespace-nowrap rounded-lg p-2 transition duration-500 hover:bg-fuel-yellow-500"
                 }
               >
-                <a href={"#eixo" + eixo.eixo}>
+                <HashLink to={"#eixo" + eixo.eixo}>
                   Eixo {eixo.eixo}: {eixo.title}
-                </a>
+                </HashLink>
               </li>
             ))}
           </ul>
@@ -140,8 +141,10 @@ const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
                   className={"rounded bg-fuel-yellow-200 p-1 text-xs"}
                   onClick={async (e) => {
                     if (navigator.clipboard) {
-                      e.currentTarget.innerHTML = "Email copiado!";
-                      await navigator.clipboard.writeText(eixo.email);
+                      const target = e.currentTarget;
+                      await navigator.clipboard
+                        .writeText(eixo.email)
+                        .then(() => (target.innerHTML = "Email copiado!"));
                       return;
                     }
                     unsecuredCopyToClipboard(e.currentTarget, eixo.email);

@@ -4,6 +4,7 @@ import { CgClose, CgMenuRightAlt } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import useScrollBehavior from "../hooks/useScrollBehavior";
 import { useMediaQuery } from "usehooks-ts";
+import { HashLink } from "react-router-hash-link";
 
 type NavbarType = {};
 
@@ -124,9 +125,13 @@ const Navbar: React.FC<NavbarType> = (props) => {
             >
               {path.path.startsWith("#") ||
               path.path.startsWith(location.pathname + "#") ? (
-                <a href={path.path} onClick={() => setIsOpen(false)}>
+                <HashLink
+                  smooth={true}
+                  to={path.path}
+                  onClick={() => setIsOpen(false)}
+                >
                   {path.name}
-                </a>
+                </HashLink>
               ) : (
                 <Link to={path.path} onClick={() => setIsOpen(false)}>
                   {path.name}
