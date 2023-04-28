@@ -1,4 +1,4 @@
-import { Ref, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Behavior = "onTop" | "scrollDown" | "scrollUp";
 
@@ -6,7 +6,7 @@ export default function useScrollBehavior() {
   const prevScrollY = useRef(0);
   const verifyScrollBehavior = (): Behavior => {
     const currentScrollPos = window.scrollY;
-    let behavior: Behavior | null = null;
+    let behavior: Behavior | null;
     if (currentScrollPos === 0) behavior = "onTop";
     else if (currentScrollPos > prevScrollY.current) behavior = "scrollDown";
     else behavior = "scrollUp";
