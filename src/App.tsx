@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Default from "./layouts/Default";
 import Page404 from "./pages/Page404";
 import Home from "./pages/Home";
@@ -9,7 +9,7 @@ import CompleteSchedule from "./pages/CompleteSchedule";
 function App() {
   return (
     <div className="App ">
-      <BrowserRouter basename={"/"}>
+      <HashRouter>
         <Routes>
           <Route element={<Default />}>
             <Route path="/" element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
           </Route>
           <Route path={"*"} element={<Page404 />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
