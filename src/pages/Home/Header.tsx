@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import poster from "../../assets/poster.png";
 import SubscribeBtn from "../../components/SubscribeBtn";
+import AsyncImage from "../../components/AsyncImage";
 
 type HomeType = {};
 
@@ -98,7 +99,7 @@ const Header: React.FC<HomeType> = (props) => {
             "max-h-[40vh] max-w-full rounded-xl shadow-md shadow-black/50 md:max-h-[55vh]"
           }
         >
-          <img
+          <AsyncImage
             className={"max-h-[40vh] w-full  rounded-xl md:max-h-[55vh]"}
             src={poster}
             alt={"Event Poster"}
