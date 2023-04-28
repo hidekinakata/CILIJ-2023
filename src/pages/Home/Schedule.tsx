@@ -228,10 +228,12 @@ const Schedule: React.FC<ScheduleType> = (props) => {
         </TabsBody>
       </Tabs>
 
-      <div className={"my-6 flex items-center justify-center"}>
+      <div className={"mx-4 my-6 flex items-center justify-center"}>
         <Link
           to={"/programacao"}
-          className={"rounded bg-fuel-yellow-400/80 p-4 px-5 text-xl"}
+          className={
+            "rounded bg-fuel-yellow-400/80 p-4 px-5 text-center text-xl"
+          }
         >
           Veja a programação completa aqui
         </Link>
