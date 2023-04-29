@@ -6,7 +6,7 @@ import { HashLink } from "react-router-hash-link";
 type EixosTematicosType = {};
 
 const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
-  const [showMenuEixos, setShowMenuEixos] = useState(true);
+  const [showMenuEixos, setShowMenuEixos] = useState(false);
   function unsecuredCopyToClipboard(el: HTMLElement, text: string) {
     const textArea = document.createElement("textarea");
     textArea.value = text;
@@ -100,10 +100,15 @@ const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
               <li
                 key={eixo.eixo}
                 className={
-                  "w-auto cursor-pointer overflow-hidden overflow-ellipsis whitespace-nowrap rounded-lg p-2 transition duration-500 hover:bg-fuel-yellow-500"
+                  " h-fit w-auto cursor-pointer overflow-hidden overflow-ellipsis whitespace-nowrap rounded-lg  transition duration-500 hover:bg-fuel-yellow-500"
                 }
               >
-                <HashLink to={"#eixo" + eixo.eixo}>
+                <HashLink
+                  to={"#eixo" + eixo.eixo}
+                  className={
+                    "block w-full overflow-hidden overflow-ellipsis whitespace-nowrap p-2"
+                  }
+                >
                   Eixo {eixo.eixo}: {eixo.title}
                 </HashLink>
               </li>
