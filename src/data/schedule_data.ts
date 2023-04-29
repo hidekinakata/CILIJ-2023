@@ -1,4 +1,4 @@
-type Schedule = {
+export type Schedule = {
   type_title: string;
   title?: string;
   presenters?: {
@@ -12,19 +12,21 @@ type Schedule = {
   }[];
 };
 
-type EventDay = {
+export type EventDayType = {
   key: string;
   day: string;
+  short_day: string;
   day_week: string;
   morning: Schedule[];
   afternoon: Schedule[];
   night: Schedule[];
 };
 
-const EventDay: EventDay[] = [
+const EventDay: EventDayType[] = [
   {
     key: "day6",
     day: "6 de Dezembro",
+    short_day: "6/12",
     day_week: "Quarta-Feira",
     morning: [
       {
@@ -122,7 +124,6 @@ const EventDay: EventDay[] = [
             resume:
               "Irene Vasco é colombiana, filha de mãe brasileira. É licenciada em Letras, especialista em literatura infanto-juvenil e tradutora de português e francês. Já escreveu dezenas de livros para crianças e jovens, muitos deles premiados, como Letras de Carvão, publicado pela Editora Pulo do Gato. Dedicou grande parte de sua vida a realizar oficinas de leitura e formação de leitores em regiões remotas da Colômbia. Frequentemente participa de programas estaduais e institucionais voltados para comunidades indígenas e camponesas, com ênfase em cidadania e responsabilidade social.",
             pictureSrc: "/speakers/irene_vasco.png",
-            presentation: { title: "", resume: "" },
           },
         ],
       },
@@ -132,6 +133,7 @@ const EventDay: EventDay[] = [
   {
     key: "day7",
     day: "7 de Dezembro",
+    short_day: "7/12",
     day_week: "Quinta-Feira",
     morning: [
       { type_title: "Apresentações de trabalhos" },
@@ -172,6 +174,7 @@ const EventDay: EventDay[] = [
   {
     key: "day8",
     day: "8 de Dezembro",
+    short_day: "8/12",
     day_week: "Sexta-Feira",
     morning: [
       {
@@ -228,7 +231,7 @@ const EventDay: EventDay[] = [
 
             presentation: {
               title:
-                "Da caixa de costura para as páginas dos livros ilustrados:imagens construídas com aviamentos em livros para crianças",
+                "Da caixa de costura para as páginas dos livros ilustrados: imagens construídas com aviamentos em livros para crianças",
               resume:
                 "Livros ilustrados se apresentam, contemporaneamente, com os mais diferentes materiais e técnicas utilizados em seus projetos gráficos. Desenhos e pinturas, massinhas, bordados, dobraduras em papel, computação gráfica e até materiais menos convencionais como cabelos humanos, calda de açúcar e pétalas de flores são usados para produzir imagens para essas obras multimodais/mutissemióticas, muitas vezes inusitadas e cada vez mais criativas. Nesta mesa, procurarei demonstrar de que maneira a escritora e ilustradora mineira Ângela Leite de Souza desenvolve suas produções nesse campo, associando trabalhos manuais com diferentes tipos de tecidos e aviamentos para ampliar os sentidos de seus textos e de outros autores nas obras que ilustra/produz. ",
             },
@@ -250,11 +253,6 @@ const EventDay: EventDay[] = [
               "Renato Moriconi é artista plástico e tem se dedicado a criar livros há mais de 20 anos. Tem obras publicadas no Brasil, Argentina, México, França, Itália, Coréia do Sul, EUA e China. Recebeu os prêmios “melhor livro-imagem” em 2011 e em 2014, e “melhor livro para a criança” em 2012 pela Fundação Nacional do Livro Infantil e Juvenil. Recebeu também o troféu Monteiro Lobato e o Jabuti de “ilustração infantil” em 2014. Em 2016 foi contemplado com o Premio Fundación Cuatrogatos (EUA) e finalista do prêmio “Melhor livro de arte” da revista italiana Andersen, ambos pelo livro Bárbaro. Em 2018 esse livro figurou na lista do The Boston Globe dos melhores livros infantis publicados nos EUA e figurou também em “The Most Astonishingly Unconventional Children’s Books” feita pela School Library Journal dos EUA. \n" +
               "Ministrou cursos, oficinas e palestras no Brasil e em outros países, como no Museu de Arte Contemporânea de Lima (Peru) e Scuola Internazionale d’Illustrazione (Sarmede/Itália). É professor convidado do curso de pós-graduação “Livros, Crianças e Jovens: Teoria, Mediação e Crítica” do Instituto Vera Cruz, em São Paulo\n",
             pictureSrc: "/speakers/renato_moriconi.png",
-
-            presentation: {
-              title: "",
-              resume: "",
-            },
           },
         ],
       },
@@ -270,7 +268,7 @@ const EventDay: EventDay[] = [
               "María Teresa Andruetto (Aº Cabral, Argentina, 1954). Publicó novelas, ensayos, libros de cuentos, poemarios y libros para niños; traducida a varias lenguas, sus libros son materia de numerosas tesis de grado y doctorado. Desde hace más de treinta años interviene de diversos modos en la construcción de una sociedad lectora. Obtuvo entre otros los premios Fondo Nacional de las Artes, Iberoamericano a la Trayectoria en Literatura Infantil SM, Premio Cultura Universidad Nacional de Córdoba, Premio Hans Christian Andersen, Konex de Platino y Premio Trayectoria en Letras del Fondo Nacional de las Artes 2020. Co dirige una colección de revalorización de narradoras argentinas en la Editorial Universitaria EDUVIM y cada semana comparte una breve historia desde la radio de la Universidad Nacional de Cordoba.",
             pictureSrc: "/speakers/maria_teresa_andruetto.png",
             presentation: {
-              title: "",
+              title: '"El arte de narrar"',
               resume:
                 "Un recorrido sobre la necesidad humana de contar historias y por el arte de narrarlas. Desde losgriegos o los michoacanos, hasta el relato de nuestras vidas que nos tienen por personajes principales y convierten modestos episodios en escenas cruciales, para mantener la unidad de nuestro yo. Porque narradores somos todos. Buscadores incansables de una ficción que nos haga ver.",
             },
