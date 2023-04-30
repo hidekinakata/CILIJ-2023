@@ -1,5 +1,5 @@
 import React from "react";
-import { EventDayType, Schedule } from "../../data/schedule_data";
+import EventDay, { EventDayType, Schedule } from "../../data/schedule_data";
 
 type EventDayContainerType = {
   eventDay: EventDayType;
@@ -23,18 +23,19 @@ const EventDayContainer: React.FC<EventDayContainerType> = ({
           "flex h-full flex-col justify-start gap-10 border-l px-2 py-3"
         }
       >
-        <PeriodContainer title={"Manhã"} schedules={morning} />
-        <PeriodContainer title={"Tarde"} schedules={afternoon} />
-        <PeriodContainer title={"Noite"} schedules={night} />
+        <PeriodContainer id={key} title={"Manhã"} schedules={morning} />
+        <PeriodContainer id={key} title={"Tarde"} schedules={afternoon} />
+        <PeriodContainer id={key} title={"Noite"} schedules={night} />
       </div>
     </section>
   );
 };
 
-const PeriodContainer: React.FC<{ title: string; schedules: Schedule[] }> = ({
-  title,
-  schedules,
-}) => {
+const PeriodContainer: React.FC<{
+  id: string;
+  title: string;
+  schedules: Schedule[];
+}> = ({ id, title, schedules }) => {
   return (
     <div className={"relative my-2"}>
       <span
@@ -49,7 +50,14 @@ const PeriodContainer: React.FC<{ title: string; schedules: Schedule[] }> = ({
       </h1>
       <div className={"flex flex-col gap-5"}>
         {schedules.map((schedule) => (
-          <div className={"bg-white/10 p-3"}>
+          <div className={"relative bg-white/10 p-3"}>
+            <span
+              id={`${`${id}_${title}_${schedule.type_title}`.replaceAll(
+                " ",
+                "_"
+              )}`}
+              className={"absolute -top-36"}
+            ></span>
             <h1
               className={
                 schedule.title ? "text-center text-xl md:text-2xl" : ""
