@@ -35,7 +35,8 @@ const Navbar: React.FC<NavbarType> = (props) => {
     { name: "Sobre o evento", path: "/#sobre" },
     { name: "Programação", path: "/#programacao" },
     { name: "Eixos temáticos", path: "/eixos" },
-    { name: "Orientações", path: "#" },
+    { name: "Orientações", path: "/orientacoes" },
+    { name: "Templates", path: "/orientacoes" },
     { name: "Contato", path: "/contact" },
   ];
 
