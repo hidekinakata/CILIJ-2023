@@ -86,7 +86,7 @@ const EventDay: EventDayType[] = [
               title:
                 "Literatura de colo: concepções e trajetórias na edição de livros para bebês",
               resume:
-                "Muitos são os estudos nas áreas de literatura, antropologia e saúde dos benefícios da leitura na Primeiríssima infância. No entanto, pouco se tem a respeito da edição do livro nacional para bebês. O que ele um livro para bebês tem que o diferencia dos demais? Será que tem diferença? Bebê entende nas narrativas visuais e verbais? Discutiremos esses pontos a partir dos caminhos da concepção da coleção Literatura de Colo, criada em 2019, pela editora Jujuba, em que coloca o bebê como protagonista do seu ato leitor, construindo a narrativa com voz ativa junto ao mediador.",
+                "Muitos são os estudos nas áreas de literatura, antropologia e saúde dos benefícios da leitura na Primeiríssima infância. No entanto, pouco se tem a respeito da edição do livro nacional para bebês. Existe alguma especificidade do livro para bebês que o diferencia dos demais? Bebê entende as narrativas visuais e verbais do livro? Qual o lugar do bebê e do mediador na leitura do livro? Discutiremos esses pontos a partir dos caminhos da concepção da coleção Literatura de Colo, criada em 2019, pela editora Jujuba, em que coloca o bebê como protagonista do seu ato leitor.",
             },
           },
         ],
@@ -253,6 +253,11 @@ const EventDay: EventDayType[] = [
               "Renato Moriconi é artista plástico e tem se dedicado a criar livros há mais de 20 anos. Tem obras publicadas no Brasil, Argentina, México, França, Itália, Coréia do Sul, EUA e China. Recebeu os prêmios “melhor livro-imagem” em 2011 e em 2014, e “melhor livro para a criança” em 2012 pela Fundação Nacional do Livro Infantil e Juvenil. Recebeu também o troféu Monteiro Lobato e o Jabuti de “ilustração infantil” em 2014. Em 2016 foi contemplado com o Premio Fundación Cuatrogatos (EUA) e finalista do prêmio “Melhor livro de arte” da revista italiana Andersen, ambos pelo livro Bárbaro. Em 2018 esse livro figurou na lista do The Boston Globe dos melhores livros infantis publicados nos EUA e figurou também em “The Most Astonishingly Unconventional Children’s Books” feita pela School Library Journal dos EUA. \n" +
               "Ministrou cursos, oficinas e palestras no Brasil e em outros países, como no Museu de Arte Contemporânea de Lima (Peru) e Scuola Internazionale d’Illustrazione (Sarmede/Itália). É professor convidado do curso de pós-graduação “Livros, Crianças e Jovens: Teoria, Mediação e Crítica” do Instituto Vera Cruz, em São Paulo\n",
             pictureSrc: "/speakers/renato_moriconi.png",
+            presentation: {
+              title: "Picturebook: o fim da ilustração",
+              resume:
+                "Na literatura infantil contemporânea, a imagem assume um protagonismo ímpar, criando um tipo de obra que desloca o livro do mundo da literatura para a fronteira com o mundo das artes visuais, a ponto da palavra ilustração perder seu sentido quando usada como sinônimo de imagem. Em minha fala apresentarei alguns exemplos de livros de fronteira e como a consciência do protagonismo da imagem altera a forma como se cria e se lê os livros.",
+            },
           },
         ],
       },
