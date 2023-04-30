@@ -23,9 +23,24 @@ const EventDayContainer: React.FC<EventDayContainerType> = ({
           "flex h-full flex-col justify-start gap-10 border-l px-2 py-3"
         }
       >
-        <PeriodContainer id={key} title={"Manhã"} schedules={morning} />
-        <PeriodContainer id={key} title={"Tarde"} schedules={afternoon} />
-        <PeriodContainer id={key} title={"Noite"} schedules={night} />
+        <PeriodContainer
+          key={key + "morning"}
+          id={key}
+          title={"Manhã"}
+          schedules={morning}
+        />
+        <PeriodContainer
+          key={key + "afternoon"}
+          id={key}
+          title={"Tarde"}
+          schedules={afternoon}
+        />
+        <PeriodContainer
+          key={key + "night"}
+          id={key}
+          title={"Noite"}
+          schedules={night}
+        />
       </div>
     </section>
   );
@@ -36,6 +51,7 @@ const PeriodContainer: React.FC<{
   title: string;
   schedules: Schedule[];
 }> = ({ id, title, schedules }) => {
+  if (schedules.length === 0) return null;
   return (
     <div className={"relative my-2"}>
       <span
@@ -49,8 +65,11 @@ const PeriodContainer: React.FC<{
         {title}
       </h1>
       <div className={"flex flex-col gap-5"}>
-        {schedules.map((schedule) => (
-          <div className={"relative bg-white/10 p-3"}>
+        {schedules.map((schedule, i) => (
+          <div
+            key={schedule.type_title + i}
+            className={"relative bg-white/10 p-3"}
+          >
             <span
               id={`${`${id}_${title}_${schedule.type_title}`.replaceAll(
                 " ",
@@ -73,8 +92,9 @@ const PeriodContainer: React.FC<{
             {schedule.presenters
               ? schedule.presenters.map((presenter) => (
                   <div
+                    key={presenter.name}
                     className={
-                      "mb-3 flex flex-col items-center border-t border-t-white/50 py-8 md:block"
+                      "mb-3 flex min-h-[350px] flex-col items-center border-t border-t-white/50 py-8 md:block"
                     }
                   >
                     <figure
@@ -89,7 +109,8 @@ const PeriodContainer: React.FC<{
                         />
                       </div>
                       <figcaption className={"text-center"}>
-                        {presenter.name}
+                        <h1>{presenter.name}</h1>
+                        <h2 className={"text-sm"}>{presenter.occupation}</h2>
                       </figcaption>
                     </figure>
 

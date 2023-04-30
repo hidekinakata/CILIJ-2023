@@ -15,11 +15,28 @@ const ResumedEventDayContainer: React.FC<ResumedEventDayContainerType> = ({
     <section className={"relative mb-20 h-fit w-full p-4"} {...props}>
       <span id={day.replaceAll(" ", "_")} className={"absolute -top-36"} />
       <div
-        className={"grid grid-rows-3 gap-5 lg:grid-cols-3 lg:grid-rows-none"}
+        className={
+          "grid auto-rows-fr gap-5 lg:auto-cols-fr lg:grid-flow-col lg:grid-rows-none"
+        }
       >
-        <PeriodContainer id={key} title={"Manhã"} schedules={morning} />
-        <PeriodContainer id={key} title={"Tarde"} schedules={afternoon} />
-        <PeriodContainer id={key} title={"Noite"} schedules={night} />
+        <PeriodContainer
+          key={key + "morning"}
+          id={key}
+          title={"Manhã"}
+          schedules={morning}
+        />
+        <PeriodContainer
+          key={key + "afternoon"}
+          id={key}
+          title={"Tarde"}
+          schedules={afternoon}
+        />
+        <PeriodContainer
+          key={key + "night"}
+          id={key}
+          title={"Noite"}
+          schedules={night}
+        />
       </div>
     </section>
   );
@@ -30,6 +47,7 @@ const PeriodContainer: React.FC<{
   title: string;
   schedules: Schedule[];
 }> = ({ id, title, schedules }) => {
+  if (schedules.length === 0) return null;
   return (
     <div className={"relative my-2"}>
       <span
@@ -43,8 +61,11 @@ const PeriodContainer: React.FC<{
         {title}
       </h1>
       <div className={"flex flex-col gap-5 border-l"}>
-        {schedules.map((schedule) => (
-          <div className={"relative bg-white/10 p-3"}>
+        {schedules.map((schedule, i) => (
+          <div
+            key={schedule.type_title + i}
+            className={"relative bg-white/10 p-3"}
+          >
             <div
               className={
                 "absolute -left-1 top-5 h-2 w-2 rounded-full bg-truegray-400 "
@@ -67,7 +88,9 @@ const PeriodContainer: React.FC<{
               <div className={"text-left"}>
                 <span className={"text-xs"}>Palestrante(s): </span>
                 {schedule.presenters
-                  .map((presenter) => presenter.name)
+                  .map(
+                    (presenter) => presenter.name + " " + presenter.occupation
+                  )
                   .join(", ")}
               </div>
             ) : null}

@@ -24,7 +24,7 @@ const CompleteSchedule: React.FC<CompleteScheduleType> = (props) => {
         }
       >
         {schedule_data.map((day) => (
-          <EventDayContainer eventDay={day} />
+          <EventDayContainer key={day.key} eventDay={day} />
         ))}
       </div>
       <div
@@ -40,6 +40,7 @@ const CompleteSchedule: React.FC<CompleteScheduleType> = (props) => {
           >
             {schedule_data.map((day) => (
               <HashLink
+                key={day.key}
                 className={"border-white/20 text-center"}
                 to={"/programacao#" + day.day.replaceAll(" ", "_")}
               >
