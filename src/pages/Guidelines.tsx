@@ -16,7 +16,7 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
         Veja como se inscrever
       </h1>
 
-      <section>
+      <section className={"w-full"}>
         <h1 className={"text-center text-xl font-black"}>
           Como inscrever comunicação oral ou poster no VII Congresso
           Internacional de Literatura Infantil e Juvenil?
@@ -50,7 +50,7 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
           <li>
             Finalizado o resumo volte ao eixo e verifique o e-mail de seu tema,
             depois envie o resumo feito no template para o email do eixo.{" "}
-            <span className={"text-aubergine-900"}>
+            <span className={""}>
               Exemplo: Se você escreveu sobre{" "}
               <span className={"font-black italic"}>
                 Literatura e ensino, eixo temático 6
@@ -61,14 +61,14 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
           </li>
           <li>
             Eviado o resumo, agora é só aguardar sua carta de aceite.{" "}
-            <strong className={"text-aubergine-700"}>
+            <strong className={""}>
               Não se esqueça de utilizar no envio o seu email que mais acessa.
             </strong>
           </li>
         </ol>
       </section>
 
-      <section>
+      <section className={"w-full"}>
         <h1 className={"text-center text-xl font-black"}>
           Tive meu resumo aprovado, quero participar do congresso e quero ir
           para Ouro Preto, como fazer minha inscrição?
@@ -116,23 +116,33 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
           <tbody>
             <tr>
               <td>Inscrição para comunicação oral ou poster</td>
-              <td>De 15 de maio a 16 de julho de 2023</td>
+              <td className={"font-black"}>
+                De 15 de maio a 16 de julho de 2023
+              </td>
             </tr>
             <tr>
               <td>Análise dos resumos</td>
-              <td>De 24 de julho a 10 de setembro de 2023</td>
+              <td className={"font-black"}>
+                De 24 de julho a 10 de setembro de 2023
+              </td>
             </tr>
             <tr>
               <td>Envio das cartas de aceite</td>
-              <td>De 11 de setembro a 29 de setembro de 2023</td>
+              <td className={"font-black"}>
+                De 11 de setembro a 29 de setembro de 2023
+              </td>
             </tr>
             <tr>
               <td>Envio do artigo completo para publicação em e-book</td>
-              <td>De 20 de novembro a 10 de dezembro</td>
+              <td className={"font-black"}>
+                De 20 de novembro a 10 de dezembro
+              </td>
             </tr>
             <tr>
               <td>Publicação do e-book com ISBN data de 2024</td>
-              <td>Dia 25 de março pelo site do congresso</td>
+              <td className={"font-black"}>
+                Dia 25 de março pelo site do congresso
+              </td>
             </tr>
           </tbody>
         </table>
