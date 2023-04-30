@@ -3,6 +3,7 @@ export type Schedule = {
   title?: string;
   presenters?: {
     name: string;
+    occupation: string;
     resume: string;
     pictureSrc: string;
     presentation?: {
@@ -41,6 +42,7 @@ const EventDay: EventDayType[] = [
         presenters: [
           {
             name: "João Anzanello Carrascoza",
+            occupation: "(escritor)",
             resume:
               "João Anzanello Carrascoza é autor dos romances que compõem a Trilogia do adeus, além de livros de contos como Aquela água toda e Tramas de meninos. Suas histórias foram traduzidas para o bengali, croata, espanhol, francês, inglês, italiano, sueco e tâmil. Recebeu três vezes o prêmio Jabuti, quatro vezes o prêmio da Fundação Nacional do Livro Infantil e Juvenil, tornando-se hors-concours, três vezes o prêmio da Fundação Biblioteca Nacional, o prêmio da APCA, da Cátedra Unesco e o Candango, além dos internacionais Radio France e White Ravens.",
             pictureSrc: "/speakers/joao_anzanello_carrascoza.png",
@@ -55,6 +57,7 @@ const EventDay: EventDayType[] = [
         presenters: [
           {
             name: "Teresa Mendes",
+            occupation: "(pesquisadora Portugal)",
             resume:
               "Teresa Mendes é Doutora em Estudos Literários pela Universidade de Lisboa e Professora Adjunta na Escola Superior de Educação e Ciências Sociais do Instituto Politécnico de Portalegre desde 1996, possuindo experiência de lecionação e formação nas áreas de Língua e Literatura Portuguesas, Literatura Infantil e Juvenil, Didática do Português e Supervisão Pedagógica, na formação inicial e na formação complementar de educadores de infância e professores do Ensino Básico. Tem desenvolvido trabalho de investigação a nível nacional e internacional nas áreas da Literatura Comparada, da Literatura Infantil e Juvenil, da Educação Literária e da Formação Docente, sendo autora de diversos artigos, livros e capítulos de livros nesses domínios. Tem organizado e participado em diversos congressos e seminários, nacionais e internacionais e tem realizado diversas formações direcionadas para educadores e professores de vários níveis de ensino, sobretudo no âmbito da Literatura Infantil, da Formação de Leitores, da Educação Literária e das Metodologias ativas no ensino do Português.",
             pictureSrc: "/speakers/teresa_mendes.png",
@@ -67,6 +70,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "Aline Abreu",
+            occupation: "(escritora)",
             resume:
               "Aline Abreu, escritora e ilustradora, é autora de 11 livros para bebês, crianças e pessoas de qualquer idade. É formada em Artes Visuais pela FAAP/SP com mestrado em Literatura e Crítica Literária pela PUC/SP. A partir da dissertação O Texto Potencial no sistema ecológico do livro ilustrado infantil: palavra-imagem-design, defendida em 2013, seus interesses como pesquisadora têm se concentrado, mais especificamente, nas relações ecológicas de palavra-imagem-design em livros ilustrados, e em estudos de Psicologia da Percepção. Ministra cursos teóricos e workshops sobre a leitura de textos híbridos como os livros ilustrados contemporâneos. Em 2016 recebeu o Prêmio João-de- Barro na categoria livro ilustrado com Quase Ninguém viu, publicado em 2019 pela Jujuba Editora e honrado, no mesmo ano, com o selo Distinção Cátedra Unesco de Leitura. Em 2020, Aline recebeu o troféu Monteiro Lobato conferido pela Revista Crescer e em 2021 participou da representação brasileira na Bienal de Ilustração de Bratislava (Eslováquia). Em 2022 foi finalista do Prêmio Barco a Vapor (Fundação SM) com o juvenil Sementes de Mamona.",
             pictureSrc: "/speakers/aline_abreu.png",
@@ -79,6 +83,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "Daniela Padilha",
+            occupation: "(editora)",
             resume:
               "Daniela Padilha é formada em Letras pela Universidade de São Paulo e especialista em Escutas Antropológicas das Infâncias. Depois de atuar em diversas editoras, fundou a Jujuba em 2010, casa editorial especializada em literatura para as infâncias. Em 2019 iniciou a coleção “Literatura de Colo”, com livros destinados à primeiríssima infância, considerando o bebê leitor e protagonista do seu processo de leitura. ",
             pictureSrc: "/speakers/daniela_padilha.png",
@@ -97,6 +102,7 @@ const EventDay: EventDayType[] = [
         presenters: [
           {
             name: "Andreia Oliveira ",
+            occupation: "(pesquisadora)",
             resume:
               "Andreia Oliveira é pós-doutoranda em Educação pela UNESP/Presidente Prudente com bolsa CNPq, Doutora em Estudos Literários pela Universidade Federal de Uberlândia – UFU, Mestre em Letras (Literatura e Práticas Culturais) pela Universidade Federal da Grande Dourados - UFGD (2012) e Graduada em Letras também pela UFGD (2007). Vice-líder do grupo de pesquisa Formação de professores e as relações entre as práticas educativas em leitura, literatura e avaliação do texto, além de ser membro do Grupo de Pesquisas em Espacialidades Artísticas - GPEA. Atua principalmente nos seguintes temas: literatura e ensino, literatura infantil e juvenil, políticas públicas de leitura e vertentes do insólito.",
             pictureSrc: "/speakers/andreia_oliveira.png",
@@ -109,6 +115,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "José Roberto Torero",
+            occupation: "(escritor)",
             resume:
               "José Roberto Torero é formado em Letras (português e espanhol) e Jornalismo pela USP. Pela mesma universidade cursou Cinema e mestrado em Cinema, incompletos. É autor de 60 livros (32 infantojuvenis e 28 para adultos), entre eles O Chalaça  (Prêmio Jabuti em 1995 – categoria romance ), Pequenos Amores (2º. Lugar Prêmio Jabuti – contos), Uma história de futebol, O evangelho de Barrabás (3º. Lugar Prêmio Jabuti – romance), Chapeuzinhos Coloridos e Papis et Circenses (Prêmio Paraná de Literatura). Foi colunista da Folha de S.Paulo de 1998 a 2012. E do Jornal da Tarde entre 1995 e 1998. Como roteirista, escreveu o programa Retrato Falado (2000-2008), dez roteiros de longas-metragens e dez roteiros de curtas-metragens, entre eles Uma história de futebol, que concorreu ao Oscar em 2002.  Dirigiu o longa-metragem Como fazer um filme de amor e o programa Super Libris para o SescTV, sobre literatura e escritores (100 episódios de 26 minutos).  É autor das peças “Omelete”, finalista do prêmio Shell, dirigida por Hamilton Vaz Pereira, de “Sic Transit Gloria Dei”, Romeu e Julieta, Segunda Parte (1992), Menção honrosa no Concurso Nascente (USP + Ed. Abril) e Sic Transit Gloria Dei, Prêmio Oswald de Andrade da Secretaria Estadual de Cultura para autores inéditos",
             pictureSrc: "/speakers/jose_roberto_torero.png",
@@ -121,6 +128,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "Irene Vasco",
+            occupation: "(escritora Colômbia)",
             resume:
               "Irene Vasco é colombiana, filha de mãe brasileira. É licenciada em Letras, especialista em literatura infanto-juvenil e tradutora de português e francês. Já escreveu dezenas de livros para crianças e jovens, muitos deles premiados, como Letras de Carvão, publicado pela Editora Pulo do Gato. Dedicou grande parte de sua vida a realizar oficinas de leitura e formação de leitores em regiões remotas da Colômbia. Frequentemente participa de programas estaduais e institucionais voltados para comunidades indígenas e camponesas, com ênfase em cidadania e responsabilidade social.",
             pictureSrc: "/speakers/irene_vasco.png",
@@ -148,18 +156,21 @@ const EventDay: EventDayType[] = [
         presenters: [
           {
             name: "Marta Passos",
+            occupation: "(pesquisadora)",
             resume:
               "Marta Passos possui graduação em Letras - Português e Literatura pela Universidade do Estado do Rio de Janeiro (1996), mestrado em Literatura Brasileira pela Universidade do Estado do Rio de Janeiro (2000), estágio de doutorado em Educação pela Universidade do Minho, Braga, Portugal (2004), doutorado e pós-doutorado em Educação pela Universidade Federal de Minas Gerais (2006). É professora do Departamento de Linguagem e Tecnologia do Centro Federal de Educação Tecnológica de Belo Horizonte (Cefet-MG), atuando como professora, no Ensino Médio, na Graduação em Letras, no Mestrado e no Doutorado em Estudos de Linguagens. È coordenadora do grupo de pesquisa LLEME (Leitura Literária, Edição e Ensino) e integrante do grupo de pesquisa Materiais e Recursos Didáticos, do CEFET-MG, e do GPELL (Grupo de Pesquisa do Letramento Literário), da Faculdade de Educação da UFMG. Tem experiência nas áreas de Letras e Educação, com ênfase em Literatura Brasileira, atuando principalmente nos seguintes temas: formação de leitor de literatura, design de livros para crianças e jovens, crônica, livro didático, letramento literário, literatura infantil e juvenil.",
             pictureSrc: "/speakers/marta_passos.png",
           },
           {
             name: "Nelson Cruz",
+            occupation: "(ilustrador)",
             resume:
               "Autodidata em desenho, tendo estudado pintura por dois anos, em Belo Horizonte, onde nasceu no ano de 1957. Desde os anos 70 é pintor e ilustrador. Começou seu trabalho no mercado editorial em 1988. Em 1999, recebeu o Prêmio Octogonal oferecido pelo Centre International d’ÉtudesenLittérature de Jeunesse, em Paris, com o livro de imagens Leonardo. Leonardo ganhou também o Prêmio de melhor livro de imagens pela FNLIJ, Seção brasileira do IBBY. Em 2001, o livro Chica e João recebeu o Prêmio Jabuti pelo texto e, da FNLIJ, o Prêmio de Melhor Livro para Criança e de melhor ilustração. O mesmo livro recebeu também o Octogonal em 2001. Em 2002, foi indicado pela FNLIJ ao Prêmio Hans Christian Andersen de ilustração e em 2004 para a Lista de Honra, ambos promovidos pela IBBY, International Board on Books for Young People, da Suíça.",
             pictureSrc: "/speakers/nelson_cruz.png",
           },
           {
             name: "Ângela Leite",
+            occupation: "(escritora)",
             resume:
               'Ângela Leite nasceu e mora em Belo Horizonte. Viveu, porém, grande parte de sua vida no Rio de Janeiro, onde se formou em Jornalismo pela PUC. De 1969 a 1975 exerceu regularmente a profissão, trabalhando em alguns dos principais jornais e revistas da imprensa brasileira, como VEJA, O GLOBO, JORNAL DO BRASIL (matéria "Um coice no Caleidoscópio" publicada em 29/setembro/2001), entre outros. Faz crítica literária, especialmente de literatura infanto-juvenil, área em que se especializou em 1992, na PUC/MG.\n ' +
               'Seu livro de poemas "Amoras com açúcar" foi premiado e publicado pela Imprensa Oficial de Minas Gerais. Os quinze anos de literatura foram comemorados com um outro prêmio - desta vez internacional - "Estas muitas Minas", no qual a autora canta sua terra, foi o Prêmio Casa de Las Américas de Literatura Brasileira, de Cuba, em 1997, conquistando unanimemente o júri, entre mais de 200 concorrentes de diversos gêneros literários.\n ' +
@@ -183,6 +194,7 @@ const EventDay: EventDayType[] = [
         presenters: [
           {
             name: "Alexandre Gomes",
+            occupation: "(escritor)",
             resume:
               "Alexandre Gomes é carioca, doutorando e mestre em Teoria da Literatura e Literatura Comparada (UERJ), especialista em Literatura Infantil e Juvenil (UCAM), membro do GP CNPq-UERJ EnLIJ - Encontros com a Literatura Infantil/Juvenil: ficção, teorias e práticas e do projeto de extensão NELIJ-UERJ, professor de história da literatura infantil e juvenil brasileira, ex-presidente da Associação de Escritores e Ilustradores de Literatura Infantil e Juvenil (AEILIJ) e autor de dezenas de livros publicados no Brasil e no exterior. Entre as distinções que suas obras já receberam, estão os selos Cátedra 10, pela Cátedra de Leitura UNESCO da PUC-Rio, o selo Altamente Recomendável pela FNLIJ, o selo da Lagarta do Prêmio AEILIJ para textos de literatura infantil e o Prêmio Cidade de Manaus de Teatro Infantil, além de outras premiações e citações em listas de excelência como as do Prêmio Internacional da Fundación Cuatrogatos e dos Prêmios Literários da Biblioteca Nacional. Alexandre organizou antologias para editoras comerciais, editou livros e anuários para plataformas digitais e foi convidado para as mais importantes feiras literárias do país. Quando atuou como presidente da AEILIJ, idealizou e organizou as duas primeiras edições dos Prêmios AEILIJ e, ao longo dos últimos anos, organizou e produziu, através da Associação e fora dela, diversos eventos literários.",
             pictureSrc: "/speakers/alexandre_gomes.png",
@@ -195,6 +207,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "Marco Haurelio",
+            occupation: "(escritor)",
             resume:
               "Marco Haurelio Nasceu em Ponta da Serra, localidade rural do município de Riacho de Santana, sertão da Bahia. Lá, pôde conviver desde cedo com as histórias tradicionais, contadas pela avó Luzia Josefina, com a poesia de autores como Castro Alves, Cecília Meireles, Vinícius de Moraes e Leandro Gomes de Barros.Dedica-se a recolher e a catalogar a poesia popular e as histórias, patrimônios imateriais do nosso povo. Em 2017 foi finalista do prêmio Jabuti com o infantojuvenil Cordéis de Arrepiar: Europa (IMEPH) e, nos anos de 2016 e 2018, foi curador do Espaço do Cordel e do Repente, na Bienal Internacional do Livro de São Paulo. Em 2018, a convite do Institute for Heritage, de Sharjah, Emirados Árabes Unidos, participou do InternationalForumNarrator. No mesmo ano, foi curador do Encontro com o Cordel, promovido pelo SESC 24 de Maio (São Paulo), evento que reuniu grandes nomes do universo do cordel e da cultura popular, como Antonio Nóbrega, Socorro Lira, Jô Oliveira e J. Borges. Em 2021, por sua atuação no universo do cordel e da cultura popular, recebeu, da Câmara Municipal de São Paulo, a comenda Guilherme de Almeida.",
             pictureSrc: "/speakers/marco_haurelio.png",
@@ -207,6 +220,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "Fernando Teixeira Luis",
+            occupation: "(pesquisador)",
             resume:
               'Fernando Teixeira Luis possui Pós-doutorado em Literatura Comparada e Identidades Culturais pelo Departamento de Letras Modernas, Faculdade de Ciências e Letras/ Assis. Doutor em Letras (Leitura, Crítica e História Literária) e Mestre em Educação (Práticas Educativas em Leitura e Literatura) pela Universidade Estadual Paulista Júlio de Mesquita Filho, possui graduação em Pedagogia pela mesma universidade e Letras pela UNINTER. Professor de Literatura Infanto-juvenil, Didática, Semiótica e Metodologia de Ensino de Língua e Literatura, orienta e desenvolve pesquisas envolvendo as produções estéticas de Monteiro Lobato, Bruno Bozzetto e Pedro Bandeira, como também histórias em quadrinhos e animações contemporâneas destinadas a leitores em formação. Participação na publicação "Monteiro Lobato: livro a livro" (Lajolo e Ceccantini), que recebeu o prêmio Jabuti de 2009. Cartunista, com diversos desenhos publicados',
             pictureSrc: "/speakers/fernando_teixeira_luis.png",
@@ -225,6 +239,7 @@ const EventDay: EventDayType[] = [
         presenters: [
           {
             name: "Hércules Tolêdo Corrêa",
+            occupation: "(pesquisador)",
             resume:
               "Hércules Tolêdo Corrêa é professor da Universidade Federal de Ouro Preto e pesquisa formação de leitores, ensino de literatura e letramento literário. Fundador e líder do Grupo de Pesquisa MULTDICS Multiletramentos e usos de TDIC na Educação.  É doutor em Educação, mestre e graduado em Letras pela Universidade Federal de Minas Gerais. Realizou estágios de pós-doutorado na Universidade do Minho, em Portugal, e na York University, no Canadá. Tem livros e artigos publicados em periódicos nacionais e internacionais. ",
             pictureSrc: "/speakers/hercules_toledo_correa.png",
@@ -238,6 +253,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "Odilon Moraes",
+            occupation: "(ilustrador)",
             resume:
               'Odilon Moraes é formado em arquitetura na USP e tem mestrado em artes visuais, pela Unicamp.Ilustrador e autor de livros ilustrados, já recebeu 5 jabutis e teve livros como " A princesinha medrosa" , "Pedro e Lua " e "Rosa" premiados como " O melhor livro do ano para crianças" pela Fundação Nacional do Livro para a Infância e Juventude ( FNLIJ).Estudioso do livro ilustrado, deu aulas na Fundação Lasar Segall, no Instituto Tomie Ohtake, foi professor convidado do Instituto de Estudos da Linguagem (IEL). Atualmente dá aulas no Instituto Vera Cruz e na Casa Tombada.',
             pictureSrc: "/speakers/odilon_moraes.png",
@@ -249,6 +265,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "Renato Moriconi",
+            occupation: "(ilustrador)",
             resume:
               "Renato Moriconi é artista plástico e tem se dedicado a criar livros há mais de 20 anos. Tem obras publicadas no Brasil, Argentina, México, França, Itália, Coréia do Sul, EUA e China. Recebeu os prêmios “melhor livro-imagem” em 2011 e em 2014, e “melhor livro para a criança” em 2012 pela Fundação Nacional do Livro Infantil e Juvenil. Recebeu também o troféu Monteiro Lobato e o Jabuti de “ilustração infantil” em 2014. Em 2016 foi contemplado com o Premio Fundación Cuatrogatos (EUA) e finalista do prêmio “Melhor livro de arte” da revista italiana Andersen, ambos pelo livro Bárbaro. Em 2018 esse livro figurou na lista do The Boston Globe dos melhores livros infantis publicados nos EUA e figurou também em “The Most Astonishingly Unconventional Children’s Books” feita pela School Library Journal dos EUA. \n" +
               "Ministrou cursos, oficinas e palestras no Brasil e em outros países, como no Museu de Arte Contemporânea de Lima (Peru) e Scuola Internazionale d’Illustrazione (Sarmede/Itália). É professor convidado do curso de pós-graduação “Livros, Crianças e Jovens: Teoria, Mediação e Crítica” do Instituto Vera Cruz, em São Paulo\n",
@@ -269,6 +286,7 @@ const EventDay: EventDayType[] = [
         presenters: [
           {
             name: "María Teresa Andruetto",
+            occupation: "(Argentina)",
             resume:
               "María Teresa Andruetto (Aº Cabral, Argentina, 1954). Publicó novelas, ensayos, libros de cuentos, poemarios y libros para niños; traducida a varias lenguas, sus libros son materia de numerosas tesis de grado y doctorado. Desde hace más de treinta años interviene de diversos modos en la construcción de una sociedad lectora. Obtuvo entre otros los premios Fondo Nacional de las Artes, Iberoamericano a la Trayectoria en Literatura Infantil SM, Premio Cultura Universidad Nacional de Córdoba, Premio Hans Christian Andersen, Konex de Platino y Premio Trayectoria en Letras del Fondo Nacional de las Artes 2020. Co dirige una colección de revalorización de narradoras argentinas en la Editorial Universitaria EDUVIM y cada semana comparte una breve historia desde la radio de la Universidad Nacional de Cordoba.",
             pictureSrc: "/speakers/maria_teresa_andruetto.png",
