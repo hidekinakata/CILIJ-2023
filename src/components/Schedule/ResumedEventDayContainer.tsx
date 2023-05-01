@@ -71,6 +71,8 @@ const PeriodContainer: React.FC<{
                 "absolute -left-1 top-5 h-2 w-2 rounded-full bg-truegray-400 "
               }
             ></div>
+
+            <span className={""}>{schedule.time} </span>
             <h1 className={""}>
               <HashLink
                 to={`/programacao/#${`${id}_${title}_${schedule.type_title}`.replaceAll(
@@ -82,7 +84,7 @@ const PeriodContainer: React.FC<{
               </HashLink>
             </h1>
             {schedule.title ? (
-              <h2 className={" text-sm opacity-70"}>{schedule.title}</h2>
+              <h2 className={" text-base font-black"}>{schedule.title}</h2>
             ) : null}
             {schedule.presenters ? (
               <div className={"text-left"}>
