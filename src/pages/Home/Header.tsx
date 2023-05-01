@@ -61,7 +61,9 @@ const Header: React.FC<HomeType> = (props) => {
             <motion.h1
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              className={"text-3xl font-black md:max-w-screen-sm md:text-6xl "}
+              className={
+                "text-3xl font-semibold md:max-w-screen-sm md:text-6xl "
+              }
             >
               Educação literária:
               <span className={"font-['Caveat'] text-red-700"}>

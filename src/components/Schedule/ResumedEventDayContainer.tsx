@@ -84,7 +84,7 @@ const PeriodContainer: React.FC<{
               </HashLink>
             </h1>
             {schedule.title ? (
-              <h2 className={" text-base font-black"}>{schedule.title}</h2>
+              <h2 className={" text-base font-semibold"}>{schedule.title}</h2>
             ) : null}
             {schedule.presenters ? (
               <div className={"text-left"}>

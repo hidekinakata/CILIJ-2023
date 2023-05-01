@@ -79,7 +79,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
         <Link
           to={"/"}
           className={
-            "w-[calc(100%-9rem)] text-center font-black uppercase text-white md:text-2xl"
+            "w-[calc(100%-9rem)] text-center font-semibold uppercase text-white md:text-2xl"
           }
         >
           VII Congresso Internacional de Literatura Infantil e Juvenil
