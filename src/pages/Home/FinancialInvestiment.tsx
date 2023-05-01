@@ -66,7 +66,7 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
       <Link
         to={"/orientacoes"}
         className={
-          "mt-10 w-fit rounded bg-pine-glade-500 p-2 px-3 text-center text-xl text-gray-100"
+          "mt-10 w-fit rounded bg-fuel-yellow-400 p-2 px-3 text-center text-xl text-gray-100"
         }
       >
         Veja as orientações para se inscrever clicando aqui
