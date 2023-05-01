@@ -114,7 +114,7 @@ const Header: React.FC<HomeType> = (props) => {
                   "text-black transition duration-300 hover:text-fuel-yellow-400"
                 }
               >
-                <h1>Arte por: Thiago Taubman</h1>
+                <h1>Arte: Thiago Taubman</h1>
                 <span className={"text-xs"}>
                   (Clique e saiba mais sobre o ilustrador)
                 </span>
