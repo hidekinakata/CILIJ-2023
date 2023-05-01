@@ -8,6 +8,7 @@ import CompleteSchedule from "./pages/CompleteSchedule";
 import Guidelines from "./pages/Guidelines";
 import ThiagoTaubman from "./pages/ThiagoTaubman";
 import Templates from "./pages/Templates";
+import OrganizingCommittee from "./pages/OrganizingCommittee";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
             <Route path="/orientacoes" element={<Guidelines />} />
             <Route path="/templates" element={<Templates />} />
             <Route path={"/thiago_taubman"} element={<ThiagoTaubman />} />
-            <Route path="/contact" element={<h1>Contato</h1>} />
+            <Route path="/comissoes" element={<OrganizingCommittee />} />
           </Route>
           <Route path={"*"} element={<Page404 />} />
         </Routes>

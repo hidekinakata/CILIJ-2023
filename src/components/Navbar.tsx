@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
     { name: "Eixos temáticos", path: "/eixos" },
     { name: "Orientações", path: "/orientacoes" },
     { name: "Templates", path: "/templates" },
-    { name: "Organizadores", path: "/contact" },
+    { name: "Comissões", path: "/comissoes" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -106,7 +106,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
       >
         <ul
           className={
-            "flex h-[calc(100vh-6rem)] w-full flex-col items-end justify-center gap-5 border-b border-b-black/20 bg-white  px-7 pb-10 text-2xl md:!flex md:h-fit md:flex-row md:py-2 md:text-sm md:!opacity-100 [&>li:hover]:text-bermuda-700"
+            "flex h-[calc(100vh-6rem)] w-full flex-col items-end items-center justify-center gap-5 border-b border-b-black/20 bg-white  px-7 pb-10 text-2xl md:!flex md:h-fit md:flex-row md:py-2 md:text-sm md:!opacity-100 [&>li:hover]:text-bermuda-700"
           }
         >
           {paths.map((path, i) => (
