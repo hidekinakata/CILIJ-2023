@@ -85,10 +85,14 @@ const PeriodContainer: React.FC<{
               }
             >
               <span className={"block text-center"}>{schedule.time}</span>
-              <h1>{schedule.type_title}</h1>
+              <h1 className={"font-light"}>{schedule.type_title}</h1>
             </div>
             {schedule.title ? (
-              <h2 className={"text-center text-lg opacity-50 md:text-xl"}>
+              <h2
+                className={
+                  "my-3 text-center text-lg font-medium opacity-80 md:text-xl"
+                }
+              >
                 {schedule.title}
               </h2>
             ) : null}
@@ -129,7 +133,7 @@ const PeriodContainer: React.FC<{
                         <>
                           <h1
                             className={
-                              "my-6 text-center text-base font-black md:my-0 md:mb-6 md:text-xl"
+                              "my-6 text-center text-base font-semibold md:my-0 md:mb-6 md:text-xl"
                             }
                           >
                             {presenter.presentation.title}
