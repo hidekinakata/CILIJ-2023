@@ -11,13 +11,50 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeType> = (props) => {
     >
       <h1 className={"mb-10 text-center text-4xl lg:text-5xl"}>Comissões</h1>
 
-      <section
-        className={
-          "flex flex-col lg:flex-row [&_h1]:mb-8 [&_h1]:text-center [&_h1]:text-2xl"
-        }
-      >
+      <section className={"mb-16"}>
+        <h1 className={"mb-8 text-center text-2xl font-semibold"}>
+          Organização geral
+        </h1>
+
+        <div className={"min-h-[30rem]"}>
+          <h1 className={"mb-8 justify-center text-center text-xl"}>
+            Renata Junqueira de Souza
+          </h1>
+          <img
+            src={"renata_junqueira.jpg"}
+            className={"mx-auto my-2 h-72 md:float-left md:mx-5"}
+          />
+          <p className={"my-auto indent-8"}>
+            Atualmente é professora visitante no Programa de Pós-graduação em
+            Educação da Universidade Federal de Ouro Preto (UFOP/MG). Possui
+            graduação em Letras pela Universidade Estadual Paulista Júlio de
+            Mesquita Filho, mestrado em Linguística e Letras pela Pontifícia
+            Universidade Católica do Rio Grande do Sul (PUC/RS), doutorado em
+            Letras pela Universidade Estadual Paulista Júlio de Mesquita Filho e
+            é livre-docente no conjunto das disciplinas Conteúdos, Metodologia e
+            Prática de Ensino de Língua Portuguesa I e II e Leitura, Literatura
+            e Interpretação de Textos no Processo de Formação de Professores.
+            Foi professora visitante na Universidade do Minho, desenvolveu
+            pesquisas de pós doutorado na British Columbia University (Canadá),
+            Ohio State University (EUA) e Universidade de Évora (Portugal).
+            Professora sênior da UNESP/Presidente Prudente, onde fundou e
+            coordenou o CELLIJ - Centro de Estudos em Leitura e Literatura
+            Infantil e Juvenil "Maria Betty Coelho Silva" (1992 - 2023).
+            Aposentou-se em 2022 e continua atuando no PPGE - Educação da
+            UNESP/Presidente Prudente. É professora colaboradora no Programa de
+            Pós-graduação em Letras da Universidade Federal da Paraíba. Tem
+            experiência em Educação, Ensino-aprendizagem com ênfase em: leitura,
+            literatura infantil, estratégias de leitura, poesia e ensino,
+            formação de professores, leitura literária.
+          </p>
+        </div>
+      </section>
+
+      <section className={"flex flex-col lg:flex-row "}>
         <div className={"w-full lg:w-1/2"}>
-          <h1>Comissão organizadora</h1>
+          <h1 className={"mb-8 text-center text-2xl font-semibold"}>
+            Comissão organizadora
+          </h1>
           <ul>
             {org.split("\n").map((organizer) => (
               <li>{organizer}</li>
@@ -26,7 +63,9 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeType> = (props) => {
         </div>
 
         <div className={"mt-12 w-full lg:mt-0 lg:w-1/2"}>
-          <h1>Comissão cientifica</h1>
+          <h1 className={"mb-8 text-center text-2xl font-semibold"}>
+            Comissão cientifica
+          </h1>
           <ul>
             {sci.split("\n").map((sciOrganizer) => (
               <li>{sciOrganizer}</li>
@@ -48,47 +87,29 @@ Berta Lúcia Tagliari Feba
 Clara Cassiolato Junqueira 
 Claudia Leite Brandão 
 Cleide de Araujo Campos 
-Andréia de Oliveira Alencar Iguma 
-Cyntia Graziella Guizelim Simões Girotto 
-Dagoberto Buim Arena 
-Daniela Maria Segabinazi 
-Elianeth Dias Kanthack Hernandes 
+Andréia de Oliveira Alencar Iguma  
 Emanuela Carla Medeiros de Queiros 
 Estela Aparecida de Souza dos Santos 
-Eva Dacome 
 Gabrielly Doná 
-Gislene Aparecida da Silva Barbosa 
 Isabela Delli Colli Zocolaro 
 Jamile Rossetti de Souza 
 Joana d'Arc Batista Herkenhoff 
-Joice Ribeiro Machado da Silva 
-Josete Marinho de Lucena 
 Juliane Francischeti Martins 
 Kenia Adriana de Aquino 
 Kilma Cristeane Ferreira Guedes 
-Laís Fernanda Espósito Barbosa 
 Leonardo Montes Lopes 
 Leoneide Maria Brito Martins 
-Luana Manoel Borges Garcia 
 Márcia Tavares Silva 
-Maria de Lourdes Zizi Trevizan Perez 
 Maria Gilliane de Oliveira Cavalcante 
 María Paula Obando Rodríguez 
-Mariana Cortez 
 Mariana Revoredo 
 Marivaldo Omena Batista 
-Marta Aparecida Broietti Henrique 
 Naelza de Araújo Wanderley 
-Paulo Roberto Prado Constantino 
-Raquel Sousa da Silva 
-Renata Junqueira de Souza 
-Rildo Jose Cosson Mota 
 Robson Guimaraes de Faria 
 Rosangela Valachinski Gandin 
 Sarah Gracielle Teixeira Silva 
 Silvana Ferreira de Souza Balsan 
 Sílvia de Fátima Pilegi Rodrigues 
-Valquíria Maria Felizardo 
 Vania Kelen Belão Vagula
 Vânia Maria Castelo Barbosa
 `;
