@@ -16,7 +16,7 @@ const ResumedEventDayContainer: React.FC<ResumedEventDayContainerType> = ({
       <span id={day.replaceAll(" ", "_")} className={"absolute -top-36"} />
       <div
         className={
-          "grid auto-rows-fr gap-5 lg:auto-cols-fr lg:grid-flow-col lg:grid-rows-none"
+          "grid auto-rows-auto gap-5 lg:auto-cols-fr lg:grid-flow-col lg:grid-rows-none"
         }
       >
         <PeriodContainer
