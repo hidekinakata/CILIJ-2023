@@ -63,6 +63,12 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
           </div>
         </div>
       </div>
+      <span className={"mt-6 text-center text-sm lg:text-base"}>
+        Obs: Grupos de 10 inscritos 10% de desconto - entrar em contato com{" "}
+        <a className={"text-blue-600"} href={"mailto:Infocilij@gmail.com"}>
+          Infocilij@gmail.com
+        </a>
+      </span>
       <Link
         to={"/orientacoes"}
         className={
