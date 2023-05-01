@@ -99,6 +99,7 @@ Kenia Adriana de Aquino
 Kilma Cristeane Ferreira Guedes 
 Leonardo Montes Lopes 
 Leoneide Maria Brito Martins 
+Luís Henrique Lustosa Reipert
 Márcia Tavares Silva 
 Maria Gilliane de Oliveira Cavalcante 
 María Paula Obando Rodríguez 
