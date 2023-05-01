@@ -122,7 +122,7 @@ const EventDay: EventDayType[] = [
             resume:
               "Andreia Oliveira é pós-doutoranda em Educação pela UNESP/Presidente Prudente com bolsa CNPq, Doutora em Estudos Literários pela Universidade Federal de Uberlândia – UFU, Mestre em Letras (Literatura e Práticas Culturais) pela Universidade Federal da Grande Dourados - UFGD (2012) e Graduada em Letras também pela UFGD (2007). Vice-líder do grupo de pesquisa Formação de professores e as relações entre as práticas educativas em leitura, literatura e avaliação do texto, além de ser membro do Grupo de Pesquisas em Espacialidades Artísticas - GPEA. Atua principalmente nos seguintes temas: literatura e ensino, literatura infantil e juvenil, políticas públicas de leitura e vertentes do insólito.",
             pictureSrc: "/speakers/andreia_oliveira.png",
-            pictureAuthor: "",
+            pictureAuthor: "nichii imagem",
             presentation: {
               title:
                 "É preciso olhar para nossas juventudes: uma conversa a partir da LJB produzida na última década",
@@ -165,7 +165,7 @@ const EventDay: EventDayType[] = [
     morning: [
       {
         type_title:
-          "Primeira Sessão Apresentações de trabalhos e Apresentações de pôster",
+          "Primeira sessão: Apresentações de trabalhos e Apresentações de pôster",
         time: "8h - 10h",
       },
       {
@@ -174,14 +174,14 @@ const EventDay: EventDayType[] = [
       },
       {
         type_title:
-          "Segunda Sessão Apresentações de trabalhos e Apresentações de pôster",
+          "Segunda sessão: Apresentações de trabalhos e Apresentações de pôster",
         time: "11h - 12h30",
       },
     ],
     afternoon: [
       {
         type_title:
-          "Terceira Sessão Apresentações de trabalhos e Apresentações de pôster",
+          "Terceira sessão: Apresentações de trabalhos e Apresentações de pôster",
         time: "14h - 16h",
       },
       {
@@ -236,12 +236,12 @@ const EventDay: EventDayType[] = [
         time: "8h - 10h",
         presenters: [
           {
-            name: "Alexandre Gomes",
+            name: "Alexandre de Castro Gomes",
             occupation: "(escritor)",
             resume:
-              "Alexandre Gomes é carioca, doutorando e mestre em Teoria da Literatura e Literatura Comparada (UERJ), especialista em Literatura Infantil e Juvenil (UCAM), membro do GP CNPq-UERJ EnLIJ - Encontros com a Literatura Infantil/Juvenil: ficção, teorias e práticas e do projeto de extensão NELIJ-UERJ, professor de história da literatura infantil e juvenil brasileira, ex-presidente da Associação de Escritores e Ilustradores de Literatura Infantil e Juvenil (AEILIJ) e autor de dezenas de livros publicados no Brasil e no exterior. Entre as distinções que suas obras já receberam, estão os selos Cátedra 10, pela Cátedra de Leitura UNESCO da PUC-Rio, o selo Altamente Recomendável pela FNLIJ, o selo da Lagarta do Prêmio AEILIJ para textos de literatura infantil e o Prêmio Cidade de Manaus de Teatro Infantil, além de outras premiações e citações em listas de excelência como as do Prêmio Internacional da Fundación Cuatrogatos e dos Prêmios Literários da Biblioteca Nacional. Alexandre organizou antologias para editoras comerciais, editou livros e anuários para plataformas digitais e foi convidado para as mais importantes feiras literárias do país. Quando atuou como presidente da AEILIJ, idealizou e organizou as duas primeiras edições dos Prêmios AEILIJ e, ao longo dos últimos anos, organizou e produziu, através da Associação e fora dela, diversos eventos literários.",
+              "Alexandre de Castro Gomes é carioca, doutorando e mestre em Teoria da Literatura e Literatura Comparada (UERJ), especialista em Literatura Infantil e Juvenil (UCAM), membro do GP CNPq-UERJ EnLIJ - Encontros com a Literatura Infantil/Juvenil: ficção, teorias e práticas e do projeto de extensão NELIJ-UERJ, professor de história da literatura infantil e juvenil brasileira, ex-presidente da Associação de Escritores e Ilustradores de Literatura Infantil e Juvenil (AEILIJ) e autor de dezenas de livros publicados no Brasil e no exterior. Entre as distinções que suas obras já receberam, estão os selos Cátedra 10, pela Cátedra de Leitura UNESCO da PUC-Rio, o selo Altamente Recomendável pela FNLIJ, o selo da Lagarta do Prêmio AEILIJ para textos de literatura infantil e o Prêmio Cidade de Manaus de Teatro Infantil, além de outras premiações e citações em listas de excelência como as do Prêmio Internacional da Fundación Cuatrogatos e dos Prêmios Literários da Biblioteca Nacional. Alexandre organizou antologias para editoras comerciais, editou livros e anuários para plataformas digitais e foi convidado para as mais importantes feiras literárias do país. Quando atuou como presidente da AEILIJ, idealizou e organizou as duas primeiras edições dos Prêmios AEILIJ e, ao longo dos últimos anos, organizou e produziu, através da Associação e fora dela, diversos eventos literários.",
             pictureSrc: "/speakers/alexandre_gomes.png",
-            pictureAuthor: "",
+            pictureAuthor: "Cris Alhadeff",
             presentation: {
               title:
                 "Criaturas na literatura infantil e juvenil brasileira pré-lobatiana",
@@ -288,26 +288,12 @@ const EventDay: EventDayType[] = [
         time: "10h30 - 12h30",
         presenters: [
           {
-            name: "Hércules Tolêdo Corrêa",
-            occupation: "(pesquisador)",
-            resume:
-              "Hércules Tolêdo Corrêa é professor da Universidade Federal de Ouro Preto e pesquisa formação de leitores, ensino de literatura e letramento literário. Fundador e líder do Grupo de Pesquisa MULTDICS Multiletramentos e usos de TDIC na Educação.  É doutor em Educação, mestre e graduado em Letras pela Universidade Federal de Minas Gerais. Realizou estágios de pós-doutorado na Universidade do Minho, em Portugal, e na York University, no Canadá. Tem livros e artigos publicados em periódicos nacionais e internacionais. ",
-            pictureSrc: "/speakers/hercules_toledo_correa.png",
-            pictureAuthor: "acervo pessoal",
-            presentation: {
-              title:
-                "Da caixa de costura para as páginas dos livros ilustrados: imagens construídas com aviamentos em livros para crianças",
-              resume:
-                "Livros ilustrados se apresentam, contemporaneamente, com os mais diferentes materiais e técnicas utilizados em seus projetos gráficos. Desenhos e pinturas, massinhas, bordados, dobraduras em papel, computação gráfica e até materiais menos convencionais como cabelos humanos, calda de açúcar e pétalas de flores são usados para produzir imagens para essas obras multimodais/mutissemióticas, muitas vezes inusitadas e cada vez mais criativas. Nesta mesa, procurarei demonstrar de que maneira a escritora e ilustradora mineira Ângela Leite de Souza desenvolve suas produções nesse campo, associando trabalhos manuais com diferentes tipos de tecidos e aviamentos para ampliar os sentidos de seus textos e de outros autores nas obras que ilustra/produz. ",
-            },
-          },
-          {
             name: "Odilon Moraes",
             occupation: "(ilustrador)",
             resume:
               'Odilon Moraes é formado em arquitetura na USP e tem mestrado em artes visuais, pela Unicamp.Ilustrador e autor de livros ilustrados, já recebeu 5 jabutis e teve livros como " A princesinha medrosa" , "Pedro e Lua " e "Rosa" premiados como " O melhor livro do ano para crianças" pela Fundação Nacional do Livro para a Infância e Juventude ( FNLIJ).Estudioso do livro ilustrado, deu aulas na Fundação Lasar Segall, no Instituto Tomie Ohtake, foi professor convidado do Instituto de Estudos da Linguagem (IEL). Atualmente dá aulas no Instituto Vera Cruz e na Casa Tombada.',
             pictureSrc: "/speakers/odilon_moraes.png",
-            pictureAuthor: "",
+            pictureAuthor: "acervo pessoal",
             presentation: {
               title: "A imagem e o tempo no livro ilustrado.",
               resume:
@@ -328,6 +314,20 @@ const EventDay: EventDayType[] = [
                 "Na literatura infantil contemporânea, a imagem assume um protagonismo ímpar, criando um tipo de obra que desloca o livro do mundo da literatura para a fronteira com o mundo das artes visuais, a ponto da palavra ilustração perder seu sentido quando usada como sinônimo de imagem. Em minha fala apresentarei alguns exemplos de livros de fronteira e como a consciência do protagonismo da imagem altera a forma como se cria e se lê os livros.",
             },
           },
+          {
+            name: "Hércules Tolêdo Corrêa",
+            occupation: "(pesquisador)",
+            resume:
+              "Hércules Tolêdo Corrêa é professor da Universidade Federal de Ouro Preto e pesquisa formação de leitores, ensino de literatura e letramento literário. Fundador e líder do Grupo de Pesquisa MULTDICS Multiletramentos e usos de TDIC na Educação.  É doutor em Educação, mestre e graduado em Letras pela Universidade Federal de Minas Gerais. Realizou estágios de pós-doutorado na Universidade do Minho, em Portugal, e na York University, no Canadá. Tem livros e artigos publicados em periódicos nacionais e internacionais. ",
+            pictureSrc: "/speakers/hercules_toledo_correa.png",
+            pictureAuthor: "acervo pessoal",
+            presentation: {
+              title:
+                "Da caixa de costura para as páginas dos livros ilustrados: imagens construídas com aviamentos em livros para crianças",
+              resume:
+                "Livros ilustrados se apresentam, contemporaneamente, com os mais diferentes materiais e técnicas utilizados em seus projetos gráficos. Desenhos e pinturas, massinhas, bordados, dobraduras em papel, computação gráfica e até materiais menos convencionais como cabelos humanos, calda de açúcar e pétalas de flores são usados para produzir imagens para essas obras multimodais/mutissemióticas, muitas vezes inusitadas e cada vez mais criativas. Nesta mesa, procurarei demonstrar de que maneira a escritora e ilustradora mineira Ângela Leite de Souza desenvolve suas produções nesse campo, associando trabalhos manuais com diferentes tipos de tecidos e aviamentos para ampliar os sentidos de seus textos e de outros autores nas obras que ilustra/produz. ",
+            },
+          },
         ],
       },
     ],
@@ -343,7 +343,7 @@ const EventDay: EventDayType[] = [
             resume:
               "María Teresa Andruetto (Aº Cabral, Argentina, 1954). Publicó novelas, ensayos, libros de cuentos, poemarios y libros para niños; traducida a varias lenguas, sus libros son materia de numerosas tesis de grado y doctorado. Desde hace más de treinta años interviene de diversos modos en la construcción de una sociedad lectora. Obtuvo entre otros los premios Fondo Nacional de las Artes, Iberoamericano a la Trayectoria en Literatura Infantil SM, Premio Cultura Universidad Nacional de Córdoba, Premio Hans Christian Andersen, Konex de Platino y Premio Trayectoria en Letras del Fondo Nacional de las Artes 2020. Co dirige una colección de revalorización de narradoras argentinas en la Editorial Universitaria EDUVIM y cada semana comparte una breve historia desde la radio de la Universidad Nacional de Cordoba.",
             pictureSrc: "/speakers/maria_teresa_andruetto.png",
-            pictureAuthor: "",
+            pictureAuthor: "acervo pessoal",
             presentation: {
               title: '"El arte de narrar"',
               resume:
