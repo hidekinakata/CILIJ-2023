@@ -15,7 +15,16 @@ const Footer: React.FC<FooterType> = (props) => {
           Apoio
         </h1>
         <div className={"flex flex-wrap items-center justify-center gap-5"}>
-          <Img src={"/support/Logo grupo de pesquisa.png"} />
+          <div className={"relative"}>
+            <Img src={"/support/Logo grupo de pesquisa.png"} />
+            <span
+              className={
+                "absolute bottom-0 left-1/2 -translate-x-1/2 text-2xl font-black text-black lg:bottom-5 lg:text-4xl"
+              }
+            >
+              PROLELI
+            </span>
+          </div>
           <Img src={"/support/UFOP_logo_educação_reduzida.png"} />
           <Img src={"/support/Logo_posletras_900_px_x_150_px_1_01.png"} />
           <Img src={"/support/PPGE FCT.png"} />
