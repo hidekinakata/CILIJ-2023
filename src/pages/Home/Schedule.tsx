@@ -22,6 +22,9 @@ const Schedule: React.FC<ScheduleType> = (props) => {
       }
     >
       <h1 className={"mb-10 text-center text-5xl"}> Programação </h1>
+      <h2 className={"mb-10 text-center text-2xl"}>
+        Local: Centro de convenções da UFOP - Ouro Preto - MG
+      </h2>
 
       <Tabs value={schedule_data[0].key} className={"relative z-[1]"}>
         <TabsHeader

@@ -18,6 +18,9 @@ const CompleteSchedule: React.FC<CompleteScheduleType> = (props) => {
       >
         Programação completa do evento
       </h1>
+      <h2 className={"mb-10 text-center text-2xl"}>
+        Local: Centro de convenções da UFOP - Ouro Preto - MG
+      </h2>
       <div
         className={
           "w-full [&>*:nth-child(1)]:bg-aubergine-900 [&>*:nth-child(2)]:bg-fuel-yellow-600 [&>*:nth-child(3)]:bg-pine-glade-700"
