@@ -6,20 +6,20 @@ type TemplatesType = {};
 const Templates: React.FC<TemplatesType> = (props) => {
   const data = [
     {
-      type: "Template Artigo",
-      path: "templates/template_artigo_congresso_2023.doc",
-    },
-    {
-      type: "Template Resumo",
+      type: "Template para elaboração do resumo",
       path: "templates/template_resumo_congresso_2023.doc",
     },
     {
-      type: "Template Poster",
+      type: "Template para edição do pôster",
       path: "templates/template_poster_congresso_2023.pptx",
     },
     {
-      type: "Template Slides",
+      type: "Template slides para apresentação oral",
       path: "templates/template_slide_congresso_2023.pptx",
+    },
+    {
+      type: "Template para elaboração do artigo final",
+      path: "templates/template_artigo_congresso_2023.doc",
     },
   ];
 
@@ -30,7 +30,9 @@ const Templates: React.FC<TemplatesType> = (props) => {
       }
     >
       <h1
-        className={"my-8 text-center text-2xl font-black md:mb-12 md:text-5xl"}
+        className={
+          "my-8 text-center text-2xl font-semibold md:mb-12 md:text-5xl"
+        }
       >
         Templates
       </h1>
