@@ -7,11 +7,11 @@ const Templates: React.FC<TemplatesType> = (props) => {
   const data = [
     {
       type: "Template Artigo",
-      path: "templates/template_artigo_congresso_2023.docx",
+      path: "templates/template_artigo_congresso_2023.doc",
     },
     {
       type: "Template Resumo",
-      path: "templates/template_resumo_congresso_2023.docx",
+      path: "templates/template_resumo_congresso_2023.doc",
     },
     {
       type: "Template Poster",
