@@ -77,78 +77,92 @@ const PeriodContainer: React.FC<{
               )}`}
               className={"absolute -top-36"}
             ></span>
-            <h1
+
+            <div
               className={
-                schedule.title ? "text-center text-xl md:text-2xl" : ""
+                (schedule.title ? "text-center text-xl md:text-2xl" : "gap-2") +
+                " flex flex-col"
               }
             >
-              {schedule.type_title}
-            </h1>
+              <span className={"block text-center"}>{schedule.time}</span>
+              <h1>{schedule.type_title}</h1>
+            </div>
             {schedule.title ? (
               <h2 className={"text-center text-lg opacity-50 md:text-xl"}>
                 {schedule.title}
               </h2>
             ) : null}
             {schedule.presenters
-              ? schedule.presenters.map((presenter) => (
-                  <div
-                    key={presenter.name}
-                    className={
-                      "mb-3 flex min-h-[350px] flex-col items-center border-t border-t-white/50 py-8 md:block"
-                    }
-                  >
-                    <figure
+              ? schedule.presenters.map((presenter) => {
+                  if (presenter.pictureAuthor === "")
+                    console.log(presenter.name);
+                  return (
+                    <div
+                      key={presenter.name}
                       className={
-                        "float-left mb-3 flex w-48 flex-col justify-center md:mr-5 md:place-self-start"
+                        "mb-3 flex min-h-[350px] flex-col items-center border-t border-t-white/50 py-8 md:block"
                       }
                     >
-                      <div className={"h-60 w-48 "}>
-                        <img
-                          src={presenter.pictureSrc}
-                          className={"h-60 w-48 object-cover"}
-                        />
-                      </div>
-                      <figcaption className={"text-center"}>
-                        <h1>{presenter.name}</h1>
-                        <h2 className={"text-sm"}>{presenter.occupation}</h2>
-                      </figcaption>
-                    </figure>
+                      <figure
+                        className={
+                          "float-left mb-3  flex w-52 flex-col items-center justify-center md:mr-5 md:place-self-start "
+                        }
+                      >
+                        <div className={"h-60 w-48 "}>
+                          <img
+                            src={presenter.pictureSrc}
+                            className={"h-60 w-48 object-cover"}
+                          />
+                        </div>
+                        <span
+                          className={"pb-3 text-center text-xs text-white/70"}
+                        >
+                          Foto: {presenter.pictureAuthor}
+                        </span>
+                        <figcaption className={"text-center"}>
+                          <h1>{presenter.name}</h1>
+                          <h2 className={"text-sm"}>{presenter.occupation}</h2>
+                        </figcaption>
+                      </figure>
 
-                    {presenter.presentation ? (
-                      <>
+                      {presenter.presentation ? (
+                        <>
+                          <h1
+                            className={
+                              "my-6 text-center text-base font-black md:my-0 md:mb-6 md:text-xl"
+                            }
+                          >
+                            {presenter.presentation.title}
+                          </h1>
+                          <p
+                            className={
+                              "pb-3 text-justify indent-8 text-sm text-white/80  md:text-base "
+                            }
+                          >
+                            {presenter.presentation.resume}
+                          </p>
+                        </>
+                      ) : null}
+
+                      <div
+                        className={`text-sm text-white/80 md:text-base ${
+                          presenter.presentation ? "md:col-span-2" : ""
+                        }`}
+                      >
                         <h1
                           className={
-                            "my-6 text-center text-base font-black md:my-0 md:mb-6 md:text-xl"
+                            "mb-2 mt-6 text-center text-base md:text-lg"
                           }
                         >
-                          {presenter.presentation.title}
+                          Sobre {presenter.name}
                         </h1>
-                        <p
-                          className={
-                            "pb-3 text-justify indent-8 text-sm text-white/80  md:text-base "
-                          }
-                        >
-                          {presenter.presentation.resume}
+                        <p className={"text-justify indent-8 "}>
+                          {presenter.resume}
                         </p>
-                      </>
-                    ) : null}
-
-                    <div
-                      className={`text-sm text-white/80 md:text-base ${
-                        presenter.presentation ? "md:col-span-2" : ""
-                      }`}
-                    >
-                      <h1
-                        className={"mb-2 mt-6 text-center text-base md:text-lg"}
-                      >
-                        Sobre {presenter.name}
-                      </h1>
-                      <p className={"text-justify indent-8 "}>
-                        {presenter.resume}
-                      </p>
+                      </div>
                     </div>
-                  </div>
-                ))
+                  );
+                })
               : null}
           </div>
         ))}

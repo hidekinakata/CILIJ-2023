@@ -25,7 +25,7 @@ const AsyncImage: React.FC<AsyncImageType> = (props) => {
   if (loadedSrc === props.src) {
     return <img {...props} />;
   }
-  return null;
+  return <div className={props.className + " bg-fuel-yellow-500"} />;
 };
 
 export default AsyncImage;

@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import EixosTematicos from "./pages/EixosTematicos";
 import CompleteSchedule from "./pages/CompleteSchedule";
 import Guidelines from "./pages/Guidelines";
+import ThiagoTaubman from "./pages/ThiagoTaubman";
+import Templates from "./pages/Templates";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Route path="/programacao" element={<CompleteSchedule />} />
             <Route path="/eixos" element={<EixosTematicos />} />
             <Route path="/orientacoes" element={<Guidelines />} />
+            <Route path="/templates" element={<Templates />} />
+            <Route path={"/thiago_taubman"} element={<ThiagoTaubman />} />
             <Route path="/contact" element={<h1>Contato</h1>} />
           </Route>
           <Route path={"*"} element={<Page404 />} />

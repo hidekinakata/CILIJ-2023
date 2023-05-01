@@ -33,11 +33,12 @@ const Navbar: React.FC<NavbarType> = (props) => {
   const paths = [
     { name: "Home", path: "/#" },
     { name: "Sobre o evento", path: "/#sobre" },
+    { name: "Investimento", path: "/#investimento" },
     { name: "Programação", path: "/#programacao" },
     { name: "Eixos temáticos", path: "/eixos" },
     { name: "Orientações", path: "/orientacoes" },
-    { name: "Templates", path: "/orientacoes" },
-    { name: "Contato", path: "/contact" },
+    { name: "Templates", path: "/templates" },
+    { name: "Organizadores", path: "/contact" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);

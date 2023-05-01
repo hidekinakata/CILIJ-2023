@@ -6,6 +6,10 @@ html {
     @apply scroll-smooth
 }
 
+.writing-vertical {
+    writing-mode: vertical-lr;
+}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {

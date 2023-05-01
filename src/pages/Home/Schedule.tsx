@@ -50,7 +50,7 @@ const Schedule: React.FC<ScheduleType> = (props) => {
         <Link
           to={"/programacao"}
           className={
-            "rounded bg-fuel-yellow-400/80 p-4 px-5 text-center text-xl"
+            "rounded bg-fuel-yellow-400 p-4 px-5 text-center text-xl text-white"
           }
         >
           Veja a programação completa aqui

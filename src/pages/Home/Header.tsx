@@ -1,8 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
-import poster from "../../assets/poster.png";
+import poster from "../../assets/poster1.jpg";
 import SubscribeBtn from "../../components/SubscribeBtn";
 import AsyncImage from "../../components/AsyncImage";
+import { Link } from "react-router-dom";
 
 type HomeType = {};
 
@@ -10,14 +11,8 @@ const Header: React.FC<HomeType> = (props) => {
   return (
     <section
       className={
-        "relative flex min-h-screen w-full items-center justify-center px-12 pt-20 lg:px-32"
+        "relative flex min-h-screen w-full items-center justify-center px-9 pt-20 lg:px-32"
       }
-      // style={{
-      //   background: `linear-gradient(90deg, rgba(255,255,255,1) 44%, rgba(255,255,255,0) 100%), url(${poster})`,
-      //   backgroundRepeat: "no-repeat",
-      //   backgroundSize: "auto 180vh",
-      //   backgroundPosition: "right",
-      // }}
     >
       <div
         className={
@@ -51,13 +46,15 @@ const Header: React.FC<HomeType> = (props) => {
                 "grid grid-cols-[min-content_auto] grid-rows-2 gap-x-2 gap-y-1 align-middle text-lg leading-none"
               }
             >
-              <span
-                className={
-                  "row-span-2 float-left h-full place-self-center text-5xl text-red-800 "
-                }
-              >
-                VII
-              </span>
+              <div className={"row-span-2 h-fit self-center"}>
+                <span
+                  className={
+                    " float-left h-full place-self-center text-5xl leading-none text-red-800 "
+                  }
+                >
+                  VII
+                </span>
+              </div>
               <p className={"self-end"}>Congresso Internacional de</p>
               <p className={"text-red-800"}>Literatura Infantil e Juvenil</p>
             </motion.h3>
@@ -95,15 +92,35 @@ const Header: React.FC<HomeType> = (props) => {
             duration: 0.5,
             ease: "easeOut",
           }}
-          className={
-            "max-h-[40vh] max-w-full rounded-xl shadow-md shadow-black/50 md:max-h-[55vh]"
-          }
+          className={"grid place-items-center rounded-xl "}
         >
-          <AsyncImage
-            className={"max-h-[40vh] w-full  rounded-xl md:max-h-[55vh]"}
-            src={poster}
-            alt={"Event Poster"}
-          />
+          <figure
+            className={
+              "float-left flex w-[15rem] flex-col justify-center md:place-self-start lg:w-[20rem]"
+            }
+          >
+            <div className={"h-[21rem] w-[15rem] lg:h-[28rem] lg:w-[20rem]"}>
+              <img
+                src={poster}
+                className={
+                  "h-[21rem] w-[15rem] rounded-xl object-cover lg:h-[28rem] lg:w-[20rem]"
+                }
+              />
+            </div>
+            <figcaption className={"mt-2 text-center"}>
+              <Link
+                to={"/thiago_taubman"}
+                className={
+                  "text-black transition duration-300 hover:text-fuel-yellow-400"
+                }
+              >
+                <h1>Arte por: Thiago Taubman</h1>
+                <span className={"text-xs"}>
+                  (Clique e saiba mais sobre o ilustrador)
+                </span>
+              </Link>
+            </figcaption>
+          </figure>
         </motion.div>
       </div>
     </section>
