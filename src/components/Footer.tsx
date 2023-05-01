@@ -7,7 +7,7 @@ const Footer: React.FC<FooterType> = (props) => {
   return (
     <footer
       className={
-        "mt-auto flex h-fit w-full flex-col items-center font-medium text-white"
+        "mt-auto flex h-fit w-full flex-col items-center border-t-2 font-medium text-white"
       }
     >
       <div className={"p-5 md:px-32"}>
@@ -30,6 +30,7 @@ const Footer: React.FC<FooterType> = (props) => {
           <Img src={"/support/PPGE FCT.png"} />
           <Img src={"/support/Logomarca_jpg_UFOP.jpg"} />
           <Img src={"/support/logo_portal_unesp_4x3.jpg"} />
+          <Img src={"/support/learned_language.png"} />
         </div>
       </div>
       <div
