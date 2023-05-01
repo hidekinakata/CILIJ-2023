@@ -11,13 +11,15 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
       }
     >
       <h1
-        className={"my-8 text-center text-2xl font-black md:mb-12 md:text-5xl"}
+        className={
+          "my-8 text-center text-2xl font-semibold md:mb-12 md:text-5xl"
+        }
       >
         Veja como se inscrever
       </h1>
 
       <section className={"w-full"}>
-        <h1 className={"text-center text-xl font-black"}>
+        <h1 className={"text-center text-xl font-semibold"}>
           Como inscrever comunicação oral ou poster no VII Congresso
           Internacional de Literatura Infantil e Juvenil?
         </h1>
@@ -35,8 +37,12 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
             e verifique o melhor eixo para seu trabalho.
           </li>
           <li>
-            Clique na aba templates, selecione template resumo e faça seu
-            resumo, seja para comunicação oral ou para poster -{" "}
+            Clique na aba{" "}
+            <Link to={"/templates"} className={"text-red-500 hover:underline"}>
+              templates
+            </Link>
+            , selecione template resumo e faça seu resumo, seja para comunicação
+            oral ou para poster -{" "}
             <strong>
               cada proponente pode escrever até 3 resumos com até três autores
             </strong>
@@ -52,7 +58,7 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
             depois envie o resumo feito no template para o email do eixo.{" "}
             <span className={""}>
               Exemplo: Se você escreveu sobre{" "}
-              <span className={"font-black italic"}>
+              <span className={"font-bold"}>
                 Literatura e ensino, eixo temático 6
               </span>
               , você enviará o resumo para o email:{" "}
@@ -69,7 +75,7 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
       </section>
 
       <section className={"w-full"}>
-        <h1 className={"text-center text-xl font-black"}>
+        <h1 className={"text-center text-xl font-semibold"}>
           Tive meu resumo aprovado, quero participar do congresso e quero ir
           para Ouro Preto, como fazer minha inscrição?
         </h1>
@@ -110,37 +116,37 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
             "mx-auto text-sm sm:text-base [&_td]:border-2 [&_td]:border-truegray-700 [&_td]:p-2"
           }
         >
-          <caption className={"mb-3 text-xl font-black text-black"}>
+          <caption className={"mb-3 text-xl font-semibold text-black"}>
             Datas importantes
           </caption>
           <tbody>
             <tr>
               <td>Inscrição para comunicação oral ou poster</td>
-              <td className={"font-black"}>
+              <td className={"font-semibold"}>
                 De 15 de maio a 16 de julho de 2023
               </td>
             </tr>
             <tr>
               <td>Análise dos resumos</td>
-              <td className={"font-black"}>
+              <td className={"font-semibold"}>
                 De 24 de julho a 10 de setembro de 2023
               </td>
             </tr>
             <tr>
               <td>Envio das cartas de aceite</td>
-              <td className={"font-black"}>
+              <td className={"font-semibold"}>
                 De 11 de setembro a 29 de setembro de 2023
               </td>
             </tr>
             <tr>
               <td>Envio do artigo completo para publicação em e-book</td>
-              <td className={"font-black"}>
+              <td className={"font-semibold"}>
                 De 20 de novembro a 10 de dezembro
               </td>
             </tr>
             <tr>
               <td>Publicação do e-book com ISBN data de 2024</td>
-              <td className={"font-black"}>
+              <td className={"font-semibold"}>
                 Dia 25 de março pelo site do congresso
               </td>
             </tr>

@@ -15,7 +15,7 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
 
       <div
         className={
-          "relative grid h-fit grid-rows-3 gap-5 md:grid-cols-3 md:grid-rows-none [&>div]:h-72 [&>div]:w-full [&>div]:rounded-xl  [&>div]:shadow-md"
+          "relative grid h-fit grid-rows-3 gap-5 md:grid-rows-none lg:grid-cols-3 [&>div]:h-72 [&>div]:w-full [&>div]:rounded-xl  [&>div]:shadow-md"
         }
       >
         <div className={"relative grid grid-rows-[min-content_auto]"}>

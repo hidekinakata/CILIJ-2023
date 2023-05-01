@@ -72,30 +72,38 @@ const PeriodContainer: React.FC<{
               }
             ></div>
 
-            <span className={""}>{schedule.time} </span>
-            <h1 className={""}>
-              <HashLink
-                to={`/programacao/#${`${id}_${title}_${schedule.type_title}`.replaceAll(
-                  " ",
-                  "_"
-                )}`}
-              >
-                {schedule.type_title}
-              </HashLink>
-            </h1>
-            {schedule.title ? (
-              <h2 className={" text-base font-semibold"}>{schedule.title}</h2>
-            ) : null}
-            {schedule.presenters ? (
-              <div className={"text-left"}>
-                <span className={"text-xs"}>Palestrante(s): </span>
-                {schedule.presenters
-                  .map(
-                    (presenter) => presenter.name + " " + presenter.occupation
-                  )
-                  .join(", ")}
-              </div>
-            ) : null}
+            <span
+              className={
+                "mb-2 block font-semibold text-fuel-yellow-400 drop-shadow-md"
+              }
+            >
+              {schedule.time}{" "}
+            </span>
+            <div className={""}>
+              <h1 className={""}>
+                <HashLink
+                  to={`/programacao/#${`${id}_${title}_${schedule.type_title}`.replaceAll(
+                    " ",
+                    "_"
+                  )}`}
+                >
+                  {schedule.type_title}
+                </HashLink>
+              </h1>
+              {schedule.title ? (
+                <h2 className={" text-base font-semibold"}>{schedule.title}</h2>
+              ) : null}
+              {schedule.presenters ? (
+                <div className={"text-left"}>
+                  <span className={"text-xs"}>Palestrante(s): </span>
+                  {schedule.presenters
+                    .map(
+                      (presenter) => presenter.name + " " + presenter.occupation
+                    )
+                    .join(", ")}
+                </div>
+              ) : null}
+            </div>
           </div>
         ))}
       </div>

@@ -11,7 +11,7 @@ const Footer: React.FC<FooterType> = (props) => {
       }
     >
       <div className={"p-5 md:px-32"}>
-        <h1 className={"mb-8 text-center text-3xl font-black text-black"}>
+        <h1 className={"mb-8 text-center text-3xl font-bold text-black"}>
           Apoio
         </h1>
         <div className={"flex flex-wrap items-center justify-center gap-5"}>

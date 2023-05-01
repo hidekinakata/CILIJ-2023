@@ -66,10 +66,9 @@ const Header: React.FC<HomeType> = (props) => {
               }
             >
               Educação literária:
-              <span className={"font-['Caveat'] text-red-700"}>
-                <br />
+              <motion.span className={"block font-['Caveat'] text-red-700"}>
                 Mudanças em movimento
-              </span>
+              </motion.span>
             </motion.h1>
             <motion.div
               initial={{ x: -20, opacity: 0 }}
@@ -105,7 +104,7 @@ const Header: React.FC<HomeType> = (props) => {
               <img
                 src={poster}
                 className={
-                  "h-[21rem] w-[15rem] rounded-xl object-cover lg:h-[28rem] lg:w-[20rem]"
+                  "h-[21rem] w-[15rem] rounded-xl object-cover drop-shadow-md lg:h-[28rem] lg:w-[20rem]"
                 }
               />
             </div>
