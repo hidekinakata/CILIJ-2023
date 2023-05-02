@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
-import poster from "../../assets/poster1.jpg";
+import poster from "../../assets/poster_final.png";
 import SubscribeBtn from "../../components/SubscribeBtn";
 import AsyncImage from "../../components/AsyncImage";
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ const Header: React.FC<HomeType> = (props) => {
   return (
     <section
       className={
-        "relative flex min-h-screen w-full items-center justify-center px-9 pt-20 lg:px-32"
+        "relative flex min-h-screen w-full items-center justify-center px-9 pt-32 lg:px-32"
       }
     >
       <div
@@ -46,23 +46,29 @@ const Header: React.FC<HomeType> = (props) => {
                 "grid grid-cols-[min-content_auto] grid-rows-2 gap-x-2 gap-y-1 align-middle text-lg leading-none"
               }
             >
-              <div className={"row-span-2 h-fit self-center"}>
+              <div
+                className={"row-span-2 h-fit self-center text-pine-glade-600"}
+              >
                 <span
                   className={
-                    " float-left h-full place-self-center text-5xl leading-none text-red-800 "
+                    " float-left h-full place-self-center text-5xl leading-none  "
                   }
                 >
                   VII
                 </span>
               </div>
-              <p className={"self-end"}>Congresso Internacional de</p>
-              <p className={"text-red-800"}>Literatura Infantil e Juvenil</p>
+              <p className={"self-end text-pine-glade-600"}>
+                Congresso Internacional de
+              </p>
+              <p className={"text-pine-glade-600"}>
+                Literatura Infantil e Juvenil
+              </p>
             </motion.h3>
             <motion.h1
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               className={
-                "text-3xl font-semibold md:max-w-screen-sm md:text-6xl "
+                "text-3xl font-semibold  md:max-w-screen-sm md:text-4xl lg:text-6xl"
               }
             >
               Educação literária:
@@ -97,16 +103,28 @@ const Header: React.FC<HomeType> = (props) => {
         >
           <figure
             className={
-              "float-left flex w-[15rem] flex-col justify-center md:place-self-start lg:w-[20rem]"
+              "float-left flex w-[15rem] flex-col justify-center md:place-self-start lg:w-[17.1rem]"
             }
           >
-            <div className={"h-[21rem] w-[15rem] lg:h-[28rem] lg:w-[20rem]"}>
+            <div
+              className={
+                "relative h-[21rem] w-[15rem] lg:h-[24rem] lg:w-[17.1rem]"
+              }
+            >
               <img
                 src={poster}
                 className={
-                  "h-[21rem] w-[15rem] rounded-xl object-cover drop-shadow-md lg:h-[28rem] lg:w-[20rem]"
+                  "h-[21rem] w-[15rem] rounded-xl object-cover drop-shadow-md  lg:h-[24rem] lg:w-[17.1rem]"
                 }
               />
+
+              <div
+                className={
+                  "absolute bottom-5 right-0 grid h-24 w-24 translate-x-1/2 place-items-center rounded-full bg-fuel-yellow-400 p-3 pt-4 text-center text-xs font-semibold drop-shadow-lg"
+                }
+              >
+                De 06 a 08 de dezembro de 2023
+              </div>
             </div>
             <figcaption className={"mt-2 text-center"}>
               <Link

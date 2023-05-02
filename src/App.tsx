@@ -9,6 +9,8 @@ import Guidelines from "./pages/Guidelines";
 import ThiagoTaubman from "./pages/ThiagoTaubman";
 import Templates from "./pages/Templates";
 import OrganizingCommittee from "./pages/OrganizingCommittee";
+import Editoras from "./pages/Editoras";
+import OuroPreto from "./pages/OuroPreto";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route path="/templates" element={<Templates />} />
             <Route path={"/thiago_taubman"} element={<ThiagoTaubman />} />
             <Route path="/comissoes" element={<OrganizingCommittee />} />
+            <Route path="/editoras" element={<Editoras />} />
+            <Route path="/ouro_preto" element={<OuroPreto />} />
           </Route>
           <Route path={"*"} element={<Page404 />} />
         </Routes>

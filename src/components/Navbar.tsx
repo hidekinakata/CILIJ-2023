@@ -39,11 +39,13 @@ const Navbar: React.FC<NavbarType> = (props) => {
     { name: "Orientações", path: "/orientacoes" },
     { name: "Templates", path: "/templates" },
     { name: "Comissões", path: "/comissoes" },
+    { name: "Editoras", path: "/editoras" },
+    { name: "Ouro Preto", path: "/ouro_preto" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
   const scrollBehavior = useScrollBehavior();
-  const matches = useMediaQuery("(min-width: 768px)");
+  const matches = useMediaQuery("(min-width: 1024px)");
 
   useEffect(() => {
     if (matches) setIsOpen(false);
@@ -79,14 +81,14 @@ const Navbar: React.FC<NavbarType> = (props) => {
         <Link
           to={"/"}
           className={
-            "w-[calc(100%-9rem)] text-center font-semibold uppercase text-white md:text-2xl"
+            "w-[calc(100%-9rem)] text-center font-semibold uppercase text-white md:text-xl lg:text-2xl"
           }
         >
           VII Congresso Internacional de Literatura Infantil e Juvenil
         </Link>
         <button
           className={
-            "absolute right-5 top-1/2 -translate-y-1/2 uppercase text-white md:hidden"
+            "absolute right-5 top-1/2 -translate-y-1/2 uppercase text-white lg:hidden"
           }
           onClick={() => setIsOpen((prevState) => !prevState)}
         >
@@ -102,11 +104,11 @@ const Navbar: React.FC<NavbarType> = (props) => {
         variants={NavVariants}
         initial={"hidden"}
         animate={isOpen ? "visible" : "hidden"}
-        className={"h-10 text-black md:!block md:!opacity-100"}
+        className={"h-10 text-black lg:!block lg:!opacity-100"}
       >
         <ul
           className={
-            "flex h-[calc(100vh-6rem)] w-full flex-col items-center justify-center gap-5 border-b border-b-black/20 bg-white  px-7 pb-10 text-2xl md:!flex md:h-fit md:flex-row md:py-2 md:text-sm md:!opacity-100 [&>li:hover]:text-bermuda-700"
+            "flex h-[calc(100vh-6rem)] w-full flex-col items-center justify-center gap-5 border-b border-b-black/20 bg-white  px-7 pb-10 text-2xl lg:!flex lg:h-fit lg:flex-row lg:py-2 lg:text-sm lg:!opacity-100 [&>li:hover]:text-bermuda-700"
           }
         >
           {paths.map((path, i) => (
@@ -122,7 +124,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
               }}
               key={i}
               className={
-                "flex w-full items-center justify-center border-b border-b-black/[0.01] text-center transition hover:border-b-black/20 md:w-fit md:!transform-none md:!opacity-100"
+                "flex w-full items-center justify-center border-b border-b-black/[0.01] text-center transition hover:border-b-black/20 lg:w-fit lg:!transform-none lg:!opacity-100"
               }
             >
               {path.path.startsWith("#") ||
