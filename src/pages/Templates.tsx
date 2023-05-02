@@ -41,7 +41,7 @@ const Templates: React.FC<TemplatesType> = (props) => {
         <table className="0 w-full text-left text-sm text-gray-500">
           <thead className="bg-aubergine-700 text-xs uppercase text-gray-100">
             <tr>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="w-1/2 px-6 py-3">
                 Template
               </th>
               <th scope="col" className="px-6 py-3">
@@ -55,10 +55,7 @@ const Templates: React.FC<TemplatesType> = (props) => {
           <tbody>
             {data.map((template) => (
               <tr key={template.type} className="border-b bg-white ">
-                <th
-                  scope="row"
-                  className="whitespace-nowrap px-6 py-4 font-medium text-gray-900"
-                >
+                <th className="w-1/2 px-6 py-4 font-medium text-gray-900">
                   {template.type}
                 </th>
                 <td className="px-6 py-4">*.{template.path.split(".")[1]}</td>
