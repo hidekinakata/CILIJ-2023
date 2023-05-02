@@ -38,24 +38,23 @@ const About: React.FC<AboutType> = (props) => {
         deixa de ser o órgão organizador do Congresso, que passa a ser uma
         atividade coordenada pelo grupo de pesquisa “Formação de professores e
         as práticas educativas em leitura, literatura e avaliação do texto
-        literário" (PROLELI). O{" "}
-        <strong className={"font-black underline"}>PROLELI</strong> atualmente
-        congrega pesquisadores de 10 estados brasileiros e o Distrito Federal em
-        17 municípios distintos, desta forma, o Congresso deixa de ter um
-        endereço fixo e se torna itinerante e, com isso, espera-se que inúmeras
-        pessoas que nunca puderam participar das atividades promovidas pelo
-        evento possam ser contempladas, afinal, várias regiões do Brasil serão
-        sede em alguma versão, haja vista que o grupo de pesquisa é formado por
-        pesquisadores(as) dos quatro cantos do país o que possibilita sua
-        pluralidade. Ademais, acredita-se que é tempo de semear em outros
-        terrenos férteis e por meio da força da palavra e da imagem à literatura
-        infantil e juvenil (re)inaugurem maneiras de narrar o mundo; e, ainda,
-        as mudanças da própria literatura que vem acontecendo através do tempo,
-        sejam elas a partir dos espaços que foram ressignificados, como, por
-        exemplo, com a proporção alcançada por meio do virtual, sejam o
-        surgimento de novos gêneros, o perfil dos(as) leitores(as), às temáticas
-        e materialidades. Indubitavelmente, é tempo de mudanças e MUDAR exige
-        MOVIMENTO.
+        literário" (PROLELI). O <strong className={"underline"}>PROLELI</strong>{" "}
+        atualmente congrega pesquisadores de 10 estados brasileiros e o Distrito
+        Federal em 17 municípios distintos, desta forma, o Congresso deixa de
+        ter um endereço fixo e se torna itinerante e, com isso, espera-se que
+        inúmeras pessoas que nunca puderam participar das atividades promovidas
+        pelo evento possam ser contempladas, afinal, várias regiões do Brasil
+        serão sede em alguma versão, haja vista que o grupo de pesquisa é
+        formado por pesquisadores(as) dos quatro cantos do país o que
+        possibilita sua pluralidade. Ademais, acredita-se que é tempo de semear
+        em outros terrenos férteis e por meio da força da palavra e da imagem à
+        literatura infantil e juvenil (re)inaugurem maneiras de narrar o mundo;
+        e, ainda, as mudanças da própria literatura que vem acontecendo através
+        do tempo, sejam elas a partir dos espaços que foram ressignificados,
+        como, por exemplo, com a proporção alcançada por meio do virtual, sejam
+        o surgimento de novos gêneros, o perfil dos(as) leitores(as), às
+        temáticas e materialidades. Indubitavelmente, é tempo de mudanças e
+        MUDAR exige MOVIMENTO.
       </p>
       <p>
         Assim, anseia-se que a força das histórias já contadas por meio de tudo

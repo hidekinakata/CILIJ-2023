@@ -29,8 +29,12 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
             (sem apresentação)
           </h1>
           <div className={"flex flex-col items-center justify-center"}>
-            <h2 className={"text-3xl font-black text-gray-800"}>R$ 100,00</h2>
-            <h3 className={"text-xl font-black text-gray-700"}>(cem reais)</h3>
+            <h2 className={"text-3xl font-semibold text-gray-800"}>
+              R$ 100,00
+            </h2>
+            <h3 className={"text-lg font-semibold text-gray-700"}>
+              (cem reais)
+            </h3>
           </div>
         </div>
         <div className={"relative grid grid-rows-[min-content_auto]"}>
@@ -42,8 +46,12 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
             Alunos de graduação com apresentação de poster
           </h1>
           <div className={"flex flex-col items-center justify-center"}>
-            <h2 className={"text-3xl font-black text-gray-800"}>R$ 100,00</h2>
-            <h3 className={"text-xl font-black text-gray-700"}>(cem reais)</h3>
+            <h2 className={"text-3xl font-semibold text-gray-800"}>
+              R$ 100,00
+            </h2>
+            <h3 className={"text-lg font-semibold text-gray-700"}>
+              (cem reais)
+            </h3>
           </div>
         </div>
         <div className={"relative grid grid-rows-[min-content_auto]"}>
@@ -56,8 +64,10 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
             com comunicação oral
           </h1>
           <div className={"flex flex-col items-center justify-center"}>
-            <h2 className={"text-3xl font-black text-gray-800"}>R$ 150,00</h2>
-            <h3 className={"text-xl font-black text-gray-700"}>
+            <h2 className={"text-3xl font-semibold text-gray-800"}>
+              R$ 150,00
+            </h2>
+            <h3 className={"text-lg font-semibold text-gray-700"}>
               (cento e cinquenta reais)
             </h3>
           </div>

@@ -84,8 +84,12 @@ const PeriodContainer: React.FC<{
                 " flex flex-col"
               }
             >
-              <span className={"block text-center"}>{schedule.time}</span>
-              <h1 className={"font-light"}>{schedule.type_title}</h1>
+              <span className={"block text-center font-bold"}>
+                {schedule.time}
+              </span>
+              <h1 className={"text-center font-light"}>
+                {schedule.type_title}
+              </h1>
             </div>
             {schedule.title ? (
               <h2
