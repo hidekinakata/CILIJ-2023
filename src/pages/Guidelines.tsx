@@ -102,15 +102,15 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
             Preenchida a ficha de inscrição agora você deverá encaminhar um pix
             ou fazer um depósito bancário para:
             <ul className={"p-5"}>
+              <li>
+                <strong>Pix: </strong>33681335000171 - Learned Language Idiomas
+              </li>
+              <br />
               <li>Agência: 0001</li>
               <li>Conta: 2485491-2</li>
               <li>Instituição: 403 - Cora SCD</li>
               <li>Nome da Empresa: Learned Language Idiomas</li>
               <li>CNPJ: 33681335000171</li>
-              <br />
-              <li>
-                <strong>Pix: </strong>33681335000171
-              </li>
             </ul>
           </li>
           <li>

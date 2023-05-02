@@ -26,7 +26,7 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
           >
             Alunos de graduação e professores
             <br />
-            (sem apresentação)
+            (sem apresentação de trabalho)
           </h1>
           <div className={"flex flex-col items-center justify-center"}>
             <h2 className={"text-3xl font-semibold text-gray-800"}>
@@ -74,7 +74,8 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
         </div>
       </div>
       <span className={"mt-6 text-center text-sm lg:text-base"}>
-        Obs: Grupos de 10 inscritos 10% de desconto - entrar em contato com{" "}
+        Obs: Obs: Grupos: a partir de 10 congressitas solicite 10% de desconto -
+        entrando em contato com{" "}
         <a className={"text-blue-600"} href={"mailto:Infocilij@gmail.com"}>
           Infocilij@gmail.com
         </a>
