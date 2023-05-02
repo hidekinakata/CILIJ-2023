@@ -117,10 +117,10 @@ const EventDay: EventDayType[] = [
         time: "16h - 18h",
         presenters: [
           {
-            name: "Andreia Oliveira",
+            name: "Andréia de Oliveira Alencar Iguma",
             occupation: "(pesquisadora)",
             resume:
-              "Andreia Oliveira é pós-doutoranda em Educação pela UNESP/Presidente Prudente com bolsa CNPq, Doutora em Estudos Literários pela Universidade Federal de Uberlândia – UFU, Mestre em Letras (Literatura e Práticas Culturais) pela Universidade Federal da Grande Dourados - UFGD (2012) e Graduada em Letras também pela UFGD (2007). Vice-líder do grupo de pesquisa Formação de professores e as relações entre as práticas educativas em leitura, literatura e avaliação do texto, além de ser membro do Grupo de Pesquisas em Espacialidades Artísticas - GPEA. Atua principalmente nos seguintes temas: literatura e ensino, literatura infantil e juvenil, políticas públicas de leitura e vertentes do insólito.",
+              "Andréia de Oliveira é pós-doutoranda em Educação pela UNESP/Presidente Prudente com bolsa CNPq, Doutora em Estudos Literários pela Universidade Federal de Uberlândia – UFU, Mestre em Letras (Literatura e Práticas Culturais) pela Universidade Federal da Grande Dourados - UFGD (2012) e Graduada em Letras também pela UFGD (2007). Vice-líder do grupo de pesquisa Formação de professores e as relações entre as práticas educativas em leitura, literatura e avaliação do texto, além de ser membro do Grupo de Pesquisas em Espacialidades Artísticas - GPEA. Atua principalmente nos seguintes temas: literatura e ensino, literatura infantil e juvenil, políticas públicas de leitura e vertentes do insólito.",
             pictureSrc: "/speakers/andreia_oliveira.png",
             pictureAuthor: "nichii imagem",
             presentation: {
@@ -155,7 +155,7 @@ const EventDay: EventDayType[] = [
         ],
       },
     ],
-    night: [{ type_title: "Sarau Literario", time: "20h" }],
+    night: [{ type_title: "Sarau Literário", time: "20h" }],
   },
   {
     key: "day7",

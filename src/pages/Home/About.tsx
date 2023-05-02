@@ -63,7 +63,7 @@ const About: React.FC<AboutType> = (props) => {
         que começa agora, afinal,
       </p>
 
-      <cite className={"w-full text-center font-caveat text-2xl md:text-4xl"}>
+      <cite className={"w-full text-center text-2xl font-semibold italic "}>
         <p className={"pt-5 !indent-0"}>
           “O homem, como um ser histórico, inserido num permanente movimento de
           procura, faz e refaz o seu saber.”

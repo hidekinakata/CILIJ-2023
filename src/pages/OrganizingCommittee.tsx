@@ -80,6 +80,7 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeType> = (props) => {
 const org = `Adriana Jesuíno Francisco 
 Ana Carolina Reginaldo Bitencourt 
 Ana Paula Carneiro 
+Andréia de Oliveira Alencar Iguma 
 Andreina de Melo Louveira Arteman 
 Antonio Cezar Nascimento de Brito 
 Beatriz Alves de Moura 
@@ -87,11 +88,11 @@ Berta Lúcia Tagliari Feba
 Clara Cassiolato Junqueira 
 Claudia Leite Brandão 
 Cleide de Araujo Campos 
-Andréia de Oliveira Alencar Iguma  
 Emanuela Carla Medeiros de Queiros 
 Estela Aparecida de Souza dos Santos 
 Gabrielly Doná 
 Isabela Delli Colli Zocolaro 
+Ivanete Bernardino Soares
 Jamile Rossetti de Souza 
 Joana d'Arc Batista Herkenhoff 
 Juliane Francischeti Martins 
@@ -106,7 +107,9 @@ María Paula Obando Rodríguez
 Mariana Revoredo 
 Marivaldo Omena Batista 
 Naelza de Araújo Wanderley 
+Rita Cristina Lima Lages
 Robson Guimaraes de Faria 
+Rodrigo Corrêa Martins Machado 
 Rosangela Valachinski Gandin 
 Sarah Gracielle Teixeira Silva 
 Silvana Ferreira de Souza Balsan 
