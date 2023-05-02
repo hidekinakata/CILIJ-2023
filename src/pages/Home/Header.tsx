@@ -46,23 +46,17 @@ const Header: React.FC<HomeType> = (props) => {
                 "grid grid-cols-[min-content_auto] grid-rows-2 gap-x-2 gap-y-1 align-middle text-lg leading-none"
               }
             >
-              <div
-                className={"row-span-2 h-fit self-center text-pine-glade-600"}
-              >
+              <div className={" row-span-2 h-fit self-center"}>
                 <span
                   className={
-                    " float-left h-full place-self-center text-5xl leading-none  "
+                    " float-left h-full place-self-center text-5xl leading-none text-aubergine-800  "
                   }
                 >
                   VII
                 </span>
               </div>
-              <p className={"self-end text-pine-glade-600"}>
-                Congresso Internacional de
-              </p>
-              <p className={"text-pine-glade-600"}>
-                Literatura Infantil e Juvenil
-              </p>
+              <p className={"self-end "}>Congresso Internacional de</p>
+              <p className={""}>Literatura Infantil e Juvenil</p>
             </motion.h3>
             <motion.h1
               initial={{ x: -20, opacity: 0 }}
