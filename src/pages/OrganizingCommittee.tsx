@@ -20,10 +20,17 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeType> = (props) => {
           <h1 className={"mb-8 justify-center text-center text-xl"}>
             Renata Junqueira de Souza
           </h1>
-          <img
-            src={"renata_junqueira.jpg"}
-            className={"mx-auto my-2 h-72 md:float-left md:mx-5"}
-          />
+          <figure
+            className={
+              "flex flex-col items-center justify-center md:float-left"
+            }
+          >
+            <img
+              src={"renata_junqueira.jpg"}
+              className={"mx-auto mt-2 h-72 md:mx-5"}
+            />
+            <caption className={"mb-3"}>Foto: Ricardo Torquato</caption>
+          </figure>
           <p className={"my-auto indent-8"}>
             Atualmente é professora visitante no Programa de Pós-graduação em
             Educação da Universidade Federal de Ouro Preto (UFOP/MG). Possui
@@ -56,9 +63,14 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeType> = (props) => {
             Comissão organizadora
           </h1>
           <ul>
-            {org.split("\n").map((organizer) => (
-              <li>{organizer}</li>
-            ))}
+            {org.split("\n").map((organizer) => {
+              if (!organizer.startsWith("_")) return <li>{organizer}</li>;
+              return (
+                <li>
+                  <strong>{organizer.slice(1)}</strong>
+                </li>
+              );
+            })}
           </ul>
         </div>
 
@@ -79,23 +91,24 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeType> = (props) => {
 
 const org = `Adriana Jesuíno Francisco 
 Ana Carolina Reginaldo Bitencourt 
-Ana Paula Carneiro 
-Andréia de Oliveira Alencar Iguma 
+_Ana Paula Carneiro
+_Andréia de Oliveira Alencar Iguma 
 Andreina de Melo Louveira Arteman 
 Antonio Cezar Nascimento de Brito 
 Beatriz Alves de Moura 
 Berta Lúcia Tagliari Feba 
 Clara Cassiolato Junqueira 
 Claudia Leite Brandão 
-Cleide de Araujo Campos 
+_Cleide de Araujo Campos 
 Emanuela Carla Medeiros de Queiros 
 Estela Aparecida de Souza dos Santos 
 Gabrielly Doná 
 Isabela Delli Colli Zocolaro 
-Ivanete Bernardino Soares
-Jamile Rossetti de Souza 
+_Ivanete Bernardino Soares
+_Jamile Rossetti de Souza 
 Joana d'Arc Batista Herkenhoff 
-Juliane Francischeti Martins 
+_Jorge de Castro
+_Juliane Francischeti Martins 
 Kenia Adriana de Aquino 
 Kilma Cristeane Ferreira Guedes 
 Leonardo Montes Lopes 
@@ -103,13 +116,14 @@ Leoneide Maria Brito Martins
 Luís Henrique Lustosa Reipert
 Márcia Tavares Silva 
 Maria Gilliane de Oliveira Cavalcante 
-María Paula Obando Rodríguez 
+_María Paula Obando Rodríguez 
 Mariana Revoredo 
 Marivaldo Omena Batista 
+_Marlice Nogueira
 Naelza de Araújo Wanderley 
-Rita Cristina Lima Lages
+_Rita Cristina Lima Lages
 Robson Guimaraes de Faria 
-Rodrigo Corrêa Martins Machado 
+_Rodrigo Corrêa Martins Machado 
 Rosangela Valachinski Gandin 
 Sarah Gracielle Teixeira Silva 
 Silvana Ferreira de Souza Balsan 
@@ -123,6 +137,7 @@ Alcione Maria dos Santos (UFMS)
 Amanda Viliego (UFSJ)
 Antônio Cézar Nascimento de Brito (Faculdade Projeção - Brasília)
 Cassia Bittens (Literatura de Berço)
+Cinthia Magda Fernandes Ariosi
 Cyntia Graziella Guizelim Simões Girotto (UNESP)
 Danglei de Castro Pereira (UNB).
 Diana Maria Lopes Saldanha (UERN)
@@ -138,7 +153,6 @@ Fabiano Tadeu Grazioli (Univ.Regional Integrada do Alto Uruguai e das Missões)
 Ilsa do Carmo Vieira Goulart (Universidade Federal de Lavras)
 Ivanete Bernardino Soares (UFOP)
 José Hélder Pinheiro Alves (UFCG) 
-Rosemary Lapa de Oliveira (UEB)
 Juliana Pádua (UNIFESSPA)
 Leonardo Montes Lopes (UniRV)
 Leoneide Martins (UFMA)
@@ -155,6 +169,7 @@ Rodrigo Corrêa Martins Silva Machado (UFOP)
 Rogério Barbosa da Silva (CEFET-MG)
 Rosa Maria Hessel Silveira (UFRGS)
 Rosana Rodrigues (UEMT)
+Rosemary Lapa de Oliveira (UEB)
 Rovilson José da Silva (UEL)
 Sandra Franco (UEL)
 Silvana Augusta Barbosa Carrijo (UFJataí), 

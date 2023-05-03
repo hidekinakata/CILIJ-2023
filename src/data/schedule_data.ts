@@ -38,12 +38,12 @@ const EventDay: EventDayType[] = [
       },
       {
         type_title: "Abertura",
-        time: "9h30 - 10h",
+        time: "9h30 - 10h30",
       },
       {
         type_title: "Conferência de Abertura",
         title: "Literatura juvenil: só para menores de cem anos",
-        time: "10h",
+        time: "10h30",
 
         presenters: [
           {
