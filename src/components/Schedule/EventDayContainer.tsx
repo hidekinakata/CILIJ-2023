@@ -1,4 +1,5 @@
-import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import EventDay, { EventDayType, Schedule } from "../../data/schedule_data";
 
 type EventDayContainerType = {
@@ -117,7 +118,7 @@ const PeriodContainer: React.FC<{
                         }
                       >
                         <div className={"h-60 w-48 "}>
-                          <img
+                          <Img
                             src={presenter.pictureSrc}
                             className={"h-60 w-48 object-cover"}
                           />
@@ -176,6 +177,42 @@ const PeriodContainer: React.FC<{
         ))}
       </div>
     </div>
+  );
+};
+
+const Img: React.FC<{ src: string; className: string }> = ({
+  src,
+  className,
+}) => {
+  const [loaded, setLoaded] = useState(false);
+  return (
+    <AnimatePresence>
+      <img
+        src={src}
+        className={className}
+        style={loaded ? {} : { display: "none" }}
+        onLoad={() => setLoaded(true)}
+        loading={"lazy"}
+      ></img>
+      {loaded ? null : (
+        <div className={className + " bg-black/20"}>
+          <motion.div
+            animate={{
+              background:
+                "linear-gradient(to right, #eee0 2%, #ddd3 13%, #eee0 24%)",
+              backgroundPositionX: ["-650px", "650px"],
+              backgroundSize: "1300px",
+            }}
+            transition={{
+              repeatType: "loop",
+              duration: 2,
+              repeat: Infinity,
+            }}
+            className={`h-full w-full overflow-hidden bg-black/20`}
+          ></motion.div>
+        </div>
+      )}
+    </AnimatePresence>
   );
 };
 

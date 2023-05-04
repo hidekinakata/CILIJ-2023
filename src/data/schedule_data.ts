@@ -198,8 +198,8 @@ const EventDay: EventDayType[] = [
             occupation: "(pesquisadora)",
             resume:
               "Marta Passos possui graduação em Letras - Português e Literatura pela Universidade do Estado do Rio de Janeiro (1996), mestrado em Literatura Brasileira pela Universidade do Estado do Rio de Janeiro (2000), estágio de doutorado em Educação pela Universidade do Minho, Braga, Portugal (2004), doutorado e pós-doutorado em Educação pela Universidade Federal de Minas Gerais (2006). É professora do Departamento de Linguagem e Tecnologia do Centro Federal de Educação Tecnológica de Belo Horizonte (Cefet-MG), atuando como professora, no Ensino Médio, na Graduação em Letras, no Mestrado e no Doutorado em Estudos de Linguagens. È coordenadora do grupo de pesquisa LLEME (Leitura Literária, Edição e Ensino) e integrante do grupo de pesquisa Materiais e Recursos Didáticos, do CEFET-MG, e do GPELL (Grupo de Pesquisa do Letramento Literário), da Faculdade de Educação da UFMG. Tem experiência nas áreas de Letras e Educação, com ênfase em Literatura Brasileira, atuando principalmente nos seguintes temas: formação de leitor de literatura, design de livros para crianças e jovens, crônica, livro didático, letramento literário, literatura infantil e juvenil.",
-            pictureSrc: "/speakers/marta_passos.png",
-            pictureAuthor: "divulgação ed. contafios",
+            pictureSrc: "/speakers/marta_passos.jpeg",
+            pictureAuthor: "acervo pessoal",
           },
           {
             name: "Nelson Cruz",
