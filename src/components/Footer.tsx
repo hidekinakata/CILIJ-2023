@@ -29,13 +29,23 @@ const Footer: React.FC<FooterType> = (props) => {
             <Img src={"/support/UFOP_logo_educação_reduzida.png"} />
             <h1
               className={
-                "absolute bottom-0 left-1/2 w-2/3 -translate-x-1/2 text-center text-sm font-black text-black lg:bottom-5 lg:text-sm"
+                "absolute bottom-0 left-1/2 w-3/4 -translate-x-1/2 text-center text-sm font-black text-black lg:bottom-5 lg:text-sm"
               }
             >
               Programa de pós-graduação em Educação UFOP
             </h1>
           </div>
-          <Img src={"/support/Logo_posletras_900_px_x_150_px_1_01.png"} />
+          <div className={"relative"}>
+            <Img src={"/support/logo_polestras.jpeg"} />
+            <h1
+              className={
+                "absolute bottom-1 left-1/2 -translate-x-1/2 text-center text-[0.55rem] font-black text-white lg:bottom-2 lg:text-[1.1rem]"
+              }
+            >
+              POSLETRAS/UFOP
+            </h1>
+          </div>
+
           <Img src={"/support/PPGE FCT.png"} />
           <Img src={"/support/Logomarca_jpg_UFOP.jpg"} />
           <Img src={"/support/logo_portal_unesp_4x3.jpg"} />

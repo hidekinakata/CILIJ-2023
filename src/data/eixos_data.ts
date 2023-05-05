@@ -56,7 +56,7 @@ const Eixos: Eixo[] = [
       "Thiago Alves Valente (UENP)",
       "Elizabeth da Penha Cardoso (PUC-SP)",
       "Rosana Rodrigues (UEMT)",
-      "Juliana Pádua (UNIFESSPA)",
+      "Juliana Pádua (GEPLIJ/UNIFESSPA)",
     ],
     email: "eixo4cilij@gmail.com",
   },
