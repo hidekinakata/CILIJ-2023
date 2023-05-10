@@ -40,6 +40,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
     { name: "Templates", path: "/templates" },
     { name: "Comissões", path: "/comissoes" },
     { name: "Editoras", path: "/editoras" },
+    { name: "Lançamento de Livros", path: "/lancamento_de_livros" },
     { name: "Ouro Preto", path: "/ouro_preto" },
   ];
 
@@ -108,7 +109,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
       >
         <ul
           className={
-            "flex h-[calc(100vh-6rem)] w-full flex-col items-center justify-center gap-5 border-b border-b-black/20 bg-white  px-7 pb-10 text-2xl lg:!flex lg:h-fit lg:flex-row lg:py-2 lg:text-sm lg:!opacity-100 [&>li:hover]:text-bermuda-700"
+            "flex h-[calc(100vh-6rem)] w-full flex-col items-center justify-center gap-6 border-b border-b-black/20 bg-white  px-7 pb-10 text-2xl lg:!flex lg:h-fit lg:flex-row lg:py-2 lg:text-sm lg:!opacity-100 [&>li:hover]:text-bermuda-700"
           }
         >
           {paths.map((path, i) => (
@@ -124,7 +125,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
               }}
               key={i}
               className={
-                "flex w-full items-center justify-center border-b border-b-black/[0.01] text-center transition hover:border-b-black/20 lg:w-fit lg:!transform-none lg:!opacity-100"
+                "flex w-full items-center justify-center border-b border-b-black/[0.01] text-center transition hover:underline lg:w-fit lg:!transform-none lg:!opacity-100"
               }
             >
               {path.path.startsWith("#") ||

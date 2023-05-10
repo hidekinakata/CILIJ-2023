@@ -11,6 +11,7 @@ import Templates from "./pages/Templates";
 import OrganizingCommittee from "./pages/OrganizingCommittee";
 import Editoras from "./pages/Editoras";
 import OuroPreto from "./pages/OuroPreto";
+import Books from "./pages/Books";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path={"/thiago_taubman"} element={<ThiagoTaubman />} />
             <Route path="/comissoes" element={<OrganizingCommittee />} />
             <Route path="/editoras" element={<Editoras />} />
+            <Route path="//lancamento_de_livros" element={<Books />} />
             <Route path="/ouro_preto" element={<OuroPreto />} />
           </Route>
           <Route path={"*"} element={<Page404 />} />
