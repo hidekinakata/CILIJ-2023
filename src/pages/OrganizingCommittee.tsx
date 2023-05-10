@@ -134,7 +134,7 @@ Vânia Maria Castelo Barbosa
 
 const sci = `Adriana Lins Precioso (UEMT)
 Alcione Maria dos Santos (UFMS)
-Amanda Viliego (UFSJ)
+Amanda Valiengo (UFSJ)
 Antônio Cézar Nascimento de Brito (Faculdade Projeção - Brasília)
 Cassia Bittens (Literatura de Berço)
 Cinthia Magda Fernandes Ariosi

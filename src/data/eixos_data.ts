@@ -65,7 +65,7 @@ const Eixos: Eixo[] = [
     title: "Literatura infantil e juvenil e as múltiplas linguagens",
     resume: `Considerando o papel que a literatura teve ao longo dos tempos de representar a experiência humana em sua diversidade, cabe refletir sobre as múltiplas linguagens por meio das quais a literatura infantil e juvenil contemporânea se apresenta, bem como o papel que os novos suportes e artifícios adquirem na sedução e envolvimento dos leitores. Dessa forma, o presente eixo pretende ser um espaço para o compartilhamento de pesquisas e experiências que enfoquem a escolarização deste acervo bem como a crítica que a ele se volta. Ficou pequeno se comparado aos demais.`,
     presenters: [
-      "Fabiane Verardi Burlamaque (UPF)",
+      "Fabiane Verardi (UPF)",
       "Diogenes Buenos Aires de Carvalho (UEPI)",
       "Regina Michelli (UERJ)",
       "Adriana Lins Precioso (UEMT)",
