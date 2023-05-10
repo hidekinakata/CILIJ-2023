@@ -15,41 +15,35 @@ const Footer: React.FC<FooterType> = (props) => {
           Apoio
         </h1>
         <div className={"flex flex-wrap items-center justify-center gap-5"}>
-          <div className={"relative"}>
-            <Img src={"/support/Logo grupo de pesquisa.png"} />
-            <span
-              className={
-                "absolute bottom-0 left-1/2 -translate-x-1/2 text-2xl font-black text-black lg:bottom-5 lg:text-4xl"
-              }
-            >
-              PROLELI
-            </span>
-          </div>
-          <div className={"relative px-12 pb-16"}>
-            <Img src={"/support/UFOP_logo_educação_reduzida.png"} />
-            <h1
-              className={
-                "absolute bottom-0 left-1/2 w-3/4 -translate-x-1/2 text-center text-sm font-black text-black lg:bottom-5 lg:text-sm"
-              }
-            >
-              Programa de pós-graduação em Educação UFOP
-            </h1>
-          </div>
-          <div className={"relative"}>
-            <Img src={"/support/logo_polestras.jpeg"} />
-            <h1
-              className={
-                "absolute bottom-1 left-1/2 -translate-x-1/2 text-center text-[0.55rem] font-black text-white lg:bottom-2 lg:text-[1.1rem]"
-              }
-            >
-              POSLETRAS/UFOP
-            </h1>
-          </div>
-
+          <Img
+            src={"/support/Logo grupo de pesquisa.png"}
+            text={"PROLELI"}
+            textClassName={
+              "absolute bottom-0 left-1/2 -translate-x-1/2 text-2xl font-black text-black lg:bottom-5 lg:text-4xl"
+            }
+          />
+          <Img
+            classname={"px-12 pb-16"}
+            src={"/support/UFOP_logo_educação_reduzida.png"}
+            text={"Programa de pós-graduação em Educação UFOP"}
+            textClassName={
+              "absolute bottom-0 left-1/2 w-3/4 -translate-x-1/2 text-center text-sm font-black text-black lg:bottom-5 lg:text-sm"
+            }
+          />
+          <Img
+            src={"/support/logo_polestras.jpeg"}
+            text={"POSLETRAS/UFOP"}
+            textClassName={
+              "absolute bottom-1 left-1/2 -translate-x-1/2 text-center text-[0.55rem] font-black text-white lg:bottom-2 lg:text-[1.1rem]"
+            }
+          />
           <Img src={"/support/PPGE FCT.png"} />
           <Img src={"/support/Logomarca_jpg_UFOP.jpg"} />
           <Img src={"/support/logo_portal_unesp_4x3.jpg"} />
-          <Img src={"/support/learned_language.png"} />
+          <Img
+            src={"/support/learned_language.png"}
+            href={"https://www.learnedlanguage.com"}
+          />
         </div>
       </div>
       <div
@@ -70,8 +64,30 @@ const Footer: React.FC<FooterType> = (props) => {
   );
 };
 
-const Img = ({ src }: { src: string }) => (
-  <img className={"h-24 w-24 object-scale-down md:h-48 md:w-48"} src={src} />
+const Img = ({
+  src,
+  classname,
+  href,
+  text,
+  textClassName,
+}: {
+  src: string;
+  classname?: string;
+  href?: string;
+  text?: string;
+  textClassName?: string;
+}) => (
+  <a
+    href={href ?? "#/"}
+    target={href ? "_blank" : ""}
+    className={" relative transition hover:scale-110 " + classname}
+  >
+    <img
+      className={"h-24 w-24 object-scale-down   md:h-48  md:w-48"}
+      src={src}
+    />
+    {text ? <h1 className={textClassName}>{text}</h1> : null}
+  </a>
 );
 
 export default Footer;
