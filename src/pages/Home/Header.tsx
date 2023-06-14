@@ -73,9 +73,22 @@ const Header: React.FC<HomeType> = (props) => {
             <motion.div
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              className={"mt-10 w-fit self-center md:self-start"}
+              className={
+                "mt-10 flex w-fit flex-col items-center gap-5 self-center md:self-start lg:flex-row"
+              }
             >
               <SubscribeBtn />
+              <a
+                className={
+                  "block w-fit cursor-pointer rounded bg-bermuda-400 p-2 px-5 text-center text-2xl text-white shadow transition hover:bg-bermuda-400 hover:shadow-[0_0_10px_1px] hover:shadow-bermuda-300"
+                }
+                href={
+                  "https://docs.google.com/forms/d/e/1FAIpQLScB0OnneqPoQiDPVReALOJOlhVN_c0uMzbPnjwgCGyf6mOKVg/viewform?usp=sf_link"
+                }
+                target={"_blank"}
+              >
+                International registration
+              </a>
             </motion.div>
           </motion.div>
         </AnimatePresence>

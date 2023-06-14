@@ -187,31 +187,35 @@ const Img: React.FC<{ src: string; className: string }> = ({
   const [loaded, setLoaded] = useState(false);
   return (
     <AnimatePresence>
-      <img
-        src={src}
-        className={className}
-        style={loaded ? {} : { display: "none" }}
-        onLoad={() => setLoaded(true)}
-        loading={"lazy"}
-      ></img>
-      {loaded ? null : (
-        <div className={className + " bg-black/20"}>
-          <motion.div
-            animate={{
-              background:
-                "linear-gradient(to right, #eee0 2%, #ddd3 13%, #eee0 24%)",
-              backgroundPositionX: ["-650px", "650px"],
-              backgroundSize: "1300px",
-            }}
-            transition={{
-              repeatType: "loop",
-              duration: 2,
-              repeat: Infinity,
-            }}
-            className={`h-full w-full overflow-hidden bg-black/20`}
-          ></motion.div>
-        </div>
-      )}
+      <div className={"relative"}>
+        <img
+          src={src}
+          className={className}
+          style={loaded ? {} : {}}
+          onLoad={() => {
+            setLoaded(true);
+          }}
+          loading={"lazy"}
+        ></img>
+        {loaded ? null : (
+          <div className={className + " absolute top-0 bg-black/20"}>
+            <motion.div
+              animate={{
+                background:
+                  "linear-gradient(to right, #eee0 2%, #ddd3 13%, #eee0 24%)",
+                backgroundPositionX: ["-650px", "650px"],
+                backgroundSize: "1300px",
+              }}
+              transition={{
+                repeatType: "loop",
+                duration: 2,
+                repeat: Infinity,
+              }}
+              className={`h-full w-full overflow-hidden bg-black/20`}
+            ></motion.div>
+          </div>
+        )}
+      </div>
     </AnimatePresence>
   );
 };

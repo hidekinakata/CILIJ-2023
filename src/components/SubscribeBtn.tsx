@@ -12,7 +12,7 @@ const SubscribeBtn: React.FC<SubscribeBtnType> = (props) => {
         target={"_blank"}
         className={
           props.className +
-          "w-fit cursor-pointer rounded bg-bermuda-400 p-2 px-5 text-center text-2xl text-white shadow transition hover:bg-bermuda-400 hover:shadow-[0_0_10px_1px] hover:shadow-bermuda-300"
+          "block w-fit cursor-pointer rounded bg-bermuda-400 p-2 px-5 text-center text-2xl text-white shadow transition hover:bg-bermuda-400 hover:shadow-[0_0_10px_1px] hover:shadow-bermuda-300"
         }
       >
         Faça sua inscrição

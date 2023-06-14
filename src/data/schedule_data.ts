@@ -125,7 +125,7 @@ const EventDay: EventDayType[] = [
             pictureAuthor: "nichii imagem",
             presentation: {
               title:
-                "É preciso olhar para nossas juventudes: uma conversa a partir da LJB produzida na última década",
+                "É preciso olhar para as nossas juventudes: uma conversa a partir da LJB produzida na última década",
               resume:
                 "Esta fala nasce a partir de uma angústia que me atravessa há anos: a invisibilidade das múltiplas juventudes nos debates dentro do cenário educacional. Tantas vezes, esse grupo social é rotulado de forma pejorativa e não é enxergado e/ou escutado. A sociedade banaliza seus desejos, medos, sonhos… E, infelizmente, a escola, nem sempre, consegue construir um espaço acolhedor e que possibilite a escuta e a visibilidade. Diante disso, minha proposta é apresentar um panorama acerca de diferentes personagens que compõem as obras de LJB (2012 - 2022), em especial, as narrativas, a fim de olhar como a arte tem construindo por meio da ficção adolescentes e jovens e estabelecer um diálogo com o campo prosaico. Defendo que a literatura seja um espaço capaz de contribuir com o processo de autodescoberta, seja por meio das diferenças ou similitudes que encontramos ao lermos um livro. Ademais, penso que por meio da presença da literatura dentro das escolas e a partir de boas mediações de leitura seja possível ressignificarmos à nossa existência e alteramos rotas.",
             },
@@ -218,6 +218,21 @@ const EventDay: EventDayType[] = [
               'Ângela é também ilustradora e com "Os elefantes" e "Medo de Escola" participou da Bienal de Ilustração de Bratislava em 1997 e 1999. \n',
             pictureSrc: "/speakers/angela_leite.jpeg",
             pictureAuthor: "Marcus Castilho",
+          },
+          {
+            name: "Leo Cunha",
+            occupation: "()",
+            resume:
+              "Leo Cunha completa em 2023 seus 30 anos de literatura. \n" +
+              "É escritor, tradutor, jornalista e professor universitário. \n" +
+              "Nascido em Bocaiúva (MG), em 1966, é Doutor em Artes pela UFMG (2011), Mestre em Ciência da Informação, pela UFMG (1999) e Graduado em Jornalismo, na PUC-MG (1991)\n" +
+              "Publicou de mais de 70 livros, entre crônicas, poesia, literatura infantil, literatura juvenil e teatro infantil.\n" +
+              "Venceu diversos prêmios literários, como Nestlé, Biblioteca Nacional, Jabuti, João-de-Barro, Adolfo Aizen, FNLIJ.\n" +
+              "Teve mais de 20 livros selecionados para programas governamentais como PNBE, PNAIC, PNLD Literário, dentre outros. \n" +
+              "Traduziu de cerca de 30 livros de literatura infantil e juvenil, de autores como Gabriela Mistral, António Skarmeta, Charles Dickens, Gabriela Mistral, Jonathan Swift, Julio Cortázar, Robert Stevenson, entre outros.\n" +
+              "É professor universitário desde 1997, em cursos de graduação e pós-graduação.",
+            pictureAuthor: "acervo pessoal",
+            pictureSrc: "/speakers/leo_cunha.png",
           },
         ],
       },

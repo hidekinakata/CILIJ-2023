@@ -34,50 +34,49 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
             <Link to={"/eixos"} className={"text-red-500 hover:underline"}>
               eixos temáticos
             </Link>{" "}
-            e verifique o melhor eixo para seu trabalho.
+            e verifique o melhor eixo para o seu trabalho.
           </li>
           <li>
             Clique na aba{" "}
             <Link to={"/templates"} className={"text-red-500 hover:underline"}>
               templates
             </Link>
-            , selecione template resumo e faça seu resumo, seja para comunicação
-            oral ou para poster -{" "}
+            , selecione o template resumo e escreva o seu resumo, seja para
+            comunicação oral ou para poster -{" "}
             <strong>
               cada proponente pode escrever até 3 resumos com até três autores
             </strong>
             , sendo que{" "}
             <strong>
               todos devem fazer a inscrição para que seus nomes constem do
-              caderno de resumos com ISBN e do e-book do evento
+              caderno de resumos com ISBN e do e-book do evento.
             </strong>
             .
           </li>
           <li>
-            Finalizado o resumo volte ao eixo e verifique o e-mail de seu tema,
-            depois envie o resumo feito no template para o email do eixo.{" "}
+            Ao finalizar a escrita do seu resumo volte ao eixo escolhido e
+            verifique o e-mail correspondente; depois envie o resumo feito no
+            template para o email do seu eixo.{" "}
             <span className={""}>
               Exemplo: Se você escreveu sobre{" "}
-              <span className={"font-bold"}>
-                Literatura e ensino, eixo temático 6
-              </span>
-              , você enviará o resumo para o email:{" "}
+              <strong>Literatura e ensino, eixo temático 6</strong>, você
+              enviará o resumo para o email{" "}
               <span className={"underline"}>eixo6cilij@gmail.com</span>
             </span>
           </li>
           <li>
-            Eviado o resumo, agora é só aguardar sua carta de aceite.{" "}
             <strong className={""}>
-              Não se esqueça de utilizar no envio o seu email que mais acessa.
-            </strong>
+              Não se esqueça de utilizar no envio o seu email de fácil acesso.
+            </strong>{" "}
+            Agora, veja a seguir as orientações para o preenchimento do Google
+            Forms.
           </li>
         </ol>
       </section>
 
       <section className={"w-full"}>
         <h1 className={"text-center text-xl font-semibold"}>
-          Tive meu resumo aprovado, quero participar do congresso e quero ir
-          para Ouro Preto, como fazer minha inscrição?
+          Como fazer a minha inscrição?
         </h1>
 
         <ol
@@ -92,34 +91,57 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
             </Link>{" "}
             do congresso: Faça sua inscrição
           </li>
-          <li>Preencha o google forms</li>
-          <li>Complete todos os campos com suas informações</li>
+          <li>Preencha o google forms;</li>
+          <li>Complete todos os campos com as suas informações;</li>
           <li>
-            Faça sua inscrição escolhendo o campo: com ou sem apresentação de
-            trabalho
+            Faça a sua inscrição escolhendo o campo: com ou sem apresentação de
+            trabalho;
           </li>
           <li>
-            Preenchida a ficha de inscrição agora você deverá encaminhar um pix
-            ou fazer um depósito bancário para:
+            Após o preenchimento da ficha de inscrição você deverá enviar um PIX
+            ou efetuar um depósito bancário para:
             <ul className={"p-5"}>
               <li>
-                <strong>Pix: </strong>33681335000171 - Learned Language Idiomas
+                <strong>PIX: </strong>33681335000171 - Learned Language Idiomas
               </li>
               <br />
-              <li>Agência: 0001</li>
-              <li>Conta: 2485491-2</li>
-              <li>Instituição: 403 - Cora SCD</li>
-              <li>Nome da Empresa: Learned Language Idiomas</li>
-              <li>CNPJ: 33681335000171</li>
+              <table
+                className={
+                  "text-sm sm:text-base [&_td]:border-2 [&_td]:border-truegray-700 [&_td]:p-2"
+                }
+              >
+                <tbody>
+                  <tr>
+                    <td>Agência</td>
+                    <td>0001</td>
+                  </tr>
+                  <tr>
+                    <td>Conta</td>
+                    <td>2485491-2</td>
+                  </tr>
+                  <tr>
+                    <td>Instituição</td>
+                    <td>403 - Cora SCD</td>
+                  </tr>
+                  <tr>
+                    <td>Nome da Empresa</td>
+                    <td>Learned Language Idiomas</td>
+                  </tr>
+                  <tr>
+                    <td>CNPJ</td>
+                    <td>33681335000171</td>
+                  </tr>
+                </tbody>
+              </table>
             </ul>
           </li>
           <li>
             Feito o pagamento envie o comprovante para o email:
-            financeirocilij@gmail.com
+            financeirocilij@gmail.com;
           </li>
           <li>
-            Inscrição feita!?!?!? Comece a preparar a mala, pois te esperamos
-            com muita prosa boa, muito carinho e pão de queijo.
+            Inscrição feita? Então, comece a preparar a mala, pois estamos te
+            esperando com muita prosa boa, carinho e pão de queijo.
           </li>
         </ol>
         <table
