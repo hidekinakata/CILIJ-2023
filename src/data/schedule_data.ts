@@ -221,7 +221,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "Leo Cunha",
-            occupation: "()",
+            occupation: "(escritor)",
             resume:
               "Leo Cunha completa em 2023 seus 30 anos de literatura. \n" +
               "É escritor, tradutor, jornalista e professor universitário. \n" +

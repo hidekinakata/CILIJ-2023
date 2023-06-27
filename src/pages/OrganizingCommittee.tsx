@@ -103,18 +103,21 @@ _Cleide de Araujo Campos
 Emanuela Carla Medeiros de Queiros 
 Estela Aparecida de Souza dos Santos 
 Gabrielly Doná 
+Guilherme da Silva Lima
 Isabela Delli Colli Zocolaro 
 _Ivanete Bernardino Soares
 _Jamile Rossetti de Souza 
 Joana d'Arc Batista Herkenhoff 
 _Jorge de Castro
 _Juliane Francischeti Martins 
+Júnia Carvalho Gaião de Queiroz
 Kenia Adriana de Aquino 
 Kilma Cristeane Ferreira Guedes 
 Leonardo Montes Lopes 
 Leoneide Maria Brito Martins 
 Luís Henrique Lustosa Reipert
 Márcia Tavares Silva 
+Maria Cecília Soares Barbosa Cota
 Maria Gilliane de Oliveira Cavalcante 
 _María Paula Obando Rodríguez 
 Mariana Revoredo 
@@ -172,7 +175,7 @@ Rosana Rodrigues (UEMT)
 Rosemary Lapa de Oliveira (UEB)
 Rovilson José da Silva (UEL)
 Sandra Franco (UEL)
-Silvana Augusta Barbosa Carrijo (UFJataí), 
+Silvana Augusta Barbosa Carrijo (UFCAT), 
 Silvana Ferreira de Souza (Faculdades de Dracena)
 Marta Passos Pinheiro (CEFET-MG)
 Sílvia de Fátima Pilegi Rodrigues (UFR).

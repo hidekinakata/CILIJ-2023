@@ -103,7 +103,7 @@ const Eixos: Eixo[] = [
       "O Eixo congrega pesquisas, trabalhos de extensão e ensino que focalizam aspectos teóricos/metodológicos relacionados a práticas pedagógicas e ao ensino de literaturas em Língua Portuguesa (LsELP), à mediação de leitura e  a formação de leitores em um contexto que contemple a  leitura como ato formativo para o leitor em construção. Entendemos, como premissa para os estudos do Eixo, a leitura literária como de fundamental importância na formação do leitor em diferentes espaços formativos. Pensamos, ainda, nos trabalhos do Eixo incluir reflexões sobre a formação do docente de Letras, Pedagogia e áreas afins como provocação a uma formação continuada ligada  à leitura literária em um sentido amplo que congrega, portanto, a diversidade de enfoques da leitura não só do texto como do mundo. A proposta tem como principal foco, por meio dos diferentes trabalhos apresentados no Eixo, refletir sobre as práticas pedagógicas e a  situação do ensino de literaturas em Língua Portuguesa na Educação Básica e, na medida do possível, traçar um perfil do professor de literatura em âmbito da formação acadêmica e políticas públicas ligadas ao ensino e difusão da leitura literária que pensem a formação de leitores e a mediação de leitura em um sentido amplo, no qual residem as concepções de letramento literário e educação literária.",
     presenters: [
       "Eliane Santana Dias Debus (UFSC)",
-      "Silvana Augusta Barbosa Carrijo (UFJataí)",
+      "Silvana Augusta Barbosa Carrijo (UFCAT)",
       "Danglei de Castro Pereira (UNB)",
       "Patricia Beraldo Romano (UNIFESSPA)",
       "Rita Lopes (UFOP)",
