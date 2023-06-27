@@ -101,15 +101,38 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
             Após o preenchimento da ficha de inscrição você deverá enviar um PIX
             ou efetuar um depósito bancário para:
             <ul className={"p-5"}>
-              <li>
-                <strong>PIX: </strong>33681335000171 - Learned Language Idiomas
-              </li>
+              <table
+                className={
+                  "text-sm sm:text-base [&_td]:border-2 [&_td]:border-truegray-700 [&_td]:p-2"
+                }
+              >
+                <thead>
+                  <tr>
+                    <td className={"font-bold"}>PIX</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Chave</td>
+                    <td>33681335000171</td>
+                  </tr>
+                  <tr>
+                    <td>Destinatário</td>
+                    <td>Learned Language Idiomas</td>
+                  </tr>
+                </tbody>
+              </table>
               <br />
               <table
                 className={
                   "text-sm sm:text-base [&_td]:border-2 [&_td]:border-truegray-700 [&_td]:p-2"
                 }
               >
+                <thead>
+                  <tr>
+                    <td className={"font-bold"}>Depósito bancário</td>
+                  </tr>
+                </thead>
                 <tbody>
                   <tr>
                     <td>Agência</td>
