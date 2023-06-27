@@ -62,49 +62,52 @@ const PeriodContainer: React.FC<{
       </h1>
       <div className={"flex flex-col gap-5 border-l"}>
         {schedules.map((schedule, i) => (
-          <div
-            key={schedule.type_title + i}
-            className={"relative bg-white/10 p-3"}
+          <HashLink
+            to={`/programacao/#${`${id}_${title}_${schedule.type_title}`.replaceAll(
+              " ",
+              "_"
+            )}`}
           >
             <div
+              key={schedule.type_title + i}
               className={
-                "absolute -left-1 top-5 h-2 w-2 rounded-full bg-truegray-400 "
-              }
-            ></div>
-
-            <span
-              className={
-                "mb-2 block font-semibold text-fuel-yellow-400 drop-shadow-md"
+                "bg-red/10 relative rounded-xl p-3 transition hover:translate-x-1 hover:font-normal hover:shadow-md hover:shadow-fuel-yellow-400/50"
               }
             >
-              {schedule.time}{" "}
-            </span>
-            <div className={""}>
-              <h1 className={""}>
-                <HashLink
-                  to={`/programacao/#${`${id}_${title}_${schedule.type_title}`.replaceAll(
-                    " ",
-                    "_"
-                  )}`}
-                >
-                  {schedule.type_title}
-                </HashLink>
-              </h1>
-              {schedule.title ? (
-                <h2 className={" text-base font-semibold"}>{schedule.title}</h2>
-              ) : null}
-              {schedule.presenters ? (
-                <div className={"text-left"}>
-                  <span className={"text-xs"}>Palestrante(s): </span>
-                  {schedule.presenters
-                    .map(
-                      (presenter) => presenter.name + " " + presenter.occupation
-                    )
-                    .join(", ")}
-                </div>
-              ) : null}
+              <div
+                className={
+                  "absolute -left-1 top-5 h-2 w-2 rounded-full bg-truegray-400 "
+                }
+              ></div>
+
+              <span
+                className={
+                  "mb-2 block font-semibold text-fuel-yellow-400 drop-shadow-md"
+                }
+              >
+                {schedule.time}{" "}
+              </span>
+              <div className={""}>
+                <h1 className={""}>{schedule.type_title}</h1>
+                {schedule.title ? (
+                  <h2 className={" text-base font-semibold"}>
+                    {schedule.title}
+                  </h2>
+                ) : null}
+                {schedule.presenters ? (
+                  <div className={"text-left"}>
+                    <span className={"text-xs"}>Palestrante(s): </span>
+                    {schedule.presenters
+                      .map(
+                        (presenter) =>
+                          presenter.name + " " + presenter.occupation
+                      )
+                      .join(", ")}
+                  </div>
+                ) : null}
+              </div>
             </div>
-          </div>
+          </HashLink>
         ))}
       </div>
     </div>
