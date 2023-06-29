@@ -7,6 +7,7 @@ type EixosTematicosType = {};
 
 const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
   const [showMenuEixos, setShowMenuEixos] = useState(false);
+
   function unsecuredCopyToClipboard(el: HTMLElement, text: string) {
     const textArea = document.createElement("textarea");
     textArea.value = text;

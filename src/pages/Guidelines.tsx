@@ -73,7 +73,6 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
           </li>
         </ol>
       </section>
-
       <section className={"w-full"}>
         <h1 className={"text-center text-xl font-semibold"}>
           Como fazer a minha inscrição?

@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
-import EventDay, { EventDayType, Schedule } from "../../data/schedule_data";
+import React, { useState } from "react";
+import { EventDayType, Schedule } from "../../data/schedule_data";
 
 type EventDayContainerType = {
   eventDay: EventDayType;

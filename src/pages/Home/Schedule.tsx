@@ -6,7 +6,6 @@ import {
   TabsBody,
   TabsHeader,
 } from "@material-tailwind/react";
-import { WiDaySunny, WiHorizonAlt, WiNightClear } from "react-icons/wi";
 import { Link } from "react-router-dom";
 import schedule_data from "../../data/schedule_data";
 import ResumedEventDayContainer from "../../components/Schedule/ResumedEventDayContainer";

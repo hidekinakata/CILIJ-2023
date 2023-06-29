@@ -2,7 +2,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import poster from "../../assets/poster_final.png";
 import SubscribeBtn from "../../components/SubscribeBtn";
-import AsyncImage from "../../components/AsyncImage";
 import { Link } from "react-router-dom";
 
 type HomeType = {};
