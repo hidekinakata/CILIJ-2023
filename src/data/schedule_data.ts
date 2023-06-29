@@ -65,7 +65,7 @@ const EventDay: EventDayType[] = [
         presenters: [
           {
             name: "Teresa Mendes",
-            occupation: "(pesquisadora Portugal)",
+            occupation: "(pesquisadora/Portugal)",
             resume:
               "Teresa Mendes é Doutora em Estudos Literários pela Universidade de Lisboa e Professora Adjunta na Escola Superior de Educação e Ciências Sociais do Instituto Politécnico de Portalegre desde 1996, possuindo experiência de lecionação e formação nas áreas de Língua e Literatura Portuguesas, Literatura Infantil e Juvenil, Didática do Português e Supervisão Pedagógica, na formação inicial e na formação complementar de educadores de infância e professores do Ensino Básico. Tem desenvolvido trabalho de investigação a nível nacional e internacional nas áreas da Literatura Comparada, da Literatura Infantil e Juvenil, da Educação Literária e da Formação Docente, sendo autora de diversos artigos, livros e capítulos de livros nesses domínios. Tem organizado e participado em diversos congressos e seminários, nacionais e internacionais e tem realizado diversas formações direcionadas para educadores e professores de vários níveis de ensino, sobretudo no âmbito da Literatura Infantil, da Formação de Leitores, da Educação Literária e das Metodologias ativas no ensino do Português.",
             pictureSrc: "/speakers/teresa_mendes.png",
@@ -146,7 +146,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "Irene Vasco",
-            occupation: "(escritora Colômbia)",
+            occupation: "(pesquisadora/Colômbia)",
             resume:
               "Irene Vasco é colombiana, filha de mãe brasileira. É licenciada em Letras, especialista em literatura infanto-juvenil e tradutora de português e francês. Já escreveu dezenas de livros para crianças e jovens, muitos deles premiados, como Letras de Carvão, publicado pela Editora Pulo do Gato. Dedicou grande parte de sua vida a realizar oficinas de leitura e formação de leitores em regiões remotas da Colômbia. Frequentemente participa de programas estaduais e institucionais voltados para comunidades indígenas e camponesas, com ênfase em cidadania e responsabilidade social.",
             pictureSrc: "/speakers/irene_vasco.png",

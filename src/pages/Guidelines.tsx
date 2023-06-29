@@ -20,7 +20,7 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
 
       <section className={"w-full"}>
         <h1 className={"text-center text-xl font-semibold"}>
-          Como inscrever comunicação oral ou poster no VII Congresso
+          Como inscrever comunicação oral ou pôster no VII Congresso
           Internacional de Literatura Infantil e Juvenil?
         </h1>
 
@@ -42,7 +42,7 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
               templates
             </Link>
             , selecione o template resumo e escreva o seu resumo, seja para
-            comunicação oral ou para poster -{" "}
+            comunicação oral ou para pôster -{" "}
             <strong>
               cada proponente pode escrever até 3 resumos com até três autores
             </strong>
@@ -56,17 +56,17 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
           <li>
             Ao finalizar a escrita do seu resumo volte ao eixo escolhido e
             verifique o e-mail correspondente; depois envie o resumo feito no
-            template para o email do seu eixo.{" "}
+            template para o e-mail do seu eixo.{" "}
             <span className={""}>
               Exemplo: Se você escreveu sobre{" "}
               <strong>Literatura e ensino, eixo temático 6</strong>, você
-              enviará o resumo para o email{" "}
+              enviará o resumo para o e-mail{" "}
               <span className={"underline"}>eixo6cilij@gmail.com</span>
             </span>
           </li>
           <li>
             <strong className={""}>
-              Não se esqueça de utilizar no envio o seu email de fácil acesso.
+              Não se esqueça de utilizar no envio o seu e-mail de fácil acesso.
             </strong>{" "}
             Agora, veja a seguir as orientações para o preenchimento do Google
             Forms.
@@ -86,9 +86,9 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
           <li>
             Clique na{" "}
             <Link to={"/"} className={"text-red-500 hover:underline"}>
-              página incial
+              página inicial
             </Link>{" "}
-            do congresso: Faça sua inscrição
+            do congresso: Faça sua inscrição;
           </li>
           <li>Preencha o google forms;</li>
           <li>Complete todos os campos com as suas informações;</li>
@@ -158,7 +158,7 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
             </ul>
           </li>
           <li>
-            Feito o pagamento envie o comprovante para o email:
+            Feito o pagamento envie o comprovante para o e-mail:
             financeirocilij@gmail.com;
           </li>
           <li>
@@ -176,7 +176,7 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
           </caption>
           <tbody>
             <tr>
-              <td>Inscrição para comunicação oral ou poster</td>
+              <td>Inscrição para comunicação oral ou pôster</td>
               <td className={"font-semibold"}>
                 De 15 de maio a 16 de julho de 2023
               </td>

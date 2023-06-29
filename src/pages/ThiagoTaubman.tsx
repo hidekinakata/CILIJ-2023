@@ -12,7 +12,7 @@ const ThiagoTaubman: React.FC<ThiagoTaubmanType> = (props) => {
       }
     >
       <h1 className={"text-center text-2xl"}>
-        Conheça o autor da ilustração do nosso poster
+        Conheça o autor da ilustração do nosso pôster
       </h1>
 
       <div>

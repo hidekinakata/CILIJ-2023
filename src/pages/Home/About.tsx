@@ -17,8 +17,8 @@ const About: React.FC<AboutType> = (props) => {
       <p>
         O VII Congresso Internacional de Literatura Infantil e Juvenil -
         <strong> Educação literária: mudanças em movimento</strong> - (re)nasce
-        em solo mineiro a partir das muitas histórias já contadas, uma vez que
-        desde o ano de 2000 integrou às atividades coordenadas pelo Centro de
+        em solo mineiro a partir das muitas histórias já contadas, uma vez que,
+        desde o ano de 2000, integrou às atividades coordenadas pelo Centro de
         Estudos em Leitura e Literatura Infantil e Juvenil (CELLIJ), com sede na
         UNESP/Presidente Prudente e pode contribuir com à educação literária de
         milhares de graduandos(as), professores(as), estudiosos(as) da área,
@@ -34,7 +34,7 @@ const About: React.FC<AboutType> = (props) => {
         Diante disso, o tema do Congresso que acontecerá entre os dias{" "}
         <span className={"underline"}>6 a 8 de dezembro de 2023</span>, no
         Centro de Convenções da Universidade Federal de Ouro Preto, Ouro Preto,
-        MG - se dá a partir de mudanças significativas. Primeiro que CELLIJ
+        MG - se dá a partir de mudanças significativas. Primeiro que o CELLIJ
         deixa de ser o órgão organizador do Congresso, que passa a ser uma
         atividade coordenada pelo grupo de pesquisa “Formação de professores e
         as práticas educativas em leitura, literatura e avaliação do texto

@@ -29,7 +29,7 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
             (sem apresentação de trabalho)
           </h1>
           <div className={"flex flex-col items-center justify-center"}>
-            <h2 className={"text-3xl font-semibold text-gray-800"}>
+            <h2 className={"text-3xl font-semibold text-gray-700"}>
               R$ 100,00
             </h2>
             <h3 className={"text-lg font-semibold text-gray-700"}>
@@ -43,10 +43,10 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
               "flex h-36 items-center justify-center rounded-t-xl bg-aubergine-500 p-3 text-center text-lg text-gray-100"
             }
           >
-            Alunos de graduação com apresentação de poster
+            Alunos de graduação com apresentação de pôster
           </h1>
           <div className={"flex flex-col items-center justify-center"}>
-            <h2 className={"text-3xl font-semibold text-gray-800"}>
+            <h2 className={"text-3xl font-semibold text-gray-700"}>
               R$ 100,00
             </h2>
             <h3 className={"text-lg font-semibold text-gray-700"}>
@@ -64,7 +64,7 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
             com comunicação oral
           </h1>
           <div className={"flex flex-col items-center justify-center"}>
-            <h2 className={"text-3xl font-semibold text-gray-800"}>
+            <h2 className={"text-3xl font-semibold text-gray-700"}>
               R$ 150,00
             </h2>
             <h3 className={"text-lg font-semibold text-gray-700"}>
@@ -74,8 +74,9 @@ const FinancialInvestment: React.FC<FinancialInvestmentType> = (props) => {
         </div>
       </div>
       <span className={"mt-6 text-center text-sm lg:text-base"}>
-        Obs: Grupos: a partir de 10 congressitas solicite 10% de desconto -
-        entrando em contato com{" "}
+        <strong>IMPORTANTE</strong>: A cada 10 congressistas (inscrição feita
+        pelo grupo) – uma inscrição será GRATUITA. Por favor, entre em contato
+        com a nossa comissão pelo e-mail{" "}
         <a className={"text-blue-600"} href={"mailto:Infocilij@gmail.com"}>
           Infocilij@gmail.com
         </a>

@@ -136,7 +136,7 @@ const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
               </div>
               <br />
               <h2 className={""}>
-                Informações no email:{" "}
+                Informações no e-mail:{" "}
                 <a
                   className={"text-blue-600 underline "}
                   href={"mailto:" + eixo.email}
@@ -150,14 +150,14 @@ const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
                       const target = e.currentTarget;
                       await navigator.clipboard
                         .writeText(eixo.email)
-                        .then(() => (target.innerHTML = "Email copiado!"));
+                        .then(() => (target.innerHTML = "E-mail copiado!"));
                       return;
                     }
                     unsecuredCopyToClipboard(e.currentTarget, eixo.email);
-                    e.currentTarget.innerHTML = "Email copiado!";
+                    e.currentTarget.innerHTML = "E-mail copiado!";
                   }}
                 >
-                  Copiar Email
+                  Copiar E-mail
                 </button>
               </h2>
               <br />

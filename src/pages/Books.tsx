@@ -16,17 +16,18 @@ const Books: React.FC<BooksType> = (props) => {
       >
         Lançamento de Livros
       </h1>
-      <div className={"flex h-72 flex-col"}>
-        <p>Olá congressista!</p>
-        <p>Olá autor!</p>
-        <p>Olá editor!</p>
-        <p className={"mt-6 text-justify indent-4"}>
-          Se você tem um livro de literatura infantil e juvenil ou algum livro
+      <div className={"flex h-72 flex-col indent-4"}>
+        <p>Olá autor(a), ilustrador(a), editor(a),</p>
+        <p className={"mt-6 text-justify "}>
+          Se você tem um livro de literatura infantil e juvenil, ou, algum livro
           teórico para lançar no VII Congresso Internacional de Literatura
           Infantil e Juvenil - teremos a noite do dia 07/12/2023 reservada para
-          isso. Por favor, preencha o Forms e prepare seus livros. Estamos te
+          isso. Por favor, preencha o Forms e prepare os seus livros. Estamos te
           esperando.
         </p>
+        <br />
+        <p>Abraços,</p>
+        <p>Comissão Organizadora</p>
         <div className={"grid place-items-center"}>
           <a
             href={
