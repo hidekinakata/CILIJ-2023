@@ -71,7 +71,7 @@ const PeriodContainer: React.FC<{
             <div
               key={schedule.type_title + i}
               className={
-                "bg-red/10 relative rounded-xl p-3 transition hover:translate-x-1 hover:font-normal hover:shadow-md hover:shadow-fuel-yellow-400/50"
+                "bg-red/10 relative rounded-xl p-3 transition hover:translate-x-1 hover:font-normal hover:shadow-[3px_3px_10px] hover:shadow-fuel-yellow-400/90"
               }
             >
               <div
