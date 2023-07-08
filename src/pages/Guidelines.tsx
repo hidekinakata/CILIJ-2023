@@ -97,8 +97,19 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
             trabalho;
           </li>
           <li>
-            Após o preenchimento da ficha de inscrição você deverá enviar um PIX
-            ou efetuar um depósito bancário para:
+            Sobre pagamentos:
+            <ul className={"list-inside pl-4 indent-4"}>
+              <li className={"mt-1 leading-tight"}>
+                <strong>SEM APRESENTAÇÃO DE TRABALHO</strong> - após o
+                preenchimento da ficha de inscrição você deverá enviar um PIX ou
+                efetuar um depósito bancário para (ver dados logo abaixo);
+              </li>
+              <li className={"mt-1 leading-tight"}>
+                <strong>COM APRESENTAÇÃO DE TRABALHO</strong> - SOMENTE após o
+                recebimento da carta de aceite você deverá enviar um PIX ou
+                efetuar um depósito bancário para:
+              </li>
+            </ul>
             <ul className={"p-5"}>
               <table
                 className={
