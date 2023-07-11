@@ -98,7 +98,7 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
           </li>
           <li>
             Sobre pagamentos:
-            <ul className={"list-inside pl-4 indent-4"}>
+            <ul className={"list-inside pl-5 indent-4"}>
               <li className={"mt-1 leading-tight"}>
                 <strong>SEM APRESENTAÇÃO DE TRABALHO</strong> - após o
                 preenchimento da ficha de inscrição você deverá enviar um PIX ou

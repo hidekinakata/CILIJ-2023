@@ -63,7 +63,7 @@ const Eixos: Eixo[] = [
   {
     eixo: 5,
     title: "Literatura infantil e juvenil e as múltiplas linguagens",
-    resume: `Considerando o papel que a literatura teve ao longo dos tempos de representar a experiência humana em sua diversidade, cabe refletir sobre as múltiplas linguagens por meio das quais a literatura infantil e juvenil contemporânea se apresenta, bem como o papel que os novos suportes e artifícios adquirem na sedução e envolvimento dos leitores. Dessa forma, o presente eixo pretende ser um espaço para o compartilhamento de pesquisas e experiências que enfoquem a escolarização deste acervo bem como a crítica que a ele se volta. Ficou pequeno se comparado aos demais.`,
+    resume: `Considerando o papel que a literatura teve ao longo dos tempos de representar a experiência humana em sua diversidade, cabe refletir sobre as múltiplas linguagens por meio das quais a literatura infantil e juvenil contemporânea se apresenta, bem como o papel que os novos suportes e artifícios adquirem na sedução e envolvimento dos leitores. Dessa forma, o presente eixo pretende ser um espaço para o compartilhamento de pesquisas e experiências que enfoquem a escolarização deste acervo bem como a crítica que a ele se volta.`,
     presenters: [
       "Fabiane Verardi (UPF)",
       "Diogenes Buenos Aires de Carvalho (UEPI)",
@@ -98,7 +98,8 @@ const Eixos: Eixo[] = [
   },
   {
     eixo: 8,
-    title: "A leitura literária: espaços de mediação e de formação de leitores",
+    title:
+      "Educação literária, Letramento literário, formação e mediação de leitores",
     resume:
       "O Eixo congrega pesquisas, trabalhos de extensão e ensino que focalizam aspectos teóricos/metodológicos relacionados a práticas pedagógicas e ao ensino de literaturas em Língua Portuguesa (LsELP), à mediação de leitura e  a formação de leitores em um contexto que contemple a  leitura como ato formativo para o leitor em construção. Entendemos, como premissa para os estudos do Eixo, a leitura literária como de fundamental importância na formação do leitor em diferentes espaços formativos. Pensamos, ainda, nos trabalhos do Eixo incluir reflexões sobre a formação do docente de Letras, Pedagogia e áreas afins como provocação a uma formação continuada ligada  à leitura literária em um sentido amplo que congrega, portanto, a diversidade de enfoques da leitura não só do texto como do mundo. A proposta tem como principal foco, por meio dos diferentes trabalhos apresentados no Eixo, refletir sobre as práticas pedagógicas e a  situação do ensino de literaturas em Língua Portuguesa na Educação Básica e, na medida do possível, traçar um perfil do professor de literatura em âmbito da formação acadêmica e políticas públicas ligadas ao ensino e difusão da leitura literária que pensem a formação de leitores e a mediação de leitura em um sentido amplo, no qual residem as concepções de letramento literário e educação literária.",
     presenters: [
