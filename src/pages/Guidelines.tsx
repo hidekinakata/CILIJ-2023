@@ -192,22 +192,28 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
                 De 15 de maio a 16 de julho de 2023
               </td>
             </tr>
-            <tr>
-              <td>Análise dos resumos</td>
+            <tr className={"font-bold text-red-500"}>
+              <td>Prorrogação para inscrições de resumos</td>
               <td className={"font-semibold"}>
-                De 24 de julho a 10 de setembro de 2023
+                De 17 de julho a 06 de agosto de 2023
               </td>
             </tr>
-            <tr>
+            <tr className={"font-bold text-red-500"}>
+              <td>Análise dos resumos</td>
+              <td className={"font-semibold"}>
+                De 07 de agosto a 27 de agosto de 2023
+              </td>
+            </tr>
+            <tr className={"font-bold text-red-500"}>
               <td>Envio das cartas de aceite</td>
               <td className={"font-semibold"}>
-                De 11 de setembro a 29 de setembro de 2023
+                De 28 de agosto a 05 de setembro de 2023
               </td>
             </tr>
             <tr>
               <td>Envio do artigo completo para publicação em e-book</td>
               <td className={"font-semibold"}>
-                De 20 de novembro a 10 de dezembro
+                De 20 de novembro a 10 de dezembro de 2023
               </td>
             </tr>
             <tr>

@@ -29,7 +29,7 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeType> = (props) => {
               src={"renata_junqueira.jpg"}
               className={"mx-auto mt-2 h-72 md:mx-5"}
             />
-            <caption className={"mb-3"}>Foto: Ricardo Torquato</caption>
+            <span className={"mb-3"}>Foto: Ricardo Torquato</span>
           </figure>
           <p className={"my-auto indent-8"}>
             Atualmente é professora visitante no Programa de Pós-graduação em
@@ -63,10 +63,11 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeType> = (props) => {
             Comissão organizadora
           </h1>
           <ul>
-            {org.split("\n").map((organizer) => {
-              if (!organizer.startsWith("_")) return <li>{organizer}</li>;
+            {org.split("\n").map((organizer, i) => {
+              if (!organizer.startsWith("_"))
+                return <li key={i}>{organizer}</li>;
               return (
-                <li>
+                <li key={i}>
                   <strong>{organizer.slice(1)}</strong>
                 </li>
               );
@@ -79,8 +80,8 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeType> = (props) => {
             Comissão cientifica
           </h1>
           <ul>
-            {sci.split("\n").map((sciOrganizer) => (
-              <li>{sciOrganizer}</li>
+            {sci.split("\n").map((sciOrganizer, i) => (
+              <li key={i}>{sciOrganizer}</li>
             ))}
           </ul>
         </div>

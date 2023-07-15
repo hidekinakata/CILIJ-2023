@@ -60,7 +60,7 @@ const EventDay: EventDayType[] = [
     afternoon: [
       {
         type_title: "Mesa redonda 1",
-        title: "Os pequenos",
+        title: "Literatura com e para leitores pequenos",
         time: "13h30 - 15h30",
         presenters: [
           {
@@ -113,7 +113,8 @@ const EventDay: EventDayType[] = [
       },
       {
         type_title: "Mesa redonda 2",
-        title: "Os maiores",
+        title:
+          "Literatura juvenil, leitores e juventudes: um olhar para os maiores",
         time: "16h - 18h",
         presenters: [
           {
@@ -247,7 +248,8 @@ const EventDay: EventDayType[] = [
     morning: [
       {
         type_title: "Mesa redonda 3",
-        title: "Tradição Popular",
+        title:
+          "Tradição popular e sala de aula: a potência da cultura brasileira",
         time: "8h - 10h",
         presenters: [
           {
@@ -299,7 +301,7 @@ const EventDay: EventDayType[] = [
       },
       {
         type_title: "Mesa redonda 4",
-        title: "Ilustração",
+        title: "Imagens, infâncias e literatura: vida em movimento",
         time: "10h30 - 12h30",
         presenters: [
           {

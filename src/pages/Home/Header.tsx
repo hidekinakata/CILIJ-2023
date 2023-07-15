@@ -35,9 +35,18 @@ const Header: React.FC<HomeType> = (props) => {
               delayChildren: 0.2,
             }}
             className={
-              "mt-6 flex h-full flex-col justify-center text-center md:mt-0 md:justify-start md:text-left"
+              "relative mt-6 flex h-full flex-col justify-center text-center md:mt-0 md:justify-start md:text-left"
             }
           >
+            <span
+              className={
+                "mb-4 w-fit self-center bg-red-500 p-2 text-xl font-semibold text-neutral-900 md:self-start"
+              }
+            >
+              INSCRIÇÕES PRORROGADAS
+              <br />
+              até 6 de agosto
+            </span>
             <motion.h3
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}

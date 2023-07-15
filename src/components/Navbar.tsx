@@ -1,7 +1,7 @@
 import { motion, Variants } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { CgClose, CgMenuRightAlt } from "react-icons/cg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useScrollBehavior from "../hooks/useScrollBehavior";
 import { useMediaQuery } from "usehooks-ts";
 import { HashLink } from "react-router-hash-link";
@@ -47,6 +47,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const scrollBehavior = useScrollBehavior();
   const matches = useMediaQuery("(min-width: 1024px)");
+  const location = useLocation();
 
   useEffect(() => {
     if (matches) setIsOpen(false);
@@ -138,7 +139,13 @@ const Navbar: React.FC<NavbarType> = (props) => {
                   {path.name}
                 </HashLink>
               ) : (
-                <Link to={path.path} onClick={() => setIsOpen(false)}>
+                <Link
+                  to={path.path}
+                  onClick={() => setIsOpen(false)}
+                  className={
+                    location.pathname === path.path ? "font-semibold" : ""
+                  }
+                >
                   {path.name}
                 </Link>
               )}

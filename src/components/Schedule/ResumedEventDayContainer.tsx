@@ -63,6 +63,7 @@ const PeriodContainer: React.FC<{
       <div className={"flex flex-col gap-5 border-l"}>
         {schedules.map((schedule, i) => (
           <HashLink
+            key={i}
             to={`/programacao/#${`${id}_${title}_${schedule.type_title}`.replaceAll(
               " ",
               "_"
