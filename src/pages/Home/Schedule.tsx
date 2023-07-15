@@ -20,6 +20,15 @@ const Schedule: React.FC<ScheduleType> = (props) => {
         "[&>p:not(:)] h-fit px-3 pb-10 pt-28 text-justify text-sm sm:px-24 sm:text-base"
       }
     >
+      <span
+        className={
+          "mx-auto mb-8 block w-fit bg-red-600  p-2 px-4 text-center text-3xl font-semibold text-neutral-100"
+        }
+      >
+        INSCRIÇÕES PRORROGADAS
+        <br />
+        até 6 de agosto
+      </span>
       <h1 className={"mb-10 text-center text-5xl"}> Programação </h1>
       <h2 className={"mb-10 text-center text-2xl"}>
         Local: Centro de convenções da UFOP - Ouro Preto - MG
