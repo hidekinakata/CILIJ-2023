@@ -27,6 +27,8 @@ const Schedule: React.FC<ScheduleType> = (props) => {
       >
         INSCRIÇÕES PRORROGADAS
         <br />
+        PARA ENVIO DE RESUMO
+        <br />
         até 6 de agosto
       </span>
       <h1 className={"mb-10 text-center text-5xl"}> Programação </h1>

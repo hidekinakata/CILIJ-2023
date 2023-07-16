@@ -40,10 +40,12 @@ const Header: React.FC<HomeType> = (props) => {
           >
             <span
               className={
-                "mb-4 w-fit self-center bg-red-600 p-2 px-4 text-2xl font-semibold text-neutral-100 md:self-start"
+                "text-20xl mb-4 w-fit self-center bg-red-600 p-2 px-4 font-semibold text-neutral-100 md:self-start"
               }
             >
               INSCRIÇÕES PRORROGADAS
+              <br />
+              PARA ENVIO DE RESUMO
               <br />
               até 6 de agosto
             </span>
