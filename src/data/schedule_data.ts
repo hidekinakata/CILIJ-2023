@@ -93,7 +93,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "Daniela Padilha",
-            occupation: "(editora)",
+            occupation: "(editora e pesquisadora)",
             resume:
               "Daniela Padilha é formada em Letras pela Universidade de São Paulo e especialista em Escutas Antropológicas das Infâncias. Depois de atuar em diversas editoras, fundou a Jujuba em 2010, casa editorial especializada em literatura para as infâncias. Em 2019 iniciou a coleção “Literatura de Colo”, com livros destinados à primeiríssima infância, considerando o bebê leitor e protagonista do seu processo de leitura. ",
             pictureSrc: "/speakers/daniela_padilha.png",
