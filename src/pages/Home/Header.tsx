@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 type HomeType = {};
 
-const Header: React.FC<HomeType> = (props) => {
+const Header: React.FC<HomeType> = () => {
   return (
     <section
       className={
