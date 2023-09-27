@@ -38,12 +38,12 @@ const EventDay: EventDayType[] = [
       },
       {
         type_title: "Abertura",
-        time: "9h30 - 10h30",
+        time: "9h30 - 10h",
       },
       {
         type_title: "Conferência de Abertura",
         title: "Literatura juvenil: só para menores de cem anos",
-        time: "10h30",
+        time: "10h",
 
         presenters: [
           {
@@ -147,7 +147,7 @@ const EventDay: EventDayType[] = [
           },
           {
             name: "Irene Vasco",
-            occupation: "(pesquisadora/Colômbia)",
+            occupation: "(pesquisadora Colômbia)",
             resume:
               "Irene Vasco é colombiana, filha de mãe brasileira. É licenciada em Letras, especialista em literatura infanto-juvenil e tradutora de português e francês. Já escreveu dezenas de livros para crianças e jovens, muitos deles premiados, como Letras de Carvão, publicado pela Editora Pulo do Gato. Dedicou grande parte de sua vida a realizar oficinas de leitura e formação de leitores em regiões remotas da Colômbia. Frequentemente participa de programas estaduais e institucionais voltados para comunidades indígenas e camponesas, com ênfase em cidadania e responsabilidade social.",
             pictureSrc: "/speakers/irene_vasco.png",
@@ -171,28 +171,33 @@ const EventDay: EventDayType[] = [
       },
       {
         type_title: "Intervalo/Café",
-        time: "10h - 10h30",
+        time: "10h - 10h20",
       },
       {
         type_title:
           "Segunda sessão: Apresentações de trabalhos e Apresentações de pôster",
-        time: "11h - 12h30",
+        time: "10h20 - 12h10",
       },
     ],
     afternoon: [
       {
         type_title:
           "Terceira sessão: Apresentações de trabalhos e Apresentações de pôster",
-        time: "14h - 16h",
+        time: "13h30 - 15h30",
       },
       {
         type_title: "Intervalo/Café",
-        time: "16h - 16h20",
+        time: "15h30 - 15h50",
+      },
+      {
+        type_title:
+          "Quarta sessão: Apresentações de trabalhos e Apresentações de pôster",
+        time: "15h50 - 17h50",
       },
       {
         type_title: "Mesa Especial",
         title: "Minas Gerais e a literatura",
-        time: "16h20 - 18h20",
+        time: "18h - 20h",
         presenters: [
           {
             name: "Marta Passos",
@@ -305,6 +310,20 @@ const EventDay: EventDayType[] = [
         time: "10h30 - 12h30",
         presenters: [
           {
+            name: "Hércules Tolêdo Corrêa",
+            occupation: "(pesquisador)",
+            resume:
+              "Hércules Tolêdo Corrêa é professor da Universidade Federal de Ouro Preto e pesquisa formação de leitores, ensino de literatura e letramento literário. Fundador e líder do Grupo de Pesquisa MULTDICS Multiletramentos e usos de TDIC na Educação.  É doutor em Educação, mestre e graduado em Letras pela Universidade Federal de Minas Gerais. Realizou estágios de pós-doutorado na Universidade do Minho, em Portugal, e na York University, no Canadá. Tem livros e artigos publicados em periódicos nacionais e internacionais. ",
+            pictureSrc: "/speakers/hercules_toledo_correa.png",
+            pictureAuthor: "acervo pessoal",
+            presentation: {
+              title:
+                "Da caixa de costura para as páginas dos livros ilustrados: imagens construídas com aviamentos em livros para crianças",
+              resume:
+                "Livros ilustrados se apresentam, contemporaneamente, com os mais diferentes materiais e técnicas utilizados em seus projetos gráficos. Desenhos e pinturas, massinhas, bordados, dobraduras em papel, computação gráfica e até materiais menos convencionais como cabelos humanos, calda de açúcar e pétalas de flores são usados para produzir imagens para essas obras multimodais/mutissemióticas, muitas vezes inusitadas e cada vez mais criativas. Nesta mesa, procurarei demonstrar de que maneira a escritora e ilustradora mineira Ângela Leite de Souza desenvolve suas produções nesse campo, associando trabalhos manuais com diferentes tipos de tecidos e aviamentos para ampliar os sentidos de seus textos e de outros autores nas obras que ilustra/produz. ",
+            },
+          },
+          {
             name: "Odilon Moraes",
             occupation: "(ilustrador)",
             resume:
@@ -331,28 +350,30 @@ const EventDay: EventDayType[] = [
                 "Na literatura infantil contemporânea, a imagem assume um protagonismo ímpar, criando um tipo de obra que desloca o livro do mundo da literatura para a fronteira com o mundo das artes visuais, a ponto da palavra ilustração perder seu sentido quando usada como sinônimo de imagem. Em minha fala apresentarei alguns exemplos de livros de fronteira e como a consciência do protagonismo da imagem altera a forma como se cria e se lê os livros.",
             },
           },
-          {
-            name: "Hércules Tolêdo Corrêa",
-            occupation: "(pesquisador)",
-            resume:
-              "Hércules Tolêdo Corrêa é professor da Universidade Federal de Ouro Preto e pesquisa formação de leitores, ensino de literatura e letramento literário. Fundador e líder do Grupo de Pesquisa MULTDICS Multiletramentos e usos de TDIC na Educação.  É doutor em Educação, mestre e graduado em Letras pela Universidade Federal de Minas Gerais. Realizou estágios de pós-doutorado na Universidade do Minho, em Portugal, e na York University, no Canadá. Tem livros e artigos publicados em periódicos nacionais e internacionais. ",
-            pictureSrc: "/speakers/hercules_toledo_correa.png",
-            pictureAuthor: "acervo pessoal",
-            presentation: {
-              title:
-                "Da caixa de costura para as páginas dos livros ilustrados: imagens construídas com aviamentos em livros para crianças",
-              resume:
-                "Livros ilustrados se apresentam, contemporaneamente, com os mais diferentes materiais e técnicas utilizados em seus projetos gráficos. Desenhos e pinturas, massinhas, bordados, dobraduras em papel, computação gráfica e até materiais menos convencionais como cabelos humanos, calda de açúcar e pétalas de flores são usados para produzir imagens para essas obras multimodais/mutissemióticas, muitas vezes inusitadas e cada vez mais criativas. Nesta mesa, procurarei demonstrar de que maneira a escritora e ilustradora mineira Ângela Leite de Souza desenvolve suas produções nesse campo, associando trabalhos manuais com diferentes tipos de tecidos e aviamentos para ampliar os sentidos de seus textos e de outros autores nas obras que ilustra/produz. ",
-            },
-          },
         ],
       },
     ],
     afternoon: [
       {
+        type_title:
+          "Quinta sessão: Apresentações de trabalhos e Apresentações de pôster",
+        time: "13h30 - 15h30",
+      },
+      {
+        type_title: "Intervalo/Café",
+        time: "15h30 - 15h50",
+      },
+      {
+        type_title:
+          "Sexta sessão: Apresentações de trabalhos e Apresentações de pôster",
+        time: "15h50 - 17h50",
+      },
+    ],
+    night: [
+      {
         type_title: "Conferência de Encerramento",
         title: '"El arte de narrar"',
-        time: "14h30",
+        time: "19h30",
         presenters: [
           {
             name: "María Teresa Andruetto",
@@ -370,11 +391,14 @@ const EventDay: EventDayType[] = [
         ],
       },
       {
+        type_title: "Encerramento",
+        time: "20h15",
+      },
+      {
         type_title: "Show cultural de encerramento",
-        time: "16h",
+        time: "21h",
       },
     ],
-    night: [],
   },
 ];
 
