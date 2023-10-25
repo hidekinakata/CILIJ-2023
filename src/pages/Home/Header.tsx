@@ -92,12 +92,12 @@ const Header: React.FC<HomeType> = () => {
               <InterSubscribeBtn />
             </motion.div>
             <a
-              className="animate-shine relative mt-8 w-fit cursor-pointer select-none self-center rounded-lg bg-red-600  px-4 py-2 text-center font-bold text-neutral-100"
+              className="relative mt-8 w-fit animate-shine cursor-pointer select-none self-center rounded-lg bg-red-600  px-4 py-2 text-center font-bold text-neutral-100"
               href="/Grade horária apresentações CILIJ.pdf"
               target="_blank"
             >
               {/* <span className="absolute right-0 top-0 block h-full w-full  animate-ping rounded-full bg-red-400"></span> */}
-              Grade horária de apresentações disponível!
+              Ensalamento (comunicação oral e poster) disponível
               <br /> CLIQUE AQUI
               <span className="absolute -right-2 -top-2 block h-5 w-5 animate-ping rounded-full bg-red-800"></span>
               <span className="absolute -right-2 -top-2 block h-5 w-5  rounded-full bg-red-500"></span>
