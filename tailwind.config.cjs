@@ -80,6 +80,15 @@ module.exports = {
           950: "#450a10",
         },
       },
+      keyframes: {
+        shine: {
+          "0%, 100%": { boxShadow: "0px 0px 30px 0px rgba(255,85,85,0.9)" },
+          "50%": { boxShadow: "0px 0px 30px 10px rgba(255,85,85,0.9)" },
+        },
+      },
+      animation: {
+        shine: "shine 1s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

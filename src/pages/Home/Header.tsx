@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import poster from "../../assets/poster_final.png";
 import SubscribeBtn from "../../components/SubscribeBtn";
+import InterSubscribeBtn from "../../components/InterSubscribeBtn";
 import { Link } from "react-router-dom";
 
 type HomeType = {};
@@ -38,7 +39,7 @@ const Header: React.FC<HomeType> = () => {
               "relative mt-6 flex h-full flex-col justify-center text-center md:mt-0 md:justify-start md:text-left"
             }
           >
-            <span
+            {/* <span
               className={
                 "text-20xl mb-4 w-fit self-center bg-red-600 p-2 px-4 font-semibold text-neutral-100 md:self-start"
               }
@@ -48,7 +49,7 @@ const Header: React.FC<HomeType> = () => {
               PARA ENVIO DE RESUMO
               <br />
               até 6 de agosto
-            </span>
+            </span> */}
             <motion.h3
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -84,22 +85,23 @@ const Header: React.FC<HomeType> = () => {
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               className={
-                "mt-10 flex w-fit flex-col items-center gap-5 self-center md:self-start lg:flex-row"
+                "mt-10 flex w-fit w-full flex-col items-center justify-center gap-5 self-center md:self-start lg:flex-row"
               }
             >
               <SubscribeBtn />
-              <a
-                className={
-                  "block w-fit cursor-pointer rounded bg-bermuda-400 p-2 px-5 text-center text-2xl text-white shadow transition hover:bg-bermuda-400 hover:shadow-[0_0_10px_1px] hover:shadow-bermuda-300"
-                }
-                href={
-                  "https://docs.google.com/forms/d/e/1FAIpQLScB0OnneqPoQiDPVReALOJOlhVN_c0uMzbPnjwgCGyf6mOKVg/viewform?usp=sf_link"
-                }
-                target={"_blank"}
-              >
-                International registration
-              </a>
+              <InterSubscribeBtn />
             </motion.div>
+            <a
+              className="animate-shine relative mt-8 w-fit cursor-pointer select-none self-center rounded-lg bg-red-600  px-4 py-2 text-center font-bold text-neutral-100"
+              href="/Grade horária apresentações CILIJ.pdf"
+              target="_blank"
+            >
+              {/* <span className="absolute right-0 top-0 block h-full w-full  animate-ping rounded-full bg-red-400"></span> */}
+              Grade horária de apresentações disponível!
+              <br /> CLIQUE AQUI
+              <span className="absolute -right-2 -top-2 block h-5 w-5 animate-ping rounded-full bg-red-800"></span>
+              <span className="absolute -right-2 -top-2 block h-5 w-5  rounded-full bg-red-500"></span>
+            </a>
           </motion.div>
         </AnimatePresence>
 
@@ -125,13 +127,13 @@ const Header: React.FC<HomeType> = () => {
           >
             <div
               className={
-                "relative h-[21rem] w-[15rem] lg:h-[24rem] lg:w-[17.1rem]"
+                "relative h-[21rem] w-[15rem] self-center lg:h-[20rem]"
               }
             >
               <img
                 src={poster}
                 className={
-                  "h-[21rem] w-[15rem] rounded-xl object-cover drop-shadow-md  lg:h-[24rem] lg:w-[17.1rem]"
+                  "h-[21rem] w-[15rem] rounded-xl object-cover drop-shadow-md  lg:h-[20rem]"
                 }
               />
 
