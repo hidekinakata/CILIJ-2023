@@ -379,6 +379,11 @@ const EventDay: EventDayType[] = [
     ],
     night: [
       {
+        type_title:
+          "Entrega do prêmio  CILIJ e PROLELI para o melhor da literatura (voto das crianças)",
+        time: "19h",
+      },
+      {
         type_title: "Conferência de Encerramento",
         title: '"El arte de narrar"',
         time: "19h30",
@@ -399,12 +404,8 @@ const EventDay: EventDayType[] = [
         ],
       },
       {
-        type_title: "Encerramento",
-        time: "20h15",
-      },
-      {
-        type_title: "Show cultural de encerramento",
-        time: "21h",
+        type_title: "Encerramento e Show cultural de encerramento",
+        time: "20h30",
       },
     ],
   },

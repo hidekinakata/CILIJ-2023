@@ -12,7 +12,7 @@ type COORDENACAO_GERAL = {
 
 const coordenacao1: COORDENACAO_GERAL = {
   nome: "Renata Junqueira de Souza",
-  cargo: "Professora visitante",
+  cargo: "Coordenador geral (PPGE/UFOP professor visitante + PPGE/UNESP)",
   bio: `Atualmente é professora visitante no Programa de Pós-graduação em
   Educação da Universidade Federal de Ouro Preto (UFOP/MG). Possui
   graduação em Letras pela Universidade Estadual Paulista Júlio de
@@ -41,7 +41,7 @@ const coordenacao1: COORDENACAO_GERAL = {
 const coordenacao2: COORDENACAO_GERAL = {
   nome: "Andréia de Oliveira Alencar Iguma",
   cargo:
-    "Coordenação pela UNESP e pelo Grupo de Pesquisa Formação de Professores e as práticas educativas em Leitura, Literatura e Avaliação do texto literário - PROLELI.",
+    "Coordenação pelo Grupo de Pesquisa Formação de Professores e as práticas educativas em Leitura, Literatura e Avaliação do texto literário - PROLELI.",
   bio: `Pós-doutoranda em Educação pela UNESP/Presidente Prudente com bolsa
   CNPq. Doutora em Estudos Literários pela Universidade Federal de
   Uberlândia - UFU; Mestre em Letras (Literatura e Práticas Culturais)
@@ -77,7 +77,7 @@ const coordenacao3: COORDENACAO_GERAL = {
 
 const coordenacao4: COORDENACAO_GERAL = {
   nome: "Guilherme da Silva Lima",
-  cargo: "Coordenação Cultural",
+  cargo: "Coordenador Cultural",
   bio: `Licenciado em Física pela UNESP (2007), Mestre em Educação pela
   UNESP (2010), Doutor em Educação pela USP (2016) e Pós-doutor em
   Educação na UFMG (2020). É membro da Associação Brasileira de
@@ -93,7 +93,7 @@ const coordenacao4: COORDENACAO_GERAL = {
   autor_foto: "acervo pessoal",
 };
 
-const coordenacao = [coordenacao1, coordenacao2, coordenacao3, coordenacao4];
+const coordenacao = [coordenacao1, coordenacao3, coordenacao4, coordenacao2];
 
 const OrganizingCommittee: React.FC<OrganizingCommitteeType> = (props) => {
   return (
