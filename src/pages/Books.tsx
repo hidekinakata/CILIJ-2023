@@ -11,6 +11,13 @@ const Books: React.FC<BooksType> = (props) => {
     >
       <h1
         className={
+          "my-8 text-center text-2xl font-semibold drop-shadow-lg md:mb-6 md:text-4xl"
+        }
+      >
+        Logo divulgaremos os títulos que serão lançados. Aguardem!!!!
+      </h1>
+      <h1
+        className={
           "my-8 text-center text-2xl font-semibold md:mb-12 md:text-5xl"
         }
       >
@@ -28,13 +35,15 @@ const Books: React.FC<BooksType> = (props) => {
         <br />
         <p>Abraços,</p>
         <p>Comissão Organizadora</p>
-        <div className={"grid place-items-center"}>
+        <div className={"flex items-center justify-center "}>
           <a
             href={
               "https://docs.google.com/forms/d/e/1FAIpQLScvkHFzyEgT1NlVmoul9UKwXPjWWZAqezIatvST7HrqrGzPZA/viewform?usp=sf_link"
             }
             target={"_blank"}
-            className={"mt-20 rounded bg-bermuda-600 p-2 px-4 text-gray-200"}
+            className={
+              "mt-20 rounded bg-bermuda-600 px-4 py-2 indent-0 text-gray-200"
+            }
           >
             Ir para o forms
           </a>

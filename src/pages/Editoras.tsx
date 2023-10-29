@@ -22,13 +22,18 @@ const Editoras: React.FC<EditorasType> = (props) => {
         "relative flex min-h-screen flex-col items-center gap-10 px-4 pb-10 pt-32 sm:px-32 md:pt-44"
       }
     >
-      <h1
-        className={
-          "my-8 text-center text-2xl font-semibold md:mb-12 md:text-5xl"
-        }
-      >
-        Editoras
-      </h1>
+      <div>
+        <h1 className={"mt-8 text-center text-2xl font-semibold md:text-5xl"}>
+          Editoras
+        </h1>
+        <h2
+          className={
+            "mt-4 text-center text-xl font-semibold md:mb-12 md:text-xl"
+          }
+        >
+          (Estandes presentes no congresso)
+        </h2>
+      </div>
       <div className={"flex flex-wrap items-center justify-center "}>
         {EDITORAS.map((editora) => (
           <div className="relative mb-10 grid  h-[150px] w-[150px]  justify-center  md:h-[250px] md:w-[250px]">

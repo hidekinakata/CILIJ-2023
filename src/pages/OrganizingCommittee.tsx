@@ -58,7 +58,7 @@ const coordenacao2: COORDENACAO_GERAL = {
 
 const coordenacao3: COORDENACAO_GERAL = {
   nome: "Rita Cristina Lima Lages",
-  cargo: "Coordenação pelo PPG em Educação UFOP",
+  cargo: "Coordenação pelo PPGL (PósLetras/UFOP)",
   bio: `Professora Adjunta do Departamento de Letras da Universidade Federal
   de Ouro Preto. Doutora em Educação (UFMG, 2013). Doutorado sanduíche
   pela Faculdade de Ciências Sociais da Universidade de Buenos Aires
@@ -77,7 +77,7 @@ const coordenacao3: COORDENACAO_GERAL = {
 
 const coordenacao4: COORDENACAO_GERAL = {
   nome: "Guilherme da Silva Lima",
-  cargo: "Coordenador Cultural",
+  cargo: "Coordenador Cultural (PPGE/UFOP)",
   bio: `Licenciado em Física pela UNESP (2007), Mestre em Educação pela
   UNESP (2010), Doutor em Educação pela USP (2016) e Pós-doutor em
   Educação na UFMG (2020). É membro da Associação Brasileira de

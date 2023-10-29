@@ -404,7 +404,7 @@ const EventDay: EventDayType[] = [
         ],
       },
       {
-        type_title: "Encerramento e Show cultural de encerramento",
+        type_title: "Encerramento e Show cultural",
         time: "20h30",
       },
     ],
