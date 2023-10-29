@@ -1,6 +1,17 @@
 import React from "react";
-import { LuBadgeInfo, LuBedDouble, LuHotel, LuPhone } from "react-icons/lu";
-import { PiArrowElbowDownRightBold } from "react-icons/pi";
+import {
+  LuBadgeInfo,
+  LuBedDouble,
+  LuGroup,
+  LuHotel,
+  LuMail,
+  LuPhone,
+  LuUserSquare,
+  LuUsers,
+  LuWarehouse,
+} from "react-icons/lu";
+import { PiArrowElbowDownRightBold, PiWhatsappLogo } from "react-icons/pi";
+import { useMediaQuery } from "usehooks-ts";
 type OuroPretoType = {};
 
 const HOSPEDAGENS_DESCONTO: string[] = [
@@ -558,6 +569,8 @@ const republicaData: RepublicaData[] = [
 ];
 
 const OuroPreto: React.FC<OuroPretoType> = (props) => {
+  const matches = useMediaQuery("(min-width: 1024px)");
+
   return (
     <main
       className={
@@ -665,55 +678,92 @@ const OuroPreto: React.FC<OuroPretoType> = (props) => {
         </div>
 
         <div className="relative mt-10 flex w-full flex-col items-center">
-          <h1 className="my-6 text-center text-3xl font-bold">Repúblicas</h1>
-          <table className="w-10/12 table-auto rounded-lg">
-            <thead className="rounded-lg">
-              <tr className="rounded-lg">
-                <th className="rounded-l-lg bg-red-600 px-4 py-2 text-white">
-                  REPUBLICA
-                </th>
-                <th className="bg-gray-400 px-4 py-2 text-white">
-                  RESPONSAVEL
-                </th>
-                <th className="bg-gray-400 px-4 py-2 text-center text-white">
-                  WHATSAPP
-                </th>
-                <th className="bg-gray-400 px-4 py-2 text-center text-white">
-                  TELEFONE
-                </th>
-                <th className="bg-gray-400 px-4 py-2 text-center text-white">
-                  E-MAIL
-                </th>
-                <th className="rounded-r-lg bg-gray-400 px-4 py-2 text-center text-white">
-                  VAGAS
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {republicaData.map((republic) => (
-                <tr key={republic.REPUBLICA}>
-                  <td className="border-b border-gray-200 px-4 py-2">
-                    {republic.REPUBLICA}
-                  </td>
-                  <td className="border-b border-gray-200 px-4 py-2 text-center">
-                    {republic.RESPONSAVEL}
-                  </td>
-                  <td className=" border-b border-gray-200 px-4 py-2 text-center">
-                    {republic.WHATSAPP}
-                  </td>
-                  <td className=" border-b border-gray-200 px-4 py-2 text-center">
-                    {republic.TELEFONE}
-                  </td>
-                  <td className="border-b border-gray-200 px-4 py-2">
-                    {republic.E_MAIL}
-                  </td>
-                  <td className="border-b border-gray-200 px-4 py-2 text-center">
-                    {republic.VAGAS}
-                  </td>
+          <h1 className="mt-6 text-center text-3xl font-bold">Repúblicas</h1>
+          <h2 className="mb-6 mt-3 font-semibold text-neutral-700 ">
+            Diárias: R$ 50
+          </h2>
+          {matches && (
+            <table className="w-[300px] table-auto rounded-lg">
+              <thead className="rounded-lg">
+                <tr className="rounded-lg">
+                  <th className="rounded-l-lg bg-red-600 px-4 py-2 text-white">
+                    REPUBLICA
+                  </th>
+                  <th className="bg-gray-400 px-4 py-2 text-white">
+                    RESPONSAVEL
+                  </th>
+                  <th className="bg-gray-400 px-4 py-2 text-center text-white">
+                    WHATSAPP
+                  </th>
+                  <th className="bg-gray-400 px-4 py-2 text-center text-white">
+                    TELEFONE
+                  </th>
+                  <th className="bg-gray-400 px-4 py-2 text-center text-white">
+                    E-MAIL
+                  </th>
+                  <th className="rounded-r-lg bg-gray-400 px-4 py-2 text-center text-white">
+                    VAGAS
+                  </th>
                 </tr>
+              </thead>
+              <tbody>
+                {republicaData.map((republic) => (
+                  <tr key={republic.REPUBLICA}>
+                    <td className="border-b border-gray-200 px-4 py-2">
+                      {republic.REPUBLICA}
+                    </td>
+                    <td className="border-b border-gray-200 px-4 py-2 text-center">
+                      {republic.RESPONSAVEL}
+                    </td>
+                    <td className=" border-b border-gray-200 px-4 py-2 text-center">
+                      {republic.WHATSAPP}
+                    </td>
+                    <td className=" border-b border-gray-200 px-4 py-2 text-center">
+                      {republic.TELEFONE}
+                    </td>
+                    <td className="border-b border-gray-200 px-4 py-2">
+                      {republic.E_MAIL}
+                    </td>
+                    <td className="border-b border-gray-200 px-4 py-2 text-center">
+                      {republic.VAGAS}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+          {!matches && (
+            <ul className="flex h-auto w-full  flex-wrap gap-4">
+              {republicaData.map((rep) => (
+                <li className=" flex  w-full flex-col gap-1 rounded-lg p-4 shadow-md shadow-neutral-800/30 lg:w-[49%] [&>span]:flex [&>span]:items-center [&>span]:gap-2">
+                  <span className="font-bold">
+                    <LuWarehouse />
+                    {rep.REPUBLICA}
+                  </span>
+                  <span>
+                    <LuUserSquare />
+                    {rep.RESPONSAVEL}
+                  </span>
+                  <span>
+                    <LuPhone />
+                    {rep.TELEFONE}
+                  </span>
+                  <span>
+                    <PiWhatsappLogo />
+                    {rep.WHATSAPP}
+                  </span>
+                  <span>
+                    <LuMail />
+                    {rep.E_MAIL}
+                  </span>
+                  <span>
+                    <LuUsers />
+                    Vagas: {rep.VAGAS}
+                  </span>
+                </li>
               ))}
-            </tbody>
-          </table>
+            </ul>
+          )}
         </div>
       </div>
     </main>
