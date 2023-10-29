@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarType> = (props) => {
     { name: "Comissões", path: "/comissoes" },
     { name: "Editoras", path: "/editoras" },
     { name: "Lançamento de Livros", path: "/lancamento_de_livros" },
-    { name: "Ouro Preto", path: "/ouro_preto" },
+    { name: "Hospedagens Ouro Preto", path: "/ouro_preto" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);

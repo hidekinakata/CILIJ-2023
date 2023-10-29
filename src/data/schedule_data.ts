@@ -240,6 +240,14 @@ const EventDay: EventDayType[] = [
             pictureAuthor: "acervo pessoal",
             pictureSrc: "/speakers/leo_cunha.png",
           },
+          {
+            name: "Marilda Castanha",
+            occupation: "(escritora/ilustradora)",
+            resume:
+              "Marilda Castanha nasceu em Belo Horizonte onde formou em Artes Visuais na UFMG. No final dos anos 80 começou a ilustrar livros de literatura para a infância. Recebeu por duas vezes o prêmio Jabuti de Ilustração (respectivamente com os livros “Pindorama terra das Palmeiras” e “Mil e uma estrelas”). Com este último também foi selecionada para a Lista White Ravens. Em 2017 recebeu o Purple Island no Nami Concours (Coreia do Sul) com o livro Sem Fim. Hoje Marilda vive e trabalha em Santa Luzia, MG.",
+            pictureAuthor: "acervo pessoal",
+            pictureSrc: "/speakers/marilda_castanha.jpeg",
+          },
         ],
       },
     ],

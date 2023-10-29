@@ -97,7 +97,7 @@ const Header: React.FC<HomeType> = () => {
               target="_blank"
             >
               {/* <span className="absolute right-0 top-0 block h-full w-full  animate-ping rounded-full bg-red-400"></span> */}
-              Ensalamento (comunicação oral e poster) disponível
+              Ensalamento provisório (comunicação oral e poster) disponível
               <br /> CLIQUE AQUI
               <span className="absolute -right-2 -top-2 block h-5 w-5 animate-ping rounded-full bg-red-800"></span>
               <span className="absolute -right-2 -top-2 block h-5 w-5  rounded-full bg-red-500"></span>
