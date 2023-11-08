@@ -11,12 +11,12 @@ const Books: React.FC<BooksType> = (props) => {
     >
       <h1
         className={
-          "my-8 text-center text-2xl font-semibold drop-shadow-lg md:mb-6 md:text-4xl"
+          "my-8 text-center text-2xl font-semibold drop-shadow-lg md:mt-16 md:text-4xl"
         }
       >
         Logo divulgaremos os títulos que serão lançados. Aguardem!!!!
       </h1>
-      <h1
+      {/* <h1
         className={
           "my-8 text-center text-2xl font-semibold md:mb-12 md:text-5xl"
         }
@@ -48,7 +48,7 @@ const Books: React.FC<BooksType> = (props) => {
             Ir para o forms
           </a>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 };

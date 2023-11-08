@@ -146,12 +146,19 @@ const EventDay: EventDayType[] = [
             },
           },
           {
-            name: "Irene Vasco",
-            occupation: "(pesquisadora Colômbia)",
+            name: "Elizabeth Cardoso",
+            occupation: "(pesquisadora e escritora)",
             resume:
-              "Irene Vasco é colombiana, filha de mãe brasileira. É licenciada em Letras, especialista em literatura infanto-juvenil e tradutora de português e francês. Já escreveu dezenas de livros para crianças e jovens, muitos deles premiados, como Letras de Carvão, publicado pela Editora Pulo do Gato. Dedicou grande parte de sua vida a realizar oficinas de leitura e formação de leitores em regiões remotas da Colômbia. Frequentemente participa de programas estaduais e institucionais voltados para comunidades indígenas e camponesas, com ênfase em cidadania e responsabilidade social.",
-            pictureSrc: "/speakers/irene_vasco.png",
+              "Sobre Elizabeth Cardoso (@elizabethcardoso357) vive em São Paulo capital e é doutora em Teoria Literária pela USP (com estágios doutorais na Universidade de Nova York e Universidade Complutense de Madrid). Bolsista Produtividade CNPq. É professora do Programa de Pós-graduação em Literatura e Crítica Literária na PUC-SP, e do Programa de Educação: Psicólogia da Educação ambos na PUC-SP realizando pesquisas, oferecendo disciplinas e orientando mestrados e doutorados. É fundadora e Líder do Grupo de Pesquisa Literatura de Ancestralidade Negra da PUC-SP. É fundadora e vice-líder do Grupo de Pesquisa Voz Escrita Infantil e Juvenil: práticas discursivas, CNPq-PUCSP. É pesquisadora da literatura de ancestralidade negra, do romance contemporâneo, da literatura infantil e da formação de leitores de literatura, com vários artigos e capítulos de livros publicados. É também Assessora da Secretaria de Educação do Município de São Paulo. Professora da Univesp - Universidade Virtual do Estado de São Paulo. Curadora do Clube Quindim para literatura negra. Colunista revista Claudia. Entre seus livros recentes destacam-se: Feminilidade e Transgressão – uma leitura da obra de Lúcio Cardoso (ensaio crítico, FAPESP e Humanitas, de 2013); Todo mundo é misturado (novela infanto-juvenil, de Brinquebook – Escarlate, 2016) com mais de 100 mil exemplares vendidos; Tarcirurga, Bartolomeu e Pluminha no mar sem fim (conto infantil ilustrado, Bambozinho, de 2017); Literatura e Ensino – territórios em diálogo (organizado em conjunto com Diana Navas e Vera Bastazin, de EDUC, 2018). Depois de tudo tem uma vírgula (romance. Patuá, 2021) ganhador do prêmio Machado de Assis  da Biblioteca Nacional, terceiro lugar de melhor romance de 2021",
+            pictureSrc: "/speakers/elizabeth_cardoso.jpeg",
             pictureAuthor: "acervo pessoal",
+            presentation: {
+              title: 'A força da poética da literatura negra na formação de leitores jovens',
+              resume: `É frenquente o relato de educadores e famílias sobre o desinteresse crescente dos jovens pela leitura. Mesmo os que liam na infância se distanciam  dos livros. 
+              Por outro lado, a literatura e as ações de formação de leitores antirracistas estão em grande parte destinadas às crianças pequenas.
+              De modo, que a poesia, o conto, o teatro e o romance de ancestralidade negra não figuram na curadoria de leituras para jovens, salvo exceções e datas comemorativas. Outro equívoco frequente é colocar essa literatura apenas no âmbito temático, deixando à margem, ou mesmo na invisibilidade, a arquitetura poética dessas obras.
+              Qual a relação entre esses fenômenos? E como a literatura negra pode reaproximar os jovens do literário? São algumas das questões que vou abordar nessa palestra.`
+            }
           },
         ],
       },

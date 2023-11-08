@@ -41,7 +41,7 @@ const coordenacao1: COORDENACAO_GERAL = {
 const coordenacao2: COORDENACAO_GERAL = {
   nome: "Andréia de Oliveira Alencar Iguma",
   cargo:
-    "Coordenação pelo Grupo de Pesquisa Formação de Professores e as práticas educativas em Leitura, Literatura e Avaliação do texto literário - PROLELI.",
+    "Coordenação pelo Grupo de Pesquisa Formação de Professores e as práticas educativas em Leitura, Literatura e Avaliação do texto literário - (PROLELI/UNESP)",
   bio: `Pós-doutoranda em Educação pela UNESP/Presidente Prudente com bolsa
   CNPq. Doutora em Estudos Literários pela Universidade Federal de
   Uberlândia - UFU; Mestre em Letras (Literatura e Práticas Culturais)
@@ -177,6 +177,7 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeType> = (props) => {
 };
 
 const org = `Adriana Jesuíno Francisco 
+_Aline Barbosa de Almeida Cechinel
 Ana Carolina Reginaldo Bitencourt 
 _Ana Paula Carneiro
 _Andréia de Oliveira Alencar Iguma 

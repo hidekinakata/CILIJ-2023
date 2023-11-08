@@ -4,15 +4,19 @@ type EditorasType = {};
 
 const EDITORAS: { nome: string; url: string }[] = [
   { nome: "Aletria", url: "/editoras/Aletria.webp" },
+  { nome: "Biruta", url: "/editoras/biruta.jpeg" },
   { nome: "Cora", url: "/editoras/Cora.jpg" },
   { nome: "Educação Literária", url: "/editoras/Educacao_literaria.png" },
   { nome: "EIS editora", url: "/editoras/EIS editora.jpg" },
   { nome: "Fino Traço", url: "/editoras/Fino_traco.webp" },
   { nome: "Francesinha", url: "/editoras/Francesinha.png" },
+  { nome: "Gaivota", url: "/editoras/gaivota.jpeg" },
   { nome: "Jujuba", url: "/editoras/jUJUBA.png" },
   { nome: "Livros da Matriz", url: "/editoras/Livros_da_Matriz.png" },
   { nome: "MRN Editora", url: "/editoras/MRN editora.png" },
   { nome: "ôZé", url: "/editoras/Oze.png" },
+  { nome: "Solisluna Editora", url: "/editoras/solisluna.jpeg" },
+
 ];
 
 const Editoras: React.FC<EditorasType> = (props) => {
@@ -34,7 +38,7 @@ const Editoras: React.FC<EditorasType> = (props) => {
           (Estandes presentes no congresso)
         </h2>
       </div>
-      <div className={"flex flex-wrap items-center justify-center "}>
+      <div className={"flex flex-wrap items-center justify-center gap-8"}>
         {EDITORAS.map((editora) => (
           <div className="relative mb-10 grid  h-[150px] w-[150px]  justify-center  md:h-[250px] md:w-[250px]">
             <img

@@ -69,7 +69,7 @@ const PeriodContainer: React.FC<{
         {schedules.map((schedule, i) => (
           <div
             key={schedule.type_title + i}
-            className={"relative bg-white/10 p-3"}
+            className={"relative bg-white/10 p-6"}
           >
             <span
               id={`${`${id}_${title}_${schedule.type_title}`.replaceAll(
