@@ -4,6 +4,7 @@ type Eixo = {
   presenters: string[];
   email: string;
   resume: string;
+  fileUrl: string | null;
 };
 
 const Eixos: Eixo[] = [
@@ -20,6 +21,7 @@ const Eixos: Eixo[] = [
       "Cinthia Magda Fernandes Ariosi (UNESP)",
     ],
     email: "eixo1cilij@gmail.com",
+    fileUrl: "Eixo 1 final 2508.pdf",
   },
   {
     eixo: 2,
@@ -33,6 +35,7 @@ const Eixos: Eixo[] = [
       "Ivanete Bernardino Soares (UFOP)",
     ],
     email: "eixo2cilij@gmail.com",
+    fileUrl: "Eixo 2 final 2508.pdf",
   },
   {
     eixo: 3,
@@ -47,6 +50,7 @@ const Eixos: Eixo[] = [
       "Rodrigo Corrêa Martins Silva Machado (UFOP)",
     ],
     email: "eixo3cilij@gmail.com",
+    fileUrl: "Eixo 3 final 2508.pdf",
   },
   {
     eixo: 4,
@@ -59,6 +63,7 @@ const Eixos: Eixo[] = [
       "Juliana Pádua (GEPLIJ/UNIFESSPA)",
     ],
     email: "eixo4cilij@gmail.com",
+    fileUrl: "Eixo 4 final 2508.pdf",
   },
   {
     eixo: 5,
@@ -71,6 +76,7 @@ const Eixos: Eixo[] = [
       "Adriana Lins Precioso (UEMT)",
     ],
     email: "eixo5cilij@gmail.com",
+    fileUrl: "Eixo 5 final 2508.pdf",
   },
   {
     eixo: 6,
@@ -83,6 +89,7 @@ const Eixos: Eixo[] = [
       "Diana Maria Lopes Saldanha (UERN)",
     ],
     email: "eixo6cilij@gmail.com",
+    fileUrl: "Eixo 6 final 2508.pdf",
   },
   {
     eixo: 7,
@@ -95,6 +102,7 @@ const Eixos: Eixo[] = [
       "Leonardo Montes Lopes (UniRV)",
     ],
     email: "eixo7cilij@gmail.com",
+    fileUrl: null,
   },
   {
     eixo: 8,
@@ -110,6 +118,7 @@ const Eixos: Eixo[] = [
       "Rita Lopes (UFOP)",
     ],
     email: "eixo8cilij@gmail.com",
+    fileUrl: "Eixo 8 final 2508.pdf",
   },
   {
     eixo: 9,
@@ -123,6 +132,7 @@ const Eixos: Eixo[] = [
       "Silvana Ferreira de Souza (Faculdades de Dracena)",
     ],
     email: "eixo9cilij@gmail.com",
+    fileUrl: "Eixo 9 final 2508.pdf",
   },
   {
     eixo: 10,
@@ -136,6 +146,7 @@ const Eixos: Eixo[] = [
       "Diana Navas (PUC-SP)",
     ],
     email: "eixo10cilij@gmail.com",
+    fileUrl: "Eixo 10 final 2508.pdf",
   },
   {
     eixo: 11,
@@ -149,6 +160,7 @@ const Eixos: Eixo[] = [
       "Luís Girão (USP)",
     ],
     email: "eixo11cilij@gmail.com",
+    fileUrl: "Eixo 11 final 2508.pdf",
   },
 ];
 

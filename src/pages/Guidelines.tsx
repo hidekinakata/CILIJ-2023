@@ -216,6 +216,12 @@ const Guidelines: React.FC<GuidelinesType> = (props) => {
                 De 20 de novembro a 10 de dezembro de 2023
               </td>
             </tr>
+            <tr className={"font-bold text-red-500"}>
+              <td>Prorrogação do envio do texto para o E-Book</td>
+              <td className={"font-semibold"}>
+                24 de janeiro de 2024
+              </td>
+            </tr>
             <tr>
               <td>Publicação do e-book com ISBN data de 2024</td>
               <td className={"font-semibold"}>

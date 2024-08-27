@@ -44,6 +44,9 @@ const Footer: React.FC<FooterType> = (props) => {
             src={"/support/learned_language.png"}
             href={"https://www.learnedlanguage.com"}
           />
+          <Img
+            src={"/support/cefet-mg.jpeg"}
+          />
         </div>
       </div>
       <div

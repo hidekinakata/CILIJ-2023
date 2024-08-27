@@ -11,7 +11,7 @@ const Header: React.FC<HomeType> = () => {
   return (
     <section
       className={
-        "relative flex min-h-screen w-full items-center justify-center px-9 pt-32 lg:px-32"
+        "relative flex min-h-screen w-full items-center justify-center px-9 pt-48 lg:px-52"
       }
     >
       <div
@@ -39,17 +39,17 @@ const Header: React.FC<HomeType> = () => {
               "relative mt-6 flex h-full flex-col justify-center text-center md:mt-0 md:justify-start md:text-left"
             }
           >
-            {/* <span
+            <span
               className={
                 "text-20xl mb-4 w-fit self-center bg-red-600 p-2 px-4 font-semibold text-neutral-100 md:self-start"
               }
             >
-              INSCRIÇÕES PRORROGADAS
+              IMPORTANTE
               <br />
-              PARA ENVIO DE RESUMO
+              NOVA DATA PARA ENVIO DO TEXTO PARA O E-BOOK
               <br />
-              até 6 de agosto
-            </span> */}
+              até 22 de janeiro de 2024
+            </span>
             <motion.h3
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -73,7 +73,7 @@ const Header: React.FC<HomeType> = () => {
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               className={
-                "text-3xl font-semibold  md:max-w-screen-sm md:text-4xl lg:text-6xl"
+                "text-3xl font-semibold  md:max-w-screen-sm md:text-3xl lg:text-5xl"
               }
             >
               Educação literária:
@@ -85,23 +85,47 @@ const Header: React.FC<HomeType> = () => {
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               className={
-                "mt-10 flex w-fit w-full flex-col items-center justify-center gap-5 self-center md:self-start lg:flex-row"
+                "mt-10 flex w-full flex-col items-center justify-center gap-5 self-center md:self-start lg:flex-row"
               }
             >
               <SubscribeBtn />
               <InterSubscribeBtn />
             </motion.div>
-            <a
-              className="relative mt-8 w-fit animate-shine cursor-pointer select-none self-center rounded-lg bg-red-600  px-4 py-2 text-center font-bold text-neutral-100"
-              href="\Ensalamento VII CILIJ 06-11.pdf"
-              target="_blank"
+            <motion.div
+              initial={{ x: -20, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              className={
+                "mt-6 flex w-full flex-col items-center justify-center gap-5 self-center md:self-start lg:flex-row"
+              }
             >
-              {/* <span className="absolute right-0 top-0 block h-full w-full  animate-ping rounded-full bg-red-400"></span> */}
-              Ensalamento Oficial (comunicação oral e poster) disponível
-              <br /> CLIQUE AQUI
-              <span className="absolute -right-2 -top-2 block h-5 w-5 animate-ping rounded-full bg-red-800"></span>
-              <span className="absolute -right-2 -top-2 block h-5 w-5  rounded-full bg-red-500"></span>
-            </a>
+              <a
+                className="relative mt-8 w-fit animate-shine cursor-pointer select-none self-center rounded-lg bg-red-600  px-4 py-2 text-center font-bold text-neutral-100"
+                href="#/eixos"
+              >
+                PDF's dos dos Eixos temáticos já disponíveis na página de Eixos
+                <span className="absolute -right-2 -top-2 block h-5 w-5 animate-ping rounded-full bg-red-800"></span>
+                <span className="absolute -right-2 -top-2 block h-5 w-5  rounded-full bg-red-500"></span>
+              </a>
+              {/* Ensalamentos */}
+              {/* <a
+                className="relative mt-8 w-fit animate-shine cursor-pointer select-none self-center rounded-lg bg-red-600  px-4 py-2 text-center font-bold text-neutral-100"
+                href="\Domingo_Ensalamento Final VII CILIJ.pdf"
+                target="_blank"
+              >
+                Ensalamento Oficial <br /> Versão PDF
+                <span className="absolute -right-2 -top-2 block h-5 w-5 animate-ping rounded-full bg-red-800"></span>
+                <span className="absolute -right-2 -top-2 block h-5 w-5  rounded-full bg-red-500"></span>
+              </a>
+              <a
+                className="relative mt-8 w-fit animate-shine cursor-pointer select-none self-center rounded-lg bg-red-600  px-4 py-2 text-center font-bold text-neutral-100"
+                href="\Domingo_Ensalamento Final VII CILIJ.docx"
+                target="_blank"
+              >
+                Ensalamento Oficial <br /> Versão .DOCX
+                <span className="absolute -right-2 -top-2 block h-5 w-5 animate-ping rounded-full bg-red-800"></span>
+                <span className="absolute -right-2 -top-2 block h-5 w-5  rounded-full bg-red-500"></span>
+              </a> */}
+            </motion.div>
           </motion.div>
         </AnimatePresence>
 

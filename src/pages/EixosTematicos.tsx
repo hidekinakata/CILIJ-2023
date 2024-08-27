@@ -96,7 +96,7 @@ const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
             "sticky top-36 hidden h-fit w-full border-r-2 p-2 lg:block"
           }
         >
-          <ul className={"flex flex-col gap-3"}>
+          <ul className={"mt-2 flex flex-col gap-3"}>
             {Eixos.map((eixo) => (
               <li
                 key={eixo.eixo}
@@ -135,6 +135,31 @@ const EixosTematicos: React.FC<EixosTematicosType> = (props) => {
                 <span className={"h-[1px] w-full bg-truegray-300"} />
               </div>
               <br />
+              <h2 className={""}>
+                {eixo.fileUrl ? (
+                  <>
+                    Download do PDF diponível:{" "}
+                    <a
+                      className={"text-blue-600 underline "}
+                      target={"_blank"}
+                      href={"/eixos/" + eixo.fileUrl}
+                    >
+                      Abrir PDF
+                    </a>{" "}
+                    <a
+                      className={"rounded bg-fuel-yellow-200 p-1 text-xs"}
+                      target={"_blank"}
+                      href={"/eixos/" + eixo.fileUrl}
+                      download
+                    >
+                      Download
+                    </a>{" "}
+                  </>
+                ) : (
+                  <>Download do PDF disponível em breve.</>
+                )}
+              </h2>
+
               <h2 className={""}>
                 Informações no e-mail:{" "}
                 <a
